@@ -4,6 +4,11 @@ Overview & Setup
 
 Destination Folders
 -------------------
+
+Newly created disk transfers are stored on the transfer server (Z or V
+drive). On the Z drive, there is one folder per accession, and within
+these folders, one folder per digital media number.
+
 All transfers are stored in a directory with the name of the auto-generated ID. These directories are located in a parent directory with the FA or Accession number.
 
 
