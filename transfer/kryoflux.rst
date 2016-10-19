@@ -1,3 +1,201 @@
 KryoFlux
 ============
 
+Imaging Instructions: 3.5” and 5.25” Floppy Disks
+=================================================
+
+The following describes how to create disk images using KryoFlux.
+KryoFlux is software and hardware used to create disk images of 3.5” and
+5.25” floppy disks.
+
+1. In the Disk Imaging Form, record “KryoFlux” as the interface and disk
+   imaging software, and select the drive that you are using from the
+   drop-down list.
+
+2. Set up the hardware.
+
+   a. Connect the drive to the KryoFlux
+
+   b. Connect KryoFlux to the FRED using the USB port in the back.
+
+   c. | Connect the drive to power.
+      | Important! Always make the drive – board - connection first,
+        then plug the power (PSU & USB). *Power always comes last! You
+        are connecting two systems with different grounds, so ground
+        (connected via the floppy data cable) must always come first.
+        Never ever connect or remove the floppy data cable while the
+        drive and / or the board are still powered.*
+
+   d. Always unplug and disconnect from mains when not in use! Do not
+      leave unattended!
+
+3. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
+
+4. | |image32|\ Go to **File > Settings**. Navigate to the **Output**
+     tab. Copy and paste the path of the directory you created into the
+     **Image Path** field. Make sure **Logs** is checked.
+   | *Example: Z:\\2013\_054\\2013\_054\_DM0000023564 or
+     Z:\\FA012\\FA012\_DM0000000759
+     *
+
+5. | On the main KryoFlux screen, enter the name of the image in the
+     text field. The image name is constructed with the accession number
+     or FA number followed by the digital media number.
+   | *Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759*
+
+6. |image33|\ If the disk is Windows formatted, select **<Multiple>**
+   from the drop down menu. A new window will appear. Use CTRL+click to
+   select **MFM Sector Image** and **KryoFlux stream files,
+   preservation**. Click OK.
+
+7. | KryoFlux is separated into three sub-windows. The upper left window
+     contains the track gird. Each blog of the grid represents a track
+     on the disk’s surface. The upper right window contains the track
+     info block, with two more tabs called “Histogram” and “Scatter.”
+     The lower part of the window is the control section, where the
+     current track, drive controls, and the filename are displayed.
+     Below the filename is the format selector, which itself is
+     dependent on profiles. The complete last line of the window is the
+     status line which displays additional information. During dumping,
+     blocks change their color according to the result of the process.
+   | |image34|
+   | |image35|
+
+   a. **Green** – track decoded, no errors found
+
+   b. **Grey** – noise (or unknown encoding scheme)
+
+   c. **Red** – track decoded, error(s) found, reading will be retried
+
+   d. **Yellow** – notifications and warnings, e.g., additional header
+      data found
+
+   e. **Glowing** – track is being dumped
+
+   f. To get more information about the result of a certain track, move
+      your mouse pointer over it. This will output the result of the
+      operation in the status line.
+
+8. Click **Start** and note what time imaging started.
+
+9. Record information in Disk Imaging form in the Digital Media
+   Inventory database.
+
+Appendices
+==========
+
+Appendix 1: KryoFlux Outputs
+----------------------------
+
+Likely in Our Collection
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+If the disk format is unknown, but is a 3.5” floppy, first try “MFM
+Sector Image.” “FM sector image” and “MFM sector image” support
+basically any normal disk used for systems that contain a generic FM or
+MFM FDC.
+
+For 3.5” disks, if MFM or FM does not work, try FM Sector Information,
+CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector
+image, Apple DOS 400k/800k sector image, or CBM DOS extended sector
+image.
+
+The following is a table of output options, the computer systems and
+drives the disks would have been used with, the size of the disk, and
+the approximate production dates of the disks.
+
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| Options                            | Used with                                                                 | Disk size      | Production Dates   |
++====================================+===========================================================================+================+====================+
+| FM sector image                    | BBC Micro, PC-8801, Atari 8-bit                                           | 5.25”          | Early 1980s        |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| FM XFD, Atari 8-bit                | Atari 8-bit bit-negated images                                            | 5.25”          | 1979-1992?         |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| MFM sector image                   | 1.44MB Macintosh disks; Commodore 128; Amiga, Atari ST, PC, many others   | 3.5” & 5.25”   | 1970-2000s         |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| AmigaDOS sector image              | Amiga                                                                     | 3.5” & 5.25”   | 1985-1992          |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| CBM DOS sector image               | Commodore's 8-bit computers                                               | 3.5” & 5.25”   | 1981-1994          |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| Apple DOS 3.2 sector image         | Apple DOS 3.2                                                             | 5.25”          | 1978-1983          |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| Apple DOS 3.3+ sector image        | Apple DOS 3.3, ProDOS                                                     | 5.25”          | 1978-1983          |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| DSK, DOS 3.3 interleave            | Apple DOS 3.3 interleave order images                                     | 5.25”          | 1978-1983          |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| Apple DOS 400k/800k sector image   | Macintosh, including Macintosh 128k, Apple II                             | 3.5”           | 1984-1987          |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| Amiga DiskSpare sector image       | Amiga                                                                     | ?              | 1985-1992?         |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| CBM GCR image                      | Commodore 1541 drive for Commodore 64                                     | 5.25”          | 1982-1988          |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+| CBM DOS extended sector image      | Commodore's 8-bit computers                                               | 3.5” & 5.25”   | 1981-1994          |
++------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+
+Not Likely in Our Collection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Several of the output options are primarily for computer games and thus
+are not likely to be used. These include MFM XFD, Atari 8-bit, Emu
+sector image, Emu II sector image, CBM MicroProse sector image, CBM
+RapidLok sector image, CBM Datasoft sector image, CBM Vorpal sector
+image, CBM V-MAX! sector image, CBM Teque sector image, CBM TDP sector
+image, CBM Big Five sector image, CBM OziSoft sector image.
+
+Appendix 2: KryoFlux Errors and Warnings
+----------------------------------------
+
+While the Kryoflux is operating, there may be exceptions that trigger
+warnings or errors. Confusingly, in the KryoFlux GUI (graphical user
+interface—i.e., not the command line) these are all called “errors.” So,
+most of what appears to be an “error” is simply a warning. While
+warnings are for informational purposes only, errors will have a direct
+effect on the operation. Some common warnings and errors:
+
+-  Sector number is not within the allowed range; the sector was NOT
+   included in the image. Error.
+
+-  Data checksum could not be verified (might be part of a protection,
+   e.g. calculation based on some seed only accessible by the original
+   loader); warning only.
+
+-  Slip marks (sector end) found at different positions from their
+   expected values; warning only.
+
+-  Header extra data was found. Data is hidden in unused parts of the
+   block header. Sector images can't hold such data; warning only. *It
+   is likely that this will appear on the beginning tracks; this is
+   normal and can be ignored.*
+
+-  Format type/block ID is non-standard; warning only.
+
+-  Sector length is non-standard. If considering it as a protection
+   measure it is possible to decode the sector and saving it in the
+   image; if not, you'll get another flag saying so; warning only.
+
+-  Sector ignored, sector was found but sector image was not created.
+   Reason could be sector having a different size set compared to what
+   the image uses; error.
+
+-  Special protection detected which will malform the sector on purpose,
+   retry will be suppressed; warning only.
+
+-  Side number found is different from what it should be; warning only.
+   *If this warning is appearing for multiple disks, the side selection
+   on the drive is broken and a new drive must be used.*
+
+-  Track number found is different from what it should be; warning only.
+
+-  Sector truncated. Sector data is incomplete, decoding stopped. Reason
+   is another sync/mark was found in the data block. Almost certainly
+   protection that a sector image can't deal with; sector is not
+   included in the image; error.
+
+-  Sector offset found is illegal. Sector is still decoded; warning
+   only.
+
+.. [1]
+   In contrast, the open source option, AFF, is no longer supported by
+   its developer and has been discontinued as an option in other imaging
+   programs, like Guymager.
+
