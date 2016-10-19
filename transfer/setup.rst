@@ -1,6 +1,6 @@
 Overview & Setup
 ================
-
+An item must be inventoried before it is transferred. 
 
 Destination Folders
 -------------------

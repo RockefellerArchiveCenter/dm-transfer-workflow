@@ -13,10 +13,11 @@ Contents:
    
    inventory
    /transfer/setup
+   /transfer/optical_disks
    /transfer/external_drives
    /transfer/kryoflux
    /transfer/zip_disks
-   original_doc
+   
 
 
 

@@ -162,3 +162,14 @@ on.
 
 13. Make sure to safely eject the hardware you were imaging. Failure to
     do so can result in irreparable damage to the media.
+	
+Further Information
+~~~~~~~~~~~~~~~~~~~
+
+A detailed Manual for FTK Imager is available as a PDF. It is located on
+the M drive or through this link on the web.
+
+M:\\Digital
+Programs\\Digital\_Media\_Tracking\\digitalMedia\_Documentation\\Imaging\\ImagerUsersGuide.pdf
+
+http://ad-pdf.s3.amazonaws.com/ImagerUsersGuide.pdf
