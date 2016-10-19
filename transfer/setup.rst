@@ -2,6 +2,11 @@ Overview & Setup
 ================
 
 
+Destination Folders
+-------------------
+All transfers are stored in a directory with the name of the auto-generated ID. These directories are located in a parent directory with the FA or Accession number.
+
+
 Choosing Transfer Method
 ------------------------
 Disk images are single files containing the complete content and
@@ -25,3 +30,4 @@ Programs if you encounter media not detailed in either list above.
 The hardware used to create images will vary depending on the type of
 digital media. Optical disks (DVDs and CDs), external hard drives, and
 USB Flash drives will be imaged using the FRED.
+

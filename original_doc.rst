@@ -1,7 +1,5 @@
 All Formats: Basic Set-Up
 =========================
-Destination Folders
--------------------
 
 Newly created disk images are stored on the transfer server (Z or V
 drive). On the Z drive, there is one folder per accession, and within
