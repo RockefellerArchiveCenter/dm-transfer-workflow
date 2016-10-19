@@ -1,0 +1,23 @@
+Overview & Setup
+================
+
+
+Choosing Transfer Method
+------------------------
+Disk images are single files containing the complete content and
+structure representing a data storage medium or device. There are
+different types of images. Forensic images perfectly replicate the
+structure and contents of a storage device, and allow the viewing of
+deleted files and slackspace (i.e, the unused space in a disk cluster).
+Logical images [AD1] are not true forensic images; and do not include
+file slackspace. In general\ *,* all physical media is imaged as a
+physical image, and all digital materials received via a network
+transfer will be logically imaged. Variations from this policy will be
+considered on a case-by-case basis.
+
+At this point in time, disk images are created in-house for optical
+disks (DVDs and CDs), external hard drives, USB Flash drives, 5.25-inch
+floppy disks and 3.5-inch floppy disks (recently dated disks that are
+PC-formatted). We do not have the capacity to image Bernoulli disks, Jaz
+disks, and 8-inch floppy disks. Please notify the Head of Digital
+Programs if you encounter media not detailed in either list above.

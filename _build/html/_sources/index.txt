@@ -13,8 +13,9 @@ Contents:
    
    setup
    inventory
-   transfer
+   /transfer/imaging
    original_doc
+   kryoflux
 
 
 

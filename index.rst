@@ -13,9 +13,9 @@ Contents:
    
    setup
    inventory
-   transfer
+   /transfer/imaging
+   /transfer/kryoflux
    original_doc
-   floppies
 
 
 
