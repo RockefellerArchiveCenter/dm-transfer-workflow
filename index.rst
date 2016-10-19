@@ -11,8 +11,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   setup
    inventory
+   /transfer/setup
    /transfer/imaging
    /transfer/kryoflux
    original_doc

@@ -21,3 +21,7 @@ floppy disks and 3.5-inch floppy disks (recently dated disks that are
 PC-formatted). We do not have the capacity to image Bernoulli disks, Jaz
 disks, and 8-inch floppy disks. Please notify the Head of Digital
 Programs if you encounter media not detailed in either list above.
+
+The hardware used to create images will vary depending on the type of
+digital media. Optical disks (DVDs and CDs), external hard drives, and
+USB Flash drives will be imaged using the FRED.
