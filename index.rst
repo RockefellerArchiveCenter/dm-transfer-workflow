@@ -13,14 +13,15 @@ Contents:
    
    inventory
    /transfer/setup
-   /transfer/imaging
+   /transfer/external_drives
    /transfer/kryoflux
+   /transfer/zip_disks
    original_doc
 
 
 
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
