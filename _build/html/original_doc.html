@@ -1,0 +1,1067 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Overview &#8212; Digital Media Transfer Workflow =0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '=0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Digital Media Transfer Workflow =0 documentation" href="index.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="transfer.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<p>Disk images are single files containing the complete content and
+structure representing a data storage medium or device. There are
+different types of images. Forensic images perfectly replicate the
+structure and contents of a storage device, and allow the viewing of
+deleted files and slackspace (i.e, the unused space in a disk cluster).
+Logical images [AD1] are not true forensic images; and do not include
+file slackspace. In general<em>,</em> all physical media is imaged as a
+physical image, and all digital materials received via a network
+transfer will be logically imaged. Variations from this policy will be
+considered on a case-by-case basis.</p>
+<p>At this point in time, disk images are created in-house for optical
+disks (DVDs and CDs), external hard drives, USB Flash drives, 5.25-inch
+floppy disks and 3.5-inch floppy disks (recently dated disks that are
+PC-formatted). We do not have the capacity to image Bernoulli disks, Jaz
+disks, and 8-inch floppy disks. Please notify the Head of Digital
+Programs if you encounter media not detailed in either list above.</p>
+<p>The information entered into these free text fields can be found in the
+Digital Media Inventory database. These instructions can be applied to
+all disk images when using FTK Imager for capture.</p>
+<p>The hardware used to create images will vary depending on the type of
+digital media. Optical disks (DVDs and CDs), external hard drives, and
+USB Flash drives will be imaged using the FRED.</p>
+</div>
+<div class="section" id="all-formats-basic-set-up">
+<h1>All Formats: Basic Set-Up<a class="headerlink" href="#all-formats-basic-set-up" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="location-of-media">
+<h2>Location of media<a class="headerlink" href="#location-of-media" title="Permalink to this headline">¶</a></h2>
+<p>Items that are ready to be imaged are located on the digital media
+shelves in the 3<sup>rd</sup> floor library and Vault 105. The shelves in
+the library are labeled “DIGITAL MEDIA DISK IMAGING WORKFLOW SHELVES.”
+The digital media is housed in Paige or Hollinger boxes that are
+labeled:</p>
+<p>ROCKEFELLER ARCHIVE CENTER DIGITAL MEDIA</p>
+<ul class="simple">
+<li>Digital media number range For example, DM0000000001-DM0000000045</li>
+<li>Accession number For example, 2012.069</li>
+<li>Box number For example, BOX 1</li>
+</ul>
+</div>
+<div class="section" id="destination-folders">
+<h2>Destination Folders<a class="headerlink" href="#destination-folders" title="Permalink to this headline">¶</a></h2>
+<p>Newly created disk images are stored on the transfer server (Z or V
+drive). On the Z drive, there is one folder per accession, and within
+these folders, one folder per digital media number.</p>
+<p>Example:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first">/2015_123</p>
+<p>/2015_123_DM0000001234</p>
+<p>/2015_123_DM0000001235</p>
+<p class="last">/2015_123_DM0000001236</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>It is much faster to create beforehand the folders where the disk images
+will go. This can be done quickly using the command line.</p>
+<ol class="arabic simple">
+<li>From the Start menu, open <strong>Cygwin64 Terminal</strong>.</li>
+<li>Type cd ../../cygdrive/z and hit enter.</li>
+<li>If a folder for this accession does not yet exist, type mkdir -p
+2001_001/2001_001_DM000000{4001,4009,4010,4012,4050}. Replace the
+appropriate accession numbers and digital media ID numbers. If this
+accession already has a folder, type the same thing without –p.</li>
+<li>If the digital media ID numbers are sequential, you can use “..” to
+create directories within a range: mkdir -p
+2001_001/2001_001_DM000000{4001..4050}</li>
+<li>You can view the folders you created in Windows Explorer.</li>
+</ol>
+</div>
+<div class="section" id="time-statistics">
+<h2>Time statistics<a class="headerlink" href="#time-statistics" title="Permalink to this headline">¶</a></h2>
+<p>Record the time it takes from beginning to end of the imaging process
+for each disk image in the Disk imaging time tracking table in the
+Digital Media inventory database.</p>
+<p>Image time varies greatly depending on the data capacity of the disk
+being imaged. For example, floppy disks may take a couple minutes to
+image while several-gigabyte hard drives may take much longer.</p>
+</div>
+<div class="section" id="digital-media-inventory">
+<h2>Digital media inventory<a class="headerlink" href="#digital-media-inventory" title="Permalink to this headline">¶</a></h2>
+<p>Information about each disk imaging attempt is recorded in the <strong>Digital
+Media Inventory database</strong>, which is located in <em>M:\Digital
+Programs\Digital Preservation Services\Digital Media
+Tracking\Database</em>.</p>
+<ol class="arabic simple">
+<li>In the database, open the <strong>Disk Imaging Form</strong>.**
+<a href="#id1"><span class="problematic" id="id2">**</span></a><a class="reference internal" href="media/image1.png"><img alt="image0" src="media/image1.png" style="width: 3.84709in; height: 3.39105in;" /></a></li>
+</ol>
+<p>For the item you are about to image, record:</p>
+<ol class="loweralpha">
+<li><div class="first line-block">
+<div class="line"><strong>Disk image filename</strong>: The disk image filename of the digital
+media item imaged. The filename is composed of the accession number
+or FA number followed by the digital media ID.</div>
+<div class="line"><em>Example: 2012_069_DM0000001354.img</em></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Digital Media ID:</strong> successive 10-digital number with the prefix
+DM. Each item receives a digital media ID. If a digital media
+resource has four disks that comprise its whole then each disk
+would be assigned a digital media ID.</div>
+<div class="line"><em>Example: DM0000001354</em></div>
+</div>
+</li>
+<li><p class="first"><strong>Date Imaged:</strong> Date the imaging took place.**
+<a href="#id3"><span class="problematic" id="id4">**</span></a><em>Example: 10/15/2014</em></p>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Examiner:</strong> Record the name of the person imaging the media.</div>
+<div class="line"><em>Example: Bonnie Gordon</em></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Interface:</strong> The interface used as point of access.</div>
+<div class="line"><a href="#id5"><span class="problematic" id="id6">*</span></a>Examples: USB (for USB devices); FC5025; Kryoflux *</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Disk imaging software:</strong> Select the software tool used to image
+the digital media</div>
+<div class="line"><em>Example: Kryoflux</em></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Disk image format:</strong> Select the disk image format used to create
+a disk image.</div>
+<div class="line"><em>Example: E01</em></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="imaging-instructions-zip-disks">
+<h1>Imaging Instructions: Zip Disks<a class="headerlink" href="#imaging-instructions-zip-disks" title="Permalink to this headline">¶</a></h1>
+<p>The following describes how to create disk images using <strong>FTK Imager</strong>.
+FTK Imager is digital forensics software used to create disk images of
+digital media separated either at accessioning, processing or during the
+Legacy Digital Media Survey. FTK Imager is a different program than the
+Forensic Toolkit, which is usually referred to as FTK.</p>
+<p>External hard drives and USB Flash drives will be imaged using the FRED.
+External hard drives and USB Flash drives need to be connected to the
+Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay
+needs to be turned ON. Two green lights should appear – the Power light
+and the WrtBlk light. Do not plug in your device unless these lights are
+on.</p>
+<ol class="arabic">
+<li><p class="first">Turn on FRED write blocker</p>
+</li>
+<li><p class="first">Connect zip drive to USB port in write blocker area</p>
+</li>
+<li><div class="first line-block">
+<div class="line">Open FTK Imager. It looks like this on the FRED toolbar:</div>
+<div class="line"><a class="reference internal" href="media/image2.png"><img alt="image1" src="media/image2.png" style="width: 0.64340in; height: 0.41509in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Click <strong>File &gt; Create Disk Image.</strong> Select the source evidence
+type. This determines if you create a physical image or a logical
+image. For physical media, such as hard drives, thumb drives, and
+floppy disks, select <strong>Physical Drive</strong>. For CDs, DVDs, and data
+received via network transfer (rsync, ftp, Dropbox, email) select
+<strong>Logical Drive</strong>.</div>
+<div class="line"><a class="reference internal" href="media/image3.png"><img alt="image2" src="media/image3.png" style="width: 4.27510in; height: 3.40302in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Select the <strong>Source Drive Location</strong>. This can be a little
+confusing, as the program picks up all connected drives –
+including the one you’re working on. The FRED machine has quite a
+few drives. You can distinguish between them by using the data
+size listed in the dialog box. For example, two of the drives are
+listed at 2000GB and 7999GB, respectively. You can also disregard
+the WIBU Codemeter Stick USB device, which is a USB key to run the
+Forensic Toolkit. In the screenshot below, the last drive,
+“Generic Flash Di USB Device (4GB USB)” is the drive we want to
+image. Click <strong>Finish</strong> to continue</div>
+<div class="line"><a class="reference internal" href="media/image4.png"><img alt="image3" src="media/image4.png" style="width: 4.13417in; height: 3.27250in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">A dialog box will appear, this time asking where to store the
+image. Click <strong>Add.</strong> Before the location of the image file can be
+identified, the type of image file to create needs to be selected.
+We are currently using the E01 file format. While this format is
+proprietary, it is the de facto image format used in law
+enforcement and is well-supported <a class="footnote-reference" href="#id41" id="id7">[1]</a>. Click <strong>Next</strong> to move
+forward.</div>
+<div class="line"><a class="reference internal" href="media/image5.png"><img alt="image4" src="media/image5.png" style="width: 4.35417in; height: 3.07292in;" /></a></div>
+</div>
+</li>
+<li><p class="first">The Evidence Item dialog box will appear. Fill in the boxes as
+described below.</p>
+<ol class="loweralpha">
+<li><div class="first line-block">
+<div class="line"><strong>Case Number:</strong> Insert the Accession number or FA number of
+the item being imaged in the Case Number field. The accession
+number should be formatted as shown: YEAR ACCESSIONED.
+SEQUENTIAL NUMBER OF ACCESSIONED MATERIAL DURING YEAR
+ACCESSIONED</div>
+<div class="line"><em>Example*</em>:** 2011.040 or FA012*</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Evidence Number:</strong> Insert the Digital Media number associated
+with the item into the Evidence Number field. This is a
+successive 10-digit number with DM as a prefix. It is tracked
+in the Digital Media inventory.</div>
+<div class="line"><em>Example: DM0000000001</em></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Unique Description:</strong> This field contains the Accession Title
+from <em>the Special Formats Tracking Form</em>, the name of the disk,
+and any information written on the disk is captured in the
+Unique Description field. Each instance of information should
+be separated by a pipe character “|” to clearly delinate the
+separate data fields. This information is also captured in the
+Digital Media Inventory database. The information should be
+formatted as such: accession title|name of the disk| any
+information written on the disk.</div>
+<div class="line"><em>Example*</em>:** Rockefeller Foundation records, Grants|PACT
+Report YZ, Alutiiq Museum Kodiak, AK|Office Depot CD-R
+Recordable 80 min 700 MB. *</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Examiner:</strong> The Imager name is captured in the Examiner
+field. The Imager name should be formatted with the first and
+last name of the Imager.</div>
+<div class="line"><em>Example: Laura Montgomery</em></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><a href="#id8"><span class="problematic" id="id9">**</span></a>Notes:
+<a href="#id10"><span class="problematic" id="id11">**</span></a>Use this field to capture additional information that is
+not captured elsewhere, such as information on the disk
+enclosure or signs of physical damage.</div>
+<div class="line"><a href="#id12"><span class="problematic" id="id13">*</span></a>Example: CD case has sticker with “200100184” written in red
+ink. There are surface scratches on disk.
+<a href="#id14"><span class="problematic" id="id15">*</span></a><a class="reference internal" href="media/image6.jpeg"><img alt="image5" src="media/image6.jpeg" style="width: 4.79167in; height: 3.56108in;" /></a></div>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">The next screen prompts you to identify where the disk image will be
+stored. All images should be stored on the
+<strong>TransferFiles</strong><em>(\\raqiq01</em>)(<em>Z:</em>) drive, in a folder that
+lists the accession number of the material. If the accession number
+isn’t available, use the FA number. Complete the fields as listed
+below.</p>
+<ol class="loweralpha">
+<li><div class="first line-block">
+<div class="line"><strong>Image Destination Folder:</strong> Save the image on
+TransferFiles(\\raqiq01)(Z:). The folder the image is stored
+in follows the naming convention of: [accession
+number]_[digital media number] or [FA number]_[digital media
+number].</div>
+<div class="line"><em>Example: Z:\2013_054\2013_054_DM0000023564 or
+Z:\FA012\FA012_DM0000000759</em></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Image Filename:</strong> The Image Filename is constructed with the
+accession number or FA number followed by the digital media
+number.</div>
+<div class="line"><a href="#id16"><span class="problematic" id="id17">*</span></a>Example: 2012_077_DM0000000001 or FA012_DM0000000759
+<a href="#id18"><span class="problematic" id="id19">*</span></a><a class="reference internal" href="media/image7.png"><img alt="image6" src="media/image7.png" style="width: 4.69792in; height: 3.47917in;" /></a></div>
+</div>
+</li>
+<li><p class="first"><strong>Image Fragment Size:</strong> The Image Fragment Size should be set to
+0 (zero).</p>
+</li>
+<li><p class="first"><strong>Compression:</strong> The Compression level should be set to 0 (zero).</p>
+</li>
+<li><p class="first"><strong>Use AD Encryption:</strong> Leave this unchecked.</p>
+</li>
+</ol>
+</li>
+<li><div class="first line-block">
+<div class="line">Click <strong>Finish</strong> to return to the Create Image dialog window, this
+time with the necessary information completed. Double check the
+<strong>Image Source</strong>, the <strong>Image Destination</strong>, and that both
+<strong>Verify images after they are created</strong> and <strong>Create directory
+listings of all files in the image after they are created</strong> are
+checked. Click <strong>Start</strong> to initiate the imaging process.</div>
+<div class="line"><a class="reference internal" href="media/image8.png"><img alt="image7" src="media/image8.png" style="width: 3.47917in; height: 3.12892in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">A Creating Image dialog window will appear. It will indicate how
+much time has elapsed during the creation of the image.</div>
+<div class="line"><a class="reference internal" href="media/image9.png"><img alt="image8" src="media/image9.png" style="width: 3.90938in; height: 2.82188in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Once completed, the Status will read <strong>Image created
+successfully</strong>. You will also receive notification that the
+Directory Listing was created successfully. In the image
+destination folder, you will see the image (.E01), the Directory
+Listing file (.csv), and the Verify Results file (.txt). The
+Verify Results Summary contains the same data presented in the
+Image Summary area below. This information contains the image
+checksum information needed for the Digital Media database.</div>
+<div class="line"><a class="reference internal" href="media/image10.png"><img alt="image9" src="media/image10.png" style="width: 4.34375in; height: 3.13542in;" /></a></div>
+<div class="line"><a class="reference internal" href="media/image11.png"><img alt="image10" src="media/image11.png" style="width: 5.35010in; height: 3.00943in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">In addition to the image checksum, checksums for each of the
+individual files should be generated. To do so, select the
+appropriate level in the file system of the attached disk. In the
+screenshot below, this is the NONAME [FAT32] area on Partition 1.</div>
+<div class="line"><a class="reference internal" href="media/image12.png"><img alt="image11" src="media/image12.png" style="width: 5.68868in; height: 1.59030in;" /></a></div>
+</div>
+</li>
+<li><p class="first">In the vast majority of cases, unpartitioned disks will contain only
+unallocated space, and thus will not contain any files. You can
+navigate the file system hierarchy in FTK Imager to verify that this
+is the case. If you do discover files in unpartitioned space, please
+contact the Head of Digital Programs.</p>
+</li>
+<li><div class="first line-block">
+<div class="line">From the <strong>File</strong> menu, select <strong>Export File Hash List</strong>. This
+option will only appear in areas where hashes (ie. checksums) can
+be generated. Save the file in the same directory as the image and
+the other files that were generated during imaging. Name the file
+with the accession number and digital media number as used before,
+appending “_hash” to the end of the file name.</div>
+<div class="line"><em>Example: 2012_077_DM0000000001_hash or
+FA012_DM0000000759_hash</em></div>
+</div>
+</li>
+<li><p class="first">Make sure to safely eject the hardware you were imaging. Failure to
+do so can result in irreparable damage to the media.</p>
+</li>
+<li><p class="first">Notify the appropriate D-Team member that the image(s) are ready to
+be scanned for viruses.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="imaging-instructions-hard-drives-usb-flash-drives">
+<h1>Imaging Instructions: Hard Drives &amp; USB Flash Drives<a class="headerlink" href="#imaging-instructions-hard-drives-usb-flash-drives" title="Permalink to this headline">¶</a></h1>
+<p>The following describes how to create disk images using <strong>FTK Imager</strong>.
+FTK Imager is digital forensics software used to create disk images of
+digital media separated either at accessioning, processing or during the
+Legacy Digital Media Survey. FTK Imager is a different program than the
+Forensic Toolkit, which is usually referred to as FTK.</p>
+<p>External hard drives and USB Flash drives will be imaged using the FRED.
+External hard drives and USB Flash drives need to be connected to the
+Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay
+needs to be turned ON. Two green lights should appear – the Power light
+and the WrtBlk light. Do not plug in your device unless these lights are
+on.</p>
+<ol class="arabic">
+<li><div class="first line-block">
+<div class="line">Open FTK Imager. It looks like this on the FRED toolbar:</div>
+<div class="line"><a class="reference internal" href="media/image2.png"><img alt="image12" src="media/image2.png" style="width: 0.64340in; height: 0.41509in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Click <strong>File &gt; Create Disk Image.</strong> Select the source evidence
+type. This determines if you create a physical image or a logical
+image. For physical media, such as hard drives, thumb drives, and
+floppy disks, select <strong>Physical Drive</strong>. For CDs, DVDs, and data
+received via network transfer (rsync, ftp, Dropbox, email) select
+<strong>Logical Drive</strong>.</div>
+<div class="line"><a class="reference internal" href="media/image3.png"><img alt="image13" src="media/image3.png" style="width: 4.27510in; height: 3.40302in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Select the <strong>Source Drive Location</strong>. This can be a little
+confusing, as the program picks up all connected drives –
+including the one you’re working on. The FRED machine has quite a
+few drives. You can distinguish between them by using the data
+size listed in the dialog box. For example, two of the drives are
+listed at 2000GB and 7999GB, respectively. You can also disregard
+the WIBU Codemeter Stick USB device, which is a USB key to run the
+Forensic Toolkit. In the screenshot below, the last drive,
+“Generic Flash Di USB Device (4GB USB)” is the drive we want to
+image. Click <strong>Finish</strong> to continue</div>
+<div class="line"><a class="reference internal" href="media/image4.png"><img alt="image14" src="media/image4.png" style="width: 4.13417in; height: 3.27250in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">A dialog box will appear, this time asking where to store the
+image. Click <strong>Add.</strong> Before the location of the image file can be
+identified, the type of image file to create needs to be selected.
+We are currently using the E01 file format. While this format is
+proprietary, it is the de facto image format used in law
+enforcement and is well-supported <a class="footnote-reference" href="#id42" id="id20">[2]</a>. Click <strong>Next</strong> to move
+forward.</div>
+<div class="line"><a class="reference internal" href="media/image5.png"><img alt="image15" src="media/image5.png" style="width: 4.35417in; height: 3.07292in;" /></a></div>
+</div>
+</li>
+<li><p class="first">The Evidence Item dialog box will appear. Fill in the boxes as
+described below.</p>
+<ol class="loweralpha">
+<li><div class="first line-block">
+<div class="line"><strong>Case Number:</strong> Insert the Accession number or FA number of
+the item being imaged in the Case Number field. The accession
+number should be formatted as shown: YEAR ACCESSIONED.
+SEQUENCIAL NUMBER OF ACCESSIONED MATERIAL DURING YEAR
+ACCESSIONED</div>
+<div class="line"><em>Example*</em>:** 2011.040 or FA012*</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Evidence Number:</strong> Insert the Digital Media number associated
+with the item into the Evidence Number field. This is a
+successive 10-digit number with DM as a prefix. It is tracked
+in the Digital Media inventory.</div>
+<div class="line"><em>Example: DM0000000001</em></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Unique Description:</strong> This field contains the Accession Title
+from <em>the Special Formats Tracking Form</em>, the name of the disk,
+and any information written on the disk is captured in the
+Unique Description field. Each instance of information should
+be separated by a pipe character “|” to clearly delinate the
+separate data fields. This information is also captured in the
+Digital Media Inventory database. The information should be
+formatted as such: accession title|name of the disk| any
+information written on the disk.</div>
+<div class="line"><em>Example*</em>:** Rockefeller Foundation records, Grants|PACT
+Report YZ, Alutiiq Museum Kodiak, AK|Office Depot CD-R
+Recordable 80 min 700 MB. *</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Examiner:</strong> The Imager name is captured in the Examiner
+field. The Imager name should be formatted with the first and
+last name of the Imager.</div>
+<div class="line"><em>Example: Laura Montgomery</em></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><a href="#id21"><span class="problematic" id="id22">**</span></a>Notes:
+<a href="#id23"><span class="problematic" id="id24">**</span></a>Use this field to capture additional information that is
+not captured elsewhere, such as information on the disk
+enclosure or signs of physical damage.</div>
+<div class="line"><a href="#id25"><span class="problematic" id="id26">*</span></a>Example: CD case has sticker with “200100184” written in red
+ink. There are surface scratches on disk.
+<a href="#id27"><span class="problematic" id="id28">*</span></a><a class="reference internal" href="media/image6.jpeg"><img alt="image16" src="media/image6.jpeg" style="width: 4.79167in; height: 3.56108in;" /></a></div>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">The next screen prompts you to identify where the disk image will be
+stored. All images should be stored on the
+<strong>TransferFiles</strong><em>(\\raqiq01</em>)(<em>Z:</em>) drive, in a folder that
+lists the accession number of the material. If the accession number
+isn’t available, use the FA number. Complete the fields as listed
+below.</p>
+<ol class="loweralpha">
+<li><div class="first line-block">
+<div class="line"><strong>Image Destination Folder:</strong> Save the image on
+TransferFiles(\\raqiq01)(Z:). The folder the image is stored
+in follows the naming convention of: [accession
+number]_[digital media number] or [FA number]_[digital media
+number].</div>
+<div class="line"><em>Example: Z:\2013_054\2013_054_DM0000023564 or
+Z:\FA012\FA012_DM0000000759</em></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Image Filename:</strong> The Image Filename is constructed with the
+accession number or FA number followed by the digital media
+number.</div>
+<div class="line"><a href="#id29"><span class="problematic" id="id30">*</span></a>Example: 2012_077_DM0000000001 or FA012_DM0000000759
+<a href="#id31"><span class="problematic" id="id32">*</span></a><a class="reference internal" href="media/image7.png"><img alt="image17" src="media/image7.png" style="width: 4.69792in; height: 3.47917in;" /></a></div>
+</div>
+</li>
+<li><p class="first"><strong>Image Fragment Size:</strong> The Image Fragment Size should be set to
+0 (zero).</p>
+</li>
+<li><p class="first"><strong>Compression:</strong> The Compression level should be set to 0 (zero).</p>
+</li>
+<li><p class="first"><strong>Use AD Encryption:</strong> Leave this unchecked.</p>
+</li>
+</ol>
+</li>
+<li><div class="first line-block">
+<div class="line">Click <strong>Finish</strong> to return to the Create Image dialog window, this
+time with the necessary information completed. Double check the
+<strong>Image Source</strong>, the <strong>Image Destination</strong>, and that both
+<strong>Verify images after they are created</strong> and <strong>Create directory
+listings of all files in the image after they are created</strong> are
+checked. Click <strong>Start</strong> to initiate the imaging process.</div>
+<div class="line"><a class="reference internal" href="media/image8.png"><img alt="image18" src="media/image8.png" style="width: 3.47917in; height: 3.12892in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">A Creating Image dialog window will appear. It will indicate how
+much time has elapsed during the creation of the image.</div>
+<div class="line"><a class="reference internal" href="media/image9.png"><img alt="image19" src="media/image9.png" style="width: 3.90938in; height: 2.82188in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Once completed, the Status will read <strong>Image created
+successfully</strong>. You will also receive notification that the
+Directory Listing was created successfully. In the image
+destination folder, you will see the image (.E01), the Directory
+Listing file (.csv), and the Verify Results file (.txt). The
+Verify Results Summary contains the same data presented in the
+Image Summary area below. This information contains the image
+checksum information needed for the Digital Media database.</div>
+<div class="line"><a class="reference internal" href="media/image10.png"><img alt="image20" src="media/image10.png" style="width: 4.34375in; height: 3.13542in;" /></a></div>
+<div class="line"><a class="reference internal" href="media/image11.png"><img alt="image21" src="media/image11.png" style="width: 5.35010in; height: 3.00943in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">In addition to the image checksum, checksums for each of the
+individual files should be generated. To do so, select the
+appropriate level in the file system of the attached disk. In the
+screenshot below, this is the NONAME [FAT32] area on Partition 1.</div>
+<div class="line"><a class="reference internal" href="media/image12.png"><img alt="image22" src="media/image12.png" style="width: 5.68868in; height: 1.59030in;" /></a></div>
+</div>
+</li>
+<li><p class="first">In the vast majority of cases, unpartitioned disks will contain only
+unallocated space, and thus will not contain any files. You can
+navigate the file system hierarchy in FTK Imager to verify that this
+is the case. If you do discover files in unpartitioned space, please
+contact the Head of Digital Programs.</p>
+</li>
+<li><div class="first line-block">
+<div class="line">From the <strong>File</strong> menu, select <strong>Export File Hash List</strong>. This
+option will only appear in areas where hashes (ie. checksums) can
+be generated. Save the file in the same directory as the image and
+the other files that were generated during imaging. Name the file
+with the accession number and digital media number as used before,
+appending “_hash” to the end of the file name.</div>
+<div class="line"><em>Example: 2012_077_DM0000000001_hash or
+FA012_DM0000000759_hash</em></div>
+</div>
+</li>
+<li><p class="first">Make sure to safely eject the hardware you were imaging. Failure to
+do so can result in irreparable damage to the media.</p>
+</li>
+<li><p class="first">Notify the appropriate D-Team member that the image(s) are ready to
+be scanned for viruses.</p>
+</li>
+</ol>
+<p>A detailed Manual for FTK Imager is available as a PDF. It is located on
+the M drive or through this link on the web.</p>
+<p>M:\Digital
+Programs\Digital_Media_Tracking\digitalMedia_Documentation\Imaging\ImagerUsersGuide.pdf</p>
+<p><a class="reference external" href="http://ad-pdf.s3.amazonaws.com/ImagerUsersGuide.pdf">http://ad-pdf.s3.amazonaws.com/ImagerUsersGuide.pdf</a></p>
+</div>
+<div class="section" id="imaging-instructions-cds-dvds">
+<h1>Imaging Instructions: CDs &amp; DVDs<a class="headerlink" href="#imaging-instructions-cds-dvds" title="Permalink to this headline">¶</a></h1>
+<p>The following describes how to create disk images using FTK Imager. FTK
+Imager is digital forensics software used to create disk images of
+digital media separated either at accessioning, processing or during the
+Legacy Digital Media Survey. FTK Imager is a different program than the
+Forensic Toolkit, which is usually referred to as FTK.</p>
+<ol class="arabic">
+<li><div class="first line-block">
+<div class="line">Open FTK Imager. It looks like this on the FRED toolbar:</div>
+<div class="line"><a class="reference internal" href="media/image2.png"><img alt="image23" src="media/image2.png" style="width: 0.64340in; height: 0.41509in;" /></a></div>
+</div>
+</li>
+<li><p class="first">Insert the disk into the CD/DVD drive on the FRED.</p>
+</li>
+<li><div class="first line-block">
+<div class="line">Click <strong>File &gt; Create Disk Image.</strong> Select the source evidence
+type. For CDs and DVDs, select <strong>Logical Drive</strong>.</div>
+<div class="line"><a class="reference internal" href="media/image13.png"><img alt="image24" src="media/image13.png" style="width: 3.98860in; height: 3.15727in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Select the <strong>Source Drive Location</strong>. This can be a little
+confusing, as the program picks up all connected drives –
+including the one you’re working on. The FRED machine has quite a
+few drives. The CD and DVD drive on the FRED is the <strong>G: drive</strong>.
+Click <strong>Finish</strong> to continue.</div>
+<div class="line"><a class="reference internal" href="media/image14.png"><img alt="image25" src="media/image14.png" style="width: 3.98860in; height: 3.15727in;" /></a></div>
+</div>
+</li>
+<li><p class="first">A dialog box will appear, this time asking where to store the image.
+Click <a href="#id33"><span class="problematic" id="id34">**</span></a>Add. **</p>
+</li>
+<li><p class="first">The next screen prompts you to identify where the disk image will be
+stored. All images should be stored on the
+TransferFiles(\\raqiq01)(Z:) drive, in a folder that lists the
+accession number of the material. If the accession number isn’t
+available, use the FA number. Complete the fields as listed below.</p>
+<ol class="loweralpha">
+<li><div class="first line-block">
+<div class="line"><strong>Image Destination Folder:</strong> Save the image on
+TransferFiles(\\raqiq01)(Z:). The folder the image is stored
+in follows the naming convention of: [accession
+number]_[digital media number] or [FA number]_[digital media
+number].</div>
+<div class="line"><em>Example: Z:\2013_054\2013_054_DM0000023564 or
+Z:\FA012\FA012_DM0000000759</em></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Image Filename:</strong> The Image Filename is constructed with the
+accession number or FA number followed by the digital media
+number.</div>
+<div class="line"><a href="#id35"><span class="problematic" id="id36">*</span></a>Example: 2012_077_DM0000000001 or FA012_DM0000000759
+<a href="#id37"><span class="problematic" id="id38">*</span></a><a class="reference internal" href="media/image7.png"><img alt="image26" src="media/image7.png" style="width: 4.33115in; height: 3.20755in;" /></a></div>
+</div>
+</li>
+<li><p class="first"><strong>Image fragment size</strong> and <strong>compression</strong> do not apply to
+DVDs/CDs. The disks are also automatically saved as ISO-type disk
+images. In the source directory you should have four files: a CUE
+file, a cue.csv file (directory listing), and cue.txt file (image
+verification) and an .iso file (the actual image).</p>
+</li>
+</ol>
+</li>
+<li><div class="first line-block">
+<div class="line">Click <strong>Finish</strong> to return to the Create Image dialog window, this
+time with the necessary information completed. Double check the
+<strong>Image Source</strong>, the <strong>Image Destination</strong>, and that both
+<strong>Verify images after they are created</strong> and <strong>Create directory
+listings of all files in the image after they are created</strong> are
+checked. Click <strong>Start</strong> to initiate the imaging process.</div>
+<div class="line"><a class="reference internal" href="media/image15.png"><img alt="image27" src="media/image15.png" style="width: 4.14406in; height: 3.72687in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">A Creating Image dialog window will appear. It will indicate how
+much time has elapsed during the creation of the image.</div>
+<div class="line"><a class="reference internal" href="media/image16.png"><img alt="image28" src="media/image16.png" style="width: 3.90938in; height: 2.82187in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Once completed, the Status will read <strong>Image created
+successfully</strong>. You will also receive notification that the
+Directory Listing was created successfully. In the image
+destination folder, you will see the image (.iso), the Directory
+Listing file (.csv), and the Verify Results file (.txt). The
+Verify Results Summary contains the same data presented in the
+<strong>Image Summary</strong> area below. This information contains the image
+checksum information needed for the Digital Media database.</div>
+<div class="line"><a class="reference internal" href="media/image10.png"><img alt="image29" src="media/image10.png" style="width: 4.34375in; height: 3.13542in;" /></a></div>
+<div class="line"><a class="reference internal" href="media/image17.png"><img alt="image30" src="media/image17.png" style="width: 5.87002in; height: 3.30189in;" /></a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">In addition to the image checksum, checksums for each of the
+individual files should be generated. To do so, select the
+appropriate level in the file system of the attached disk. In the
+screenshot below, this is the NONAME [FAT32] area on Partition 1.</div>
+<div class="line"><a class="reference internal" href="media/image12.png"><img alt="image31" src="media/image12.png" style="width: 6.49097in; height: 1.81458in;" /></a></div>
+</div>
+</li>
+<li><p class="first">In the vast majority of cases, unpartitioned disks will contain only
+unallocated space, and thus will not contain any files. You can
+navigate the file system hierarchy in FTK Imager to verify that this
+is the case. If you do discover files in unpartitioned space, please
+contact the Head of Digital Programs.</p>
+</li>
+<li><div class="first line-block">
+<div class="line">From the <strong>File</strong> menu, select <strong>Export File Hash List</strong>. This
+option will only appear in areas where hashes (ie. checksums) can
+be generated. Save the file in the same directory as the image and
+the other files that were generated during imaging. Name the file
+with the accession number and digital media number as used before,
+appending “_hash” to the end of the file name.</div>
+<div class="line"><em>Example: 2012_077_DM0000000001_hash or
+FA012_DM0000000759_hash</em></div>
+</div>
+</li>
+<li><p class="first">Make sure to safely eject the hardware you were imaging. Failure to
+do so can result in irreparable damage to the media.</p>
+</li>
+<li><p class="first">Notify the appropriate D-Team member that the image(s) are ready to
+be scanned for viruses.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="imaging-instructions-3-5-and-5-25-floppy-disks">
+<h1>Imaging Instructions: 3.5” and 5.25” Floppy Disks<a class="headerlink" href="#imaging-instructions-3-5-and-5-25-floppy-disks" title="Permalink to this headline">¶</a></h1>
+<p>The following describes how to create disk images using KryoFlux.
+KryoFlux is software and hardware used to create disk images of 3.5” and
+5.25” floppy disks.</p>
+<ol class="arabic">
+<li><p class="first">In the Disk Imaging Form, record “KryoFlux” as the interface and disk
+imaging software, and select the drive that you are using from the
+drop-down list.</p>
+</li>
+<li><p class="first">Set up the hardware.</p>
+<ol class="loweralpha">
+<li><p class="first">Connect the drive to the KryoFlux</p>
+</li>
+<li><p class="first">Connect KryoFlux to the FRED using the USB port in the back.</p>
+</li>
+<li><div class="first line-block">
+<div class="line">Connect the drive to power.</div>
+<div class="line">Important! Always make the drive – board - connection first,
+then plug the power (PSU &amp; USB). <em>Power always comes last! You
+are connecting two systems with different grounds, so ground
+(connected via the floppy data cable) must always come first.
+Never ever connect or remove the floppy data cable while the
+drive and / or the board are still powered.</em></div>
+</div>
+</li>
+<li><p class="first">Always unplug and disconnect from mains when not in use! Do not
+leave unattended!</p>
+</li>
+</ol>
+</li>
+<li><p class="first">Open the <strong>kryoflux-ui.jar – Shortcut</strong> on the desktop.</p>
+</li>
+<li><div class="first line-block">
+<div class="line"><a class="reference internal" href="media/image18.png"><img alt="image32" src="media/image18.png" style="width: 4.46528in; height: 1.53889in;" /></a>Go to <strong>File &gt; Settings</strong>. Navigate to the <strong>Output</strong>
+tab. Copy and paste the path of the directory you created into the
+<strong>Image Path</strong> field. Make sure <strong>Logs</strong> is checked.</div>
+<div class="line"><a href="#id39"><span class="problematic" id="id40">*</span></a>Example: Z:\2013_054\2013_054_DM0000023564 or
+Z:\FA012\FA012_DM0000000759
+*</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">On the main KryoFlux screen, enter the name of the image in the
+text field. The image name is constructed with the accession number
+or FA number followed by the digital media number.</div>
+<div class="line"><em>Example: 2012_077_DM0000000001 or FA012_DM0000000759</em></div>
+</div>
+</li>
+<li><p class="first"><a class="reference internal" href="media/image19.png"><img alt="image33" src="media/image19.png" style="width: 1.79861in; height: 1.79861in;" /></a>If the disk is Windows formatted, select <strong>&lt;Multiple&gt;</strong>
+from the drop down menu. A new window will appear. Use CTRL+click to
+select <strong>MFM Sector Image</strong> and <strong>KryoFlux stream files,
+preservation</strong>. Click OK.</p>
+</li>
+<li><div class="first line-block">
+<div class="line">KryoFlux is separated into three sub-windows. The upper left window
+contains the track gird. Each blog of the grid represents a track
+on the disk’s surface. The upper right window contains the track
+info block, with two more tabs called “Histogram” and “Scatter.”
+The lower part of the window is the control section, where the
+current track, drive controls, and the filename are displayed.
+Below the filename is the format selector, which itself is
+dependent on profiles. The complete last line of the window is the
+status line which displays additional information. During dumping,
+blocks change their color according to the result of the process.</div>
+<div class="line"><a class="reference internal" href="media/image20.png"><img alt="image34" src="media/image20.png" style="width: 3.83333in; height: 2.57492in;" /></a></div>
+<div class="line"><a class="reference internal" href="media/image21.png"><img alt="image35" src="media/image21.png" style="width: 3.88194in; height: 2.60757in;" /></a></div>
+</div>
+<ol class="loweralpha simple">
+<li><strong>Green</strong> – track decoded, no errors found</li>
+<li><strong>Grey</strong> – noise (or unknown encoding scheme)</li>
+<li><strong>Red</strong> – track decoded, error(s) found, reading will be retried</li>
+<li><strong>Yellow</strong> – notifications and warnings, e.g., additional header
+data found</li>
+<li><strong>Glowing</strong> – track is being dumped</li>
+<li>To get more information about the result of a certain track, move
+your mouse pointer over it. This will output the result of the
+operation in the status line.</li>
+</ol>
+</li>
+<li><p class="first">Click <strong>Start</strong> and note what time imaging started.</p>
+</li>
+<li><p class="first">Record information in Disk Imaging form in the Digital Media
+Inventory database.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="appendices">
+<h1>Appendices<a class="headerlink" href="#appendices" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="appendix-1-kryoflux-outputs">
+<h2>Appendix 1: KryoFlux Outputs<a class="headerlink" href="#appendix-1-kryoflux-outputs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="likely-in-our-collection">
+<h3>Likely in Our Collection<a class="headerlink" href="#likely-in-our-collection" title="Permalink to this headline">¶</a></h3>
+<p>If the disk format is unknown, but is a 3.5” floppy, first try “MFM
+Sector Image.” “FM sector image” and “MFM sector image” support
+basically any normal disk used for systems that contain a generic FM or
+MFM FDC.</p>
+<p>For 3.5” disks, if MFM or FM does not work, try FM Sector Information,
+CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector
+image, Apple DOS 400k/800k sector image, or CBM DOS extended sector
+image.</p>
+<p>The following is a table of output options, the computer systems and
+drives the disks would have been used with, the size of the disk, and
+the approximate production dates of the disks.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="51%" />
+<col width="11%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Options</th>
+<th class="head">Used with</th>
+<th class="head">Disk size</th>
+<th class="head">Production Dates</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>FM sector image</td>
+<td>BBC Micro, PC-8801, Atari 8-bit</td>
+<td>5.25”</td>
+<td>Early 1980s</td>
+</tr>
+<tr class="row-odd"><td>FM XFD, Atari 8-bit</td>
+<td>Atari 8-bit bit-negated images</td>
+<td>5.25”</td>
+<td>1979-1992?</td>
+</tr>
+<tr class="row-even"><td>MFM sector image</td>
+<td>1.44MB Macintosh disks; Commodore 128; Amiga, Atari ST, PC, many others</td>
+<td>3.5” &amp; 5.25”</td>
+<td>1970-2000s</td>
+</tr>
+<tr class="row-odd"><td>AmigaDOS sector image</td>
+<td>Amiga</td>
+<td>3.5” &amp; 5.25”</td>
+<td>1985-1992</td>
+</tr>
+<tr class="row-even"><td>CBM DOS sector image</td>
+<td>Commodore&#8217;s 8-bit computers</td>
+<td>3.5” &amp; 5.25”</td>
+<td>1981-1994</td>
+</tr>
+<tr class="row-odd"><td>Apple DOS 3.2 sector image</td>
+<td>Apple DOS 3.2</td>
+<td>5.25”</td>
+<td>1978-1983</td>
+</tr>
+<tr class="row-even"><td>Apple DOS 3.3+ sector image</td>
+<td>Apple DOS 3.3, ProDOS</td>
+<td>5.25”</td>
+<td>1978-1983</td>
+</tr>
+<tr class="row-odd"><td>DSK, DOS 3.3 interleave</td>
+<td>Apple DOS 3.3 interleave order images</td>
+<td>5.25”</td>
+<td>1978-1983</td>
+</tr>
+<tr class="row-even"><td>Apple DOS 400k/800k sector image</td>
+<td>Macintosh, including Macintosh 128k, Apple II</td>
+<td>3.5”</td>
+<td>1984-1987</td>
+</tr>
+<tr class="row-odd"><td>Amiga DiskSpare sector image</td>
+<td>Amiga</td>
+<td>?</td>
+<td>1985-1992?</td>
+</tr>
+<tr class="row-even"><td>CBM GCR image</td>
+<td>Commodore 1541 drive for Commodore 64</td>
+<td>5.25”</td>
+<td>1982-1988</td>
+</tr>
+<tr class="row-odd"><td>CBM DOS extended sector image</td>
+<td>Commodore&#8217;s 8-bit computers</td>
+<td>3.5” &amp; 5.25”</td>
+<td>1981-1994</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="not-likely-in-our-collection">
+<h3>Not Likely in Our Collection<a class="headerlink" href="#not-likely-in-our-collection" title="Permalink to this headline">¶</a></h3>
+<p>Several of the output options are primarily for computer games and thus
+are not likely to be used. These include MFM XFD, Atari 8-bit, Emu
+sector image, Emu II sector image, CBM MicroProse sector image, CBM
+RapidLok sector image, CBM Datasoft sector image, CBM Vorpal sector
+image, CBM V-MAX! sector image, CBM Teque sector image, CBM TDP sector
+image, CBM Big Five sector image, CBM OziSoft sector image.</p>
+</div>
+</div>
+<div class="section" id="appendix-2-kryoflux-errors-and-warnings">
+<h2>Appendix 2: KryoFlux Errors and Warnings<a class="headerlink" href="#appendix-2-kryoflux-errors-and-warnings" title="Permalink to this headline">¶</a></h2>
+<p>While the Kryoflux is operating, there may be exceptions that trigger
+warnings or errors. Confusingly, in the KryoFlux GUI (graphical user
+interface—i.e., not the command line) these are all called “errors.” So,
+most of what appears to be an “error” is simply a warning. While
+warnings are for informational purposes only, errors will have a direct
+effect on the operation. Some common warnings and errors:</p>
+<ul class="simple">
+<li>Sector number is not within the allowed range; the sector was NOT
+included in the image. Error.</li>
+<li>Data checksum could not be verified (might be part of a protection,
+e.g. calculation based on some seed only accessible by the original
+loader); warning only.</li>
+<li>Slip marks (sector end) found at different positions from their
+expected values; warning only.</li>
+<li>Header extra data was found. Data is hidden in unused parts of the
+block header. Sector images can&#8217;t hold such data; warning only. <em>It
+is likely that this will appear on the beginning tracks; this is
+normal and can be ignored.</em></li>
+<li>Format type/block ID is non-standard; warning only.</li>
+<li>Sector length is non-standard. If considering it as a protection
+measure it is possible to decode the sector and saving it in the
+image; if not, you&#8217;ll get another flag saying so; warning only.</li>
+<li>Sector ignored, sector was found but sector image was not created.
+Reason could be sector having a different size set compared to what
+the image uses; error.</li>
+<li>Special protection detected which will malform the sector on purpose,
+retry will be suppressed; warning only.</li>
+<li>Side number found is different from what it should be; warning only.
+<em>If this warning is appearing for multiple disks, the side selection
+on the drive is broken and a new drive must be used.</em></li>
+<li>Track number found is different from what it should be; warning only.</li>
+<li>Sector truncated. Sector data is incomplete, decoding stopped. Reason
+is another sync/mark was found in the data block. Almost certainly
+protection that a sector image can&#8217;t deal with; sector is not
+included in the image; error.</li>
+<li>Sector offset found is illegal. Sector is still decoded; warning
+only.</li>
+</ul>
+</div>
+<div class="section" id="appendix-3-hardware-setup-images">
+<h2>Appendix 3: Hardware &amp; Setup Images<a class="headerlink" href="#appendix-3-hardware-setup-images" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="media/image22.png"><img alt="image36" src="media/image22.png" style="width: 6.95833in; height: 4.25232in;" /></a></p>
+<p><a class="reference internal" href="media/image23.jpeg"><img alt="image37" src="media/image23.jpeg" style="width: 6.39583in; height: 3.60417in;" /></a></p>
+<p><a class="reference internal" href="media/image24.jpeg"><img alt="image38" src="media/image24.jpeg" style="width: 5.39583in; height: 2.92708in;" /></a></p>
+<p><a class="reference internal" href="media/image25.jpeg"><img alt="image39" src="media/image25.jpeg" style="width: 4.16667in; height: 3.12500in;" /></a></p>
+</div>
+<div class="section" id="appendix-4-physical-problems-cleaning-repair">
+<h2>Appendix 4: Physical Problems, Cleaning, &amp; Repair<a class="headerlink" href="#appendix-4-physical-problems-cleaning-repair" title="Permalink to this headline">¶</a></h2>
+<table class="docutils footnote" frame="void" id="id41" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[1]</a></td><td>In contrast, the open source option, AFF, is no longer supported by
+its developer and has been discontinued as an option in other imaging
+programs, like Guymager.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id42" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id20">[2]</a></td><td>In contrast, the open source option, AFF, is no longer supported by
+its developer and has been discontinued as an option in other imaging
+programs, like Guymager.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Overview</a></li>
+<li><a class="reference internal" href="#all-formats-basic-set-up">All Formats: Basic Set-Up</a><ul>
+<li><a class="reference internal" href="#location-of-media">Location of media</a></li>
+<li><a class="reference internal" href="#destination-folders">Destination Folders</a></li>
+<li><a class="reference internal" href="#time-statistics">Time statistics</a></li>
+<li><a class="reference internal" href="#digital-media-inventory">Digital media inventory</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imaging-instructions-zip-disks">Imaging Instructions: Zip Disks</a></li>
+<li><a class="reference internal" href="#imaging-instructions-hard-drives-usb-flash-drives">Imaging Instructions: Hard Drives &amp; USB Flash Drives</a></li>
+<li><a class="reference internal" href="#imaging-instructions-cds-dvds">Imaging Instructions: CDs &amp; DVDs</a></li>
+<li><a class="reference internal" href="#imaging-instructions-3-5-and-5-25-floppy-disks">Imaging Instructions: 3.5” and 5.25” Floppy Disks</a></li>
+<li><a class="reference internal" href="#appendices">Appendices</a><ul>
+<li><a class="reference internal" href="#appendix-1-kryoflux-outputs">Appendix 1: KryoFlux Outputs</a><ul>
+<li><a class="reference internal" href="#likely-in-our-collection">Likely in Our Collection</a></li>
+<li><a class="reference internal" href="#not-likely-in-our-collection">Not Likely in Our Collection</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#appendix-2-kryoflux-errors-and-warnings">Appendix 2: KryoFlux Errors and Warnings</a></li>
+<li><a class="reference internal" href="#appendix-3-hardware-setup-images">Appendix 3: Hardware &amp; Setup Images</a></li>
+<li><a class="reference internal" href="#appendix-4-physical-problems-cleaning-repair">Appendix 4: Physical Problems, Cleaning, &amp; Repair</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="transfer.html" title="previous chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/original_doc.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Rockefeller Archive Center.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="_sources/original_doc.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

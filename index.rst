@@ -11,7 +11,11 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   overview
+   setup
+   inventory
+   transfer
+   original_doc
+   floppies
 
 
 
