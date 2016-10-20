@@ -21,4 +21,4 @@ Instructions
 
 5. Choose the appopriate format from the drop down menu.
 
-6. If you are ready to transfer the item, continue to :ref:`/transfer/setup`
+6. If you are ready to transfer the item, continue to :doc:`/transfer/setup`
