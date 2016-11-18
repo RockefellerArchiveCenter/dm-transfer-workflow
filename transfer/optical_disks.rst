@@ -7,6 +7,8 @@ digital media separated either at accessioning, processing or during the
 Legacy Digital Media Survey. FTK Imager is a different program than the
 Forensic Toolkit, which is usually referred to as FTK.
 
+Note: Forensics images cannot be made for Audio CDs. Please see `Audio CDs`_ for instructions.
+
 1.  | Open FTK Imager. It looks like this on the FRED toolbar:
     | |image23|
 
@@ -101,4 +103,8 @@ Forensic Toolkit, which is usually referred to as FTK.
 
 14. Notify the appropriate D-Team member that the image(s) are ready to
     be scanned for viruses.
+	
+Audio CDs
+=========
+
 
