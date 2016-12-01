@@ -1,5 +1,6 @@
-Imaging Instructions: CDs & DVDs
+CDs & DVDs
 ================================
+In general, optical disk images will be forensically imaged using FTK Imager or BitCurator. Forensics images cannot be made for Audio CDs. Please see `Audio CDs`_ for instructions.
 
 The following describes how to create disk images using FTK Imager. FTK
 Imager is digital forensics software used to create disk images of
@@ -7,23 +8,21 @@ digital media separated either at accessioning, processing or during the
 Legacy Digital Media Survey. FTK Imager is a different program than the
 Forensic Toolkit, which is usually referred to as FTK.
 
-Note: Forensics images cannot be made for Audio CDs. Please see `Audio CDs`_ for instructions.
+1.  | Open FTK Imager. It looks like this  toolbar:
+    
 
-1.  | Open FTK Imager. It looks like this on the FRED toolbar:
-    | |image23|
-
-2.  Insert the disk into the CD/DVD drive on the FRED.
+2.  Insert the disk into the CD/DVD drive .
 
 3.  | Click **File > Create Disk Image.** Select the source evidence
       type. For CDs and DVDs, select **Logical Drive**.
-    | |image24|
+    
 
 4.  | Select the **Source Drive Location**. This can be a little
       confusing, as the program picks up all connected drives –
       including the one you’re working on. The FRED machine has quite a
-      few drives. The CD and DVD drive on the FRED is the **G: drive**.
+      few drives. The CD and DVD drive  is the **G: drive**.
       Click **Finish** to continue.
-    | |image25|
+    
 
 5.  A dialog box will appear, this time asking where to store the image.
     Click **Add. **
@@ -46,7 +45,7 @@ Note: Forensics images cannot be made for Audio CDs. Please see `Audio CDs`_ for
          accession number or FA number followed by the digital media
          number.
        | *Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759
-         *\ |image26|
+         *\ 
 
     c. **Image fragment size** and **compression** do not apply to
        DVDs/CDs. The disks are also automatically saved as ISO-type disk
@@ -60,11 +59,11 @@ Note: Forensics images cannot be made for Audio CDs. Please see `Audio CDs`_ for
       **Verify images after they are created** and **Create directory
       listings of all files in the image after they are created** are
       checked. Click **Start** to initiate the imaging process.
-    | |image27|
+    
 
 8.  | A Creating Image dialog window will appear. It will indicate how
       much time has elapsed during the creation of the image.
-    | |image28|
+    
 
 9.  | Once completed, the Status will read **Image created
       successfully**. You will also receive notification that the
@@ -74,14 +73,14 @@ Note: Forensics images cannot be made for Audio CDs. Please see `Audio CDs`_ for
       Verify Results Summary contains the same data presented in the
       **Image Summary** area below. This information contains the image
       checksum information needed for the Digital Media database.
-    | |image29|
-    | |image30|
+    
+    
 
 10. | In addition to the image checksum, checksums for each of the
       individual files should be generated. To do so, select the
       appropriate level in the file system of the attached disk. In the
       screenshot below, this is the NONAME [FAT32] area on Partition 1.
-    | |image31|
+    
 
 11. In the vast majority of cases, unpartitioned disks will contain only
     unallocated space, and thus will not contain any files. You can
@@ -89,20 +88,6 @@ Note: Forensics images cannot be made for Audio CDs. Please see `Audio CDs`_ for
     is the case. If you do discover files in unpartitioned space, please
     contact the Head of Digital Programs.
 
-12. | From the **File** menu, select **Export File Hash List**. This
-      option will only appear in areas where hashes (ie. checksums) can
-      be generated. Save the file in the same directory as the image and
-      the other files that were generated during imaging. Name the file
-      with the accession number and digital media number as used before,
-      appending “\_hash” to the end of the file name.
-    | *Example: 2012\_077\_DM0000000001\_hash or
-      FA012\_DM0000000759\_hash*
-
-13. Make sure to safely eject the hardware you were imaging. Failure to
-    do so can result in irreparable damage to the media.
-
-14. Notify the appropriate D-Team member that the image(s) are ready to
-    be scanned for viruses.
 	
 Audio CDs
 ---------
