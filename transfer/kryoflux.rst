@@ -31,7 +31,7 @@ KryoFlux is software and hardware used to create disk images of 3.5” and
 
 3. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
 
-4. | |image32|\ Go to **File > Settings**. Navigate to the **Output**
+4. \ Go to **File > Settings**. Navigate to the **Output**
      tab. Copy and paste the path of the directory you created into the
      **Image Path** field. Make sure **Logs** is checked.
    | *Example: Z:\\2013\_054\\2013\_054\_DM0000023564 or
@@ -43,7 +43,7 @@ KryoFlux is software and hardware used to create disk images of 3.5” and
      or FA number followed by the digital media number.
    | *Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759*
 
-6. |image33|\ If the disk is Windows formatted, select **<Multiple>**
+6. \ If the disk is Windows formatted, select **<Multiple>**
    from the drop down menu. A new window will appear. Use CTRL+click to
    select **MFM Sector Image** and **KryoFlux stream files,
    preservation**. Click OK.
@@ -58,8 +58,8 @@ KryoFlux is software and hardware used to create disk images of 3.5” and
      dependent on profiles. The complete last line of the window is the
      status line which displays additional information. During dumping,
      blocks change their color according to the result of the process.
-   | |image34|
-   | |image35|
+   
+   
 
    a. **Green** – track decoded, no errors found
 
@@ -105,31 +105,31 @@ drives the disks would have been used with, the size of the disk, and
 the approximate production dates of the disks.
 
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| Options                            | Used with                                                                 | Disk size      | Production Dates   |
+
 +====================================+===========================================================================+================+====================+
-| FM sector image                    | BBC Micro, PC-8801, Atari 8-bit                                           | 5.25”          | Early 1980s        |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| FM XFD, Atari 8-bit                | Atari 8-bit bit-negated images                                            | 5.25”          | 1979-1992?         |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| MFM sector image                   | 1.44MB Macintosh disks; Commodore 128; Amiga, Atari ST, PC, many others   | 3.5” & 5.25”   | 1970-2000s         |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| AmigaDOS sector image              | Amiga                                                                     | 3.5” & 5.25”   | 1985-1992          |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| CBM DOS sector image               | Commodore's 8-bit computers                                               | 3.5” & 5.25”   | 1981-1994          |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| Apple DOS 3.2 sector image         | Apple DOS 3.2                                                             | 5.25”          | 1978-1983          |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| Apple DOS 3.3+ sector image        | Apple DOS 3.3, ProDOS                                                     | 5.25”          | 1978-1983          |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| DSK, DOS 3.3 interleave            | Apple DOS 3.3 interleave order images                                     | 5.25”          | 1978-1983          |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| Apple DOS 400k/800k sector image   | Macintosh, including Macintosh 128k, Apple II                             | 3.5”           | 1984-1987          |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| Amiga DiskSpare sector image       | Amiga                                                                     | ?              | 1985-1992?         |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| CBM GCR image                      | Commodore 1541 drive for Commodore 64                                     | 5.25”          | 1982-1988          |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-| CBM DOS extended sector image      | Commodore's 8-bit computers                                               | 3.5” & 5.25”   | 1981-1994          |
+
 +------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
 
 Not Likely in Our Collection
