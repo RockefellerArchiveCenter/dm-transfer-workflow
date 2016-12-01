@@ -40,7 +40,7 @@ KryoFlux is software and hardware used to create disk images of 3.5” and
 
 5. | On the main KryoFlux screen, enter the name of the image in the
      text field. The image name is constructed with the accession number
-     or FA number followed by the digital media number.
+     or FA number followed by the digital media ID.
    | *Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759*
 
 6. \ If the disk is Windows formatted, select **<Multiple>**

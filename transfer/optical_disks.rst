@@ -8,7 +8,7 @@ digital media separated either at accessioning, processing or during the
 Legacy Digital Media Survey. FTK Imager is a different program than the
 Forensic Toolkit, which is usually referred to as FTK.
 
-1.  | Open FTK Imager. It looks like this  toolbar:
+1.  | Open FTK Imager.
     
 
 2.  Insert the disk into the CD/DVD drive .
@@ -36,7 +36,7 @@ Forensic Toolkit, which is usually referred to as FTK.
     a. | **Image Destination Folder:** Save the image on
          TransferFiles(\\\\raqiq01)(Z:). The folder the image is stored
          in follows the naming convention of: [accession
-         number]\_[digital media number] or [FA number]\_[digital media
+         number]\_[digital media ID] or [FA number]\_[digital media
          number].
        | *Example: Z:\\2013\_054\\2013\_054\_DM0000023564 or
          Z:\\FA012\\FA012\_DM0000000759*
