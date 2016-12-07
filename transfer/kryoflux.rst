@@ -1,10 +1,8 @@
 Imaging Instructions: 3.5” and 5.25” Floppy Disks
 =================================================
 
-3.5" and 5.25" floppy disks need to be imaged using KryoFlux. 
+3.5" and 5.25" floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. 
 The following describes how to create disk images using KryoFlux.
-KryoFlux is software and hardware used to create disk images of 3.5” and
-5.25” floppy disks.
 
 
 KryoFlux SetUp
@@ -28,31 +26,29 @@ KryoFlux SetUp
       leave unattended!
 
 
-
-
 Imaging with the KryoFlux GUI
 -----------------------------
 
-3. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
+1. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
 
-4. \ Go to **File > Settings**. Navigate to the **Output**
+2. \ Go to **File > Settings**. Navigate to the **Output**
      tab. Copy and paste the path of the directory you created into the
      **Image Path** field. Make sure **Logs** is checked.
    | *Example: Z:\\2013\_054\\2013\_054\_DM0000023564 or
      Z:\\FA012\\FA012\_DM0000000759
      *
 
-5. | On the main KryoFlux screen, enter the name of the image in the
+3. | On the main KryoFlux screen, enter the name of the image in the
      text field. The image name is constructed with the accession number
      or FA number followed by the digital media ID.
    | *Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759*
 
-6. \ If the disk is Windows formatted, select **<Multiple>**
+4. \ If the disk is Windows formatted, select **<Multiple>**
    from the drop down menu. A new window will appear. Use CTRL+click to
    select **MFM Sector Image** and **KryoFlux stream files,
    preservation**. Click OK.
 
-7. | KryoFlux is separated into three sub-windows. The upper left window
+5. | KryoFlux is separated into three sub-windows. The upper left window
      contains the track gird. Each blog of the grid represents a track
      on the disk’s surface. The upper right window contains the track
      info block, with two more tabs called “Histogram” and “Scatter.”
@@ -80,16 +76,18 @@ Imaging with the KryoFlux GUI
       your mouse pointer over it. This will output the result of the
       operation in the status line.
 
-8. Click **Start** and note what time imaging started.
+6. Click **Start** and note what time imaging started.
 
-9. Record information in Disk Imaging form in the Digital Media
+7. Record information in Disk Imaging form in the Digital Media
    Inventory database.
+
+Imaging with the KryoFlux CLI
+-----------------------------
+
 
 Appendices
 ==========
 
-Appendix 1: KryoFlux Outputs
-----------------------------
 
 Likely in Our Collection
 ~~~~~~~~~~~~~~~~~~~~~~~~
