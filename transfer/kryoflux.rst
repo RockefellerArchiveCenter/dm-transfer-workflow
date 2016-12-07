@@ -1,18 +1,16 @@
-KryoFlux
-============
-
 Imaging Instructions: 3.5” and 5.25” Floppy Disks
 =================================================
 
+3.5" and 5.25" floppy disks need to be imaged using KryoFlux. 
 The following describes how to create disk images using KryoFlux.
 KryoFlux is software and hardware used to create disk images of 3.5” and
 5.25” floppy disks.
 
-1. In the Disk Imaging Form, record “KryoFlux” as the interface and disk
-   imaging software, and select the drive that you are using from the
-   drop-down list.
 
-2. Set up the hardware.
+KryoFlux SetUp
+--------------
+
+1. Set up the hardware.
 
    a. Connect the drive to the KryoFlux
 
@@ -28,6 +26,12 @@ KryoFlux is software and hardware used to create disk images of 3.5” and
 
    d. Always unplug and disconnect from mains when not in use! Do not
       leave unattended!
+
+
+
+
+Imaging with the KryoFlux GUI
+-----------------------------
 
 3. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
 
@@ -100,37 +104,9 @@ CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector
 image, Apple DOS 400k/800k sector image, or CBM DOS extended sector
 image.
 
-The following is a table of output options, the computer systems and
-drives the disks would have been used with, the size of the disk, and
-the approximate production dates of the disks.
 
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+====================================+===========================================================================+================+====================+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
-
-+------------------------------------+---------------------------------------------------------------------------+----------------+--------------------+
+Imaging with the KryoFlux Command Line 
+-----------------------------
 
 Not Likely in Our Collection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -142,7 +118,7 @@ RapidLok sector image, CBM Datasoft sector image, CBM Vorpal sector
 image, CBM V-MAX! sector image, CBM Teque sector image, CBM TDP sector
 image, CBM Big Five sector image, CBM OziSoft sector image.
 
-Appendix 2: KryoFlux Errors and Warnings
+Appendix 1: KryoFlux Errors and Warnings
 ----------------------------------------
 
 While the Kryoflux is operating, there may be exceptions that trigger
