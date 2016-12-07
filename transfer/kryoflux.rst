@@ -5,25 +5,25 @@ Imaging Instructions: 3.5” and 5.25” Floppy Disks
 The following describes how to create disk images using KryoFlux.
 
 
-KryoFlux SetUp
---------------
+KryoFlux Hardware Setup
+------------------------
 
-1. Set up the hardware.
+Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the `official documentation <http://kryoflux.com/?page=download#docs>`_.
 
-   a. Connect the drive to the KryoFlux
+1. On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
 
-   b. Connect KryoFlux to the FRED using the USB port in the back.
+2. Connect KryoFlux to the FRED using the USB port in the back.
 
-   c. | Connect the drive to power.
-      | Important! Always make the drive – board - connection first,
-        then plug the power (PSU & USB). *Power always comes last! You
-        are connecting two systems with different grounds, so ground
-        (connected via the floppy data cable) must always come first.
-        Never ever connect or remove the floppy data cable while the
-        drive and / or the board are still powered.*
+3. | Connect the drive to power.
+  | Important! Always make the drive – board - connection first,
+    then plug the power (PSU & USB). *Power always comes last! You
+    are connecting two systems with different grounds, so ground
+    (connected via the floppy data cable) must always come first.
+    Never ever connect or remove the floppy data cable while the
+    drive and / or the board are still powered.*
 
-   d. Always unplug and disconnect from mains when not in use! Do not
-      leave unattended!
+4. Always unplug and disconnect from mains when not in use! Do not
+  leave unattended!
 
 
 Imaging with the KryoFlux GUI
