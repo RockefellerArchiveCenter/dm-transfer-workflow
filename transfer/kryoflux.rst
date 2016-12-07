@@ -34,10 +34,7 @@ Imaging with the KryoFlux GUI
 2. \ Go to **File > Settings**. Navigate to the **Output**
      tab. Copy and paste the path of the directory you created into the
      **Image Path** field. Make sure **Logs** is checked.
-   | *Example: Z:\\2013\_054\\2013\_054\_DM0000023564 or
-     Z:\\FA012\\FA012\_DM0000000759
-     *
-
+	 
 3. | On the main KryoFlux screen, enter the name of the image in the
      text field. The image name is constructed with the accession number
      or FA number followed by the digital media ID.
@@ -86,7 +83,7 @@ Imaging with the KryoFlux CLI
 
 
 Appendices
-==========
+----------
 
 
 Likely in Our Collection
@@ -104,7 +101,7 @@ image.
 
 
 Imaging with the KryoFlux Command Line 
------------------------------
+--------------------------------------
 
 Not Likely in Our Collection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
