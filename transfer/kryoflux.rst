@@ -30,9 +30,7 @@ Imaging with the KryoFlux GUI
 
 1. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
 
-2. \ Go to **File > Settings**. Navigate to the **Output**
-     tab. Copy and paste the path of the directory you created into the
-     **Image Path** field. Make sure **Logs** is checked.
+2. \ For each image you create, you must change the output file. In order to so, go to **File > Settings**. and navigate to the **Output** tab. Enter the directory the image will be in. Make sure **Logs** is checked.
 	 
 3. | On the main KryoFlux screen, enter the name of the image in the
      text field. The image name is constructed with the accession number
@@ -77,8 +75,8 @@ Imaging with the KryoFlux GUI
 7. Record information in Disk Imaging form in the Digital Media
    Inventory database.
 
-Imaging with the KryoFlux CLI
------------------------------
+Imaging with the KryoFlux on the Command Line
+--------------------------------------
 
 
 Appendices
@@ -97,10 +95,6 @@ For 3.5” disks, if MFM or FM does not work, try FM Sector Information,
 CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector
 image, Apple DOS 400k/800k sector image, or CBM DOS extended sector
 image.
-
-
-Imaging with the KryoFlux Command Line 
---------------------------------------
 
 Not Likely in Our Collection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -171,18 +165,15 @@ effect on the operation. Some common warnings and errors:
 
 Appendix 2: Troubleshooting
 ---------------------------
-If the FRED does not recongize the KryoFlux, it is likely an issue with the driver.   
-   Device manager
+If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 10 has with the driver. To fix this issues:  
+1. Open the Device Manager
+
+2. Expand "Ports COM & LPT" and right click on "Bossa Program Post"
    
-   Ports COM & LPT
-   
-   Bossa program port
-   
-   Browse my computer for driver software
-   
-   let me pick from a list of device drivers
-   
-   KryoFlux disk system
-   http://forum.kryoflux.com/viewtopic.php?t=1038
-   
+3. Choose "Browse my computer for driver software" then "let me pick from a list of device drivers"
+
+4. Since KryoFlux has already been installed, you should see the KryoFlux driver in the list
+
+5. Open the commpand prompt and cd to the DTC folder. Run "dtc -c2"
+  
 
