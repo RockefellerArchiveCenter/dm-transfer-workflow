@@ -1,7 +1,7 @@
-Imaging Instructions: 3.5” and 5.25” Floppy Disks
+Imaging Instructions: 3 1/2 Inch and 5 1/4 Inch Floppy Disks
 =================================================
 
-3.5" and 5.25" floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. 
+3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. 
 The following describes how to create disk images using KryoFlux.
 
 
@@ -12,7 +12,7 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 
 1. On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
 
-2. Connect KryoFlux to the FRED using the USB port in the back.
+2. Connect KryoFlux to the FRED using the USB port in the back of the tower.
 
 3. | Connect the drive to power.
   | Important! Always make the drive – board - connection first,
@@ -22,8 +22,7 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
     Never ever connect or remove the floppy data cable while the
     drive and / or the board are still powered.*
 
-4. Always unplug and disconnect from mains when not in use! Do not
-  leave unattended!
+4. Always unplug and disconnect from mains when not in use! Do not leave unattended!
 
 
 Imaging with the KryoFlux GUI
@@ -169,4 +168,21 @@ effect on the operation. Some common warnings and errors:
    In contrast, the open source option, AFF, is no longer supported by
    its developer and has been discontinued as an option in other imaging
    programs, like Guymager.
+
+Appendix 2: Troubleshooting
+---------------------------
+If the FRED does not recongize the KryoFlux, it is likely an issue with the driver.   
+   Device manager
+   
+   Ports COM & LPT
+   
+   Bossa program port
+   
+   Browse my computer for driver software
+   
+   let me pick from a list of device drivers
+   
+   KryoFlux disk system
+   http://forum.kryoflux.com/viewtopic.php?t=1038
+   
 
