@@ -77,7 +77,10 @@ Imaging with the KryoFlux GUI
 
 Imaging with the KryoFlux on the Command Line
 --------------------------------------
+1. In the command prompt, navigate to the /dtc directory.
 
+2. dtc -f[filename].img -i[imagetype]
+ image types correspond to numbers; "4" is for MFM images
 
 Appendices
 ----------
@@ -165,7 +168,8 @@ effect on the operation. Some common warnings and errors:
 
 Appendix 2: Troubleshooting
 ---------------------------
-If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 10 has with the driver. To fix this issues:  
+If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 10 has with the driver. To fix this issue:  
+
 1. Open the Device Manager
 
 2. Expand "Ports COM & LPT" and right click on "Bossa Program Post"
