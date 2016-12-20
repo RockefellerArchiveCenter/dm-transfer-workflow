@@ -1,9 +1,10 @@
 Imaging Instructions: 3 1/2 Inch and 5 1/4 Inch Floppy Disks
-=================================================
+============================================================
 
 3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. 
 The following describes how to create disk images using KryoFlux.
 
+For guidelines on which directories images should be put in and file naming conventions, see :doc:`/transfer/setup` 
 
 KryoFlux Hardware Setup
 ------------------------
@@ -28,7 +29,10 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 Imaging with the KryoFlux GUI
 -----------------------------
 
+
 1. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
+
+2. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 
 2. \ For each image you create, you must change the output file. In order to so, go to **File > Settings**. and navigate to the **Output** tab. Enter the directory the image will be in. Make sure **Logs** is checked.
 	 
@@ -77,10 +81,14 @@ Imaging with the KryoFlux GUI
 
 Imaging with the KryoFlux on the Command Line
 --------------------------------------
-1. In the command prompt, navigate to the /dtc directory.
+1. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 
-2. dtc -f[filename].img -i[imagetype]
+2. In the command prompt, navigate to the /dtc directory.
+
+3. dtc -f[filename].img -i[imagetype]
  image types correspond to numbers; "4" is for MFM images
+ 
+4.  
 
 Appendices
 ----------
