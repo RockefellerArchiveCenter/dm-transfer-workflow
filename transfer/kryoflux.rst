@@ -1,13 +1,13 @@
 Imaging Instructions: 3 1/2 Inch and 5 1/4 Inch Floppy Disks
 ============================================================
 
-3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. 
+3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software.
 The following describes how to create disk images using KryoFlux.
 
-For guidelines on which directories images should be put in and file naming conventions, see :doc:`/transfer/setup` 
+For guidelines on which directories images should be put in and file naming conventions, see :doc:`/transfer/setup`
 
 KryoFlux Hardware Setup
-------------------------
+***********************
 
 Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the `official documentation <http://kryoflux.com/?page=download#docs>`_.
 
@@ -27,7 +27,7 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 
 
 Imaging with the KryoFlux GUI
------------------------------
+*****************************
 
 
 1. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
@@ -35,7 +35,7 @@ Imaging with the KryoFlux GUI
 2. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 
 2. \ For each image you create, you must change the output file. In order to so, go to **File > Settings**. and navigate to the **Output** tab. Enter the directory the image will be in. Make sure **Logs** is checked.
-	 
+
 3. | On the main KryoFlux screen, enter the name of the image in the
      text field. The image name is constructed with the accession number
      or FA number followed by the digital media ID.
@@ -56,8 +56,8 @@ Imaging with the KryoFlux GUI
      dependent on profiles. The complete last line of the window is the
      status line which displays additional information. During dumping,
      blocks change their color according to the result of the process.
-   
-   
+
+
 
    a. **Green** – track decoded, no errors found
 
@@ -80,22 +80,22 @@ Imaging with the KryoFlux GUI
    Inventory database.
 
 Imaging with the KryoFlux on the Command Line
---------------------------------------
+*********************************************
 1. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 
 2. In the command prompt, navigate to the /dtc directory.
 
 3. dtc -f[filename].img -i[imagetype]
  image types correspond to numbers; "4" is for MFM images
- 
-4.  
+
+4.
 
 Appendices
-----------
+**********
 
 
 Likely in Our Collection
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 If the disk format is unknown, but is a 3.5” floppy, first try “MFM
 Sector Image.” “FM sector image” and “MFM sector image” support
@@ -108,7 +108,7 @@ image, Apple DOS 400k/800k sector image, or CBM DOS extended sector
 image.
 
 Not Likely in Our Collection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 Several of the output options are primarily for computer games and thus
 are not likely to be used. These include MFM XFD, Atari 8-bit, Emu
@@ -176,16 +176,16 @@ effect on the operation. Some common warnings and errors:
 
 Appendix 2: Troubleshooting
 ---------------------------
-If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 10 has with the driver. To fix this issue:  
+If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 10 has with the driver. To fix this issue:
 
 1. Open the Device Manager
 
 2. Expand "Ports COM & LPT" and right click on "Bossa Program Post"
-   
+
 3. Choose "Browse my computer for driver software" then "let me pick from a list of device drivers"
 
 4. Since KryoFlux has already been installed, you should see the KryoFlux driver in the list
 
 5. Open the commpand prompt and cd to the DTC folder. Run "dtc -c2"
-  
+
 
