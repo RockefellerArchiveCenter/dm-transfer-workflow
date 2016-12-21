@@ -11,45 +11,49 @@ Forensic Toolkit, which is usually referred to as FTK.
 Imaging with the FTK Imager Command Line
 ****************************************
 
+1. Insert the disk in the drive.
+
+2. In the command prompt, run the script.
 
 
 Imaging with the FTK Imager GUI
 *******************************
 
+
 1.	Open FTK Imager.
 
 2.	Insert the disk into the CD/DVD drive .
 
-3.	Click **File > Create Disk Image.** Select the source evidence type. For CDs and DVDs, select **Logical Drive**.
+3.	Click File > Create Disk Image. Select Logical Drive as the source evidence type.
 
-4.	Select the **Source Drive Location**. On the FRED, the CD and DVD drive  is the **G: drive**. 
+4.	Select the Source Drive Location. On the FRED, the CD and DVD drive  is the G: drive.
 
-5.	A dialog box will appear, this time asking where to store the image. Click **Add. **
+5.	A dialog box will appear, this time asking where to store the image. Click Add.
 
 6.	The next screen prompts you to identify where the disk image will be
-stored. Select the appropriate **Image Destination Folder** and enter the **Image Filename** . **Image fragment size** and **compression** do not apply to DVDs/CDs. The disks are also automatically saved as ISO-type disk
+stored. Select the appropriate Image Destination Folder and enter the Image Filename . Image fragment size and compression do not apply to DVDs/CDs. The disks are also automatically saved as ISO-type disk
 images. In the source directory you should have four files: a CUE
 file, a cue.csv file (directory listing), and cue.txt file (image
 verification) and an .iso file (the actual image).
 
-7.   Click **Finish** to return to the Create Image dialog window, this time with the necessary information completed. Double check the
-**Image Source**, the **Image Destination**, and that both
-**Verify images after they are created** and **Create directory
-listings of all files in the image after they are created** are
-checked. Click **Start** to initiate the imaging process.
+7.   Click Finish to return to the Create Image dialog window, this time with the necessary information completed. Double check the
+Image Source, the Image Destination, and that both
+Verify images after they are created and Create directory
+listings of all files in the image after they are created are
+checked. Click Start to initiate the imaging process.
 
 
 8.   A Creating Image dialog window will appear. It will indicate how
 much time has elapsed during the creation of the image.
 
 
-9.   Once completed, the Status will read **Image created
-successfully**. You will also receive notification that the
+9.   Once completed, the Status will read Image created
+successfully. You will also receive notification that the
 Directory Listing was created successfully. In the image
 destination folder, you will see the image (.iso), the Directory
 Listing file (.csv), and the Verify Results file (.txt). The
 Verify Results Summary contains the same data presented in the
-**Image Summary** area below. This information contains the image
+Image Summary area below. This information contains the image
 checksum information needed for the Digital Media database.
 
 
