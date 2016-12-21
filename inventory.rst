@@ -21,6 +21,6 @@ Instructions
 
 4. The component and resource fields should autopopulate. If they do not, contact the administrator.
 
-5. Choose the appopriate format from the drop down menu.
+5. Choose the appropriate format from the drop down menu.
 
 6. If you are ready to transfer the item, continue to :doc:`/transfer/setup`
