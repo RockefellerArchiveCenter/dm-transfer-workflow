@@ -7,7 +7,7 @@ Digital media items should be inventoried as they are encountered during process
 
 Setup
 *****
-The Digital Media Log is located at [link].
+The Digital Media Log is located at `dm-log.rockarch.org <http://dm-log.rockarch.org/>`_.
 
 Instructions
 ************
