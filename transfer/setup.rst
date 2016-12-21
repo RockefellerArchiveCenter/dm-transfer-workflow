@@ -1,7 +1,7 @@
 Transfer Overview & Setup
 =========================
 
-An item must be inventoried in the Digital Media Log before it is transferred. See inventory instructions. When a digital media item is imaged or otherwise has its contents transferred, this must be recorded in the Digital Media Log.
+An item must be inventoried in the Digital Media Log before it is transferred. See instructions for :ref:`inventory_instructions`. When a digital media item is imaged or otherwise has its contents transferred, this must be recorded in the Digital Media Log.
 
 Recording Transfers in Digital Media Log
 ****************************************
