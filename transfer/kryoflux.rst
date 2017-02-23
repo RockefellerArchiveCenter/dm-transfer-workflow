@@ -41,10 +41,8 @@ Imaging with the KryoFlux GUI
      or FA number followed by the digital media ID.
    | *Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759*
 
-4. \ If the disk is Windows formatted, select **<Multiple>**
-   from the drop down menu. A new window will appear. Use CTRL+click to
-   select **MFM Sector Image** and **KryoFlux stream files,
-   preservation**. Click OK.
+4. \ If the disk is Windows formatted, select **MFM Sector Image**
+   from the drop down menu. Click start.
 
 5. | KryoFlux is separated into three sub-windows. The upper left window
      contains the track gird. Each blog of the grid represents a track
