@@ -8,6 +8,12 @@ digital media separated either at accessioning, processing or during the
 Legacy Digital Media Survey. FTK Imager is a different program than the
 Forensic Toolkit, which is usually referred to as FTK.
 
+
+Imaging Optical Disks on BitCurator
+***********************************
+1. Optical disks will automatically mount on the BitCurator machine and must be unmounted before disk imaging. To do so, enter the following into the command line: `umount /media/bcadmin`
+
+
 Imaging with the FTK Imager Command Line
 ****************************************
 
