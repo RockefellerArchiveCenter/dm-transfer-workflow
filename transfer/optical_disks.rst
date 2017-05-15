@@ -9,12 +9,12 @@ Legacy Digital Media Survey. FTK Imager is a different program than the
 Forensic Toolkit, which is usually referred to as FTK.
 
 
-Imaging with the FTK Imager Command Line
+Imaging with the Command Line
 ****************************************
 
 1. Insert the disk in the drive.
 
-2. In the command prompt, run the script.
+2. In the command prompt, run the script `optical_disks.sh`.
 
 
 Imaging with the FTK Imager GUI
