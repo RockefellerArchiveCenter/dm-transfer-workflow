@@ -125,31 +125,8 @@ on.
       Verify Results Summary contains the same data presented in the
       Image Summary area below. This information contains the image
       checksum information needed for the Digital Media database.
-    
-    
 
-10. | In addition to the image checksum, checksums for each of the
-      individual files should be generated. To do so, select the
-      appropriate level in the file system of the attached disk. In the
-      screenshot below, this is the NONAME [FAT32] area on Partition 1.
-    
-
-11. In the vast majority of cases, unpartitioned disks will contain only
-    unallocated space, and thus will not contain any files. You can
-    navigate the file system hierarchy in FTK Imager to verify that this
-    is the case. If you do discover files in unpartitioned space, please
-    contact the Head of Digital Programs.
-
-12. | From the **File** menu, select **Export File Hash List**. This
-      option will only appear in areas where hashes (ie. checksums) can
-      be generated. Save the file in the same directory as the image and
-      the other files that were generated during imaging. Name the file
-      with the accession number and digital media ID as used before,
-      appending “\_hash” to the end of the file name.
-    | *Example: 2012\_077\_DM0000000001\_hash or
-      FA012\_DM0000000759\_hash*
-
-13. Make sure to safely eject the hardware you were imaging. Failure to
+10. Make sure to safely eject the hardware you were imaging. Failure to
     do so can result in irreparable damage to the media.
 	
 Further Information
