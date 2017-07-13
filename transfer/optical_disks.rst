@@ -1,5 +1,5 @@
 CDs & DVDs
-================================
+==========
 In general, optical disk images will be forensically imaged using FTK Imager or BitCurator. Forensics images cannot be made for Audio CDs. Please see `Audio CDs`_ for instructions.
 
 The following describes how to create disk images using FTK Imager. FTK
@@ -10,7 +10,7 @@ Forensic Toolkit, which is usually referred to as FTK.
 
 
 Imaging with the Command Line
-****************************************
+*****************************
 
 1. Insert the disk in the drive.
 
