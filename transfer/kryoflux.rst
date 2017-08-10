@@ -6,6 +6,8 @@ The following describes how to create disk images using KryoFlux.
 
 For guidelines on which directories images should be put in and file naming conventions, see :doc:`/transfer/setup`
 
+The KryoFlux can be used with Windows, Mac, and Linux machines, and has both command line and GUI interfaces. Scripts using the KryoFlux command line tools on the BitCurator machine are preferred in most cases, but it is also possible to use the GUI on the FRED.
+
 KryoFlux Hardware Setup
 ***********************
 
@@ -25,9 +27,19 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 
 4. Always unplug and disconnect from mains when not in use! Do not leave unattended!
 
+Imaging with the KryoFlux on the Command Line
+*********************************************
+1. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 
-Imaging with the KryoFlux GUI
-*****************************
+2. In the command prompt, navigate to the /dtc directory.
+
+3. dtc -f[filename].img -i[imagetype]
+ image types correspond to numbers; "4" is for MFM images
+
+4.
+
+Imaging with the KryoFlux GUI on the FRED
+*****************************************
 
 
 1. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
@@ -77,16 +89,7 @@ Imaging with the KryoFlux GUI
 7. Record information in Disk Imaging form in the Digital Media
    Inventory database.
 
-Imaging with the KryoFlux on the Command Line
-*********************************************
-1. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 
-2. In the command prompt, navigate to the /dtc directory.
-
-3. dtc -f[filename].img -i[imagetype]
- image types correspond to numbers; "4" is for MFM images
-
-4.
 
 Appendices
 **********
