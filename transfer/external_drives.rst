@@ -8,7 +8,7 @@ External hard drives and USB Flash drives need to be imaged using the FRED becau
 1.  | Turn on the Tableau UltraBay write blocker on the FRED. Two green lights should appear – the Power light and the WrtBlk light. Do not plug in your device unless these lights are on.
     
 
-2.  | Open FTK Imager and click **File > Create Disk Image.** Select the source evidence type. For physical media, such as hard drive and thumb drives, and floppy disks, select **Physical Drive**.
+2.  | Open FTK Imager and click **Create Disk Image** in the **File Menu** Select the source evidence type. Hard drives and thumb drives are physical media, so select **Physical Drive**.
     
 
 3.  | Select the **Source Drive Location**. This can be a little confusing, as the program picks up all connected drives – including the one you’re working on. The FRED machine has quite a few drives. You can distinguish between them by using the data size listed in the dialog box. For example, two of the drives are listed at 2000GB and 7999GB, respectively. You can also disregard the WIBU Codemeter Stick USB device, which is a USB key to run the Forensic Toolkit. Click **Finish** to continue
