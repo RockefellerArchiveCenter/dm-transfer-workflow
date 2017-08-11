@@ -1,9 +1,12 @@
-Imaging Instructions: Hard Drives & USB Flash Drives
-====================================================
+Hard Drives & USB Flash Drives
+==============================
 
 The following describes how to create disk images using **FTK Imager** on the FRED.
 
-External hard drives and USB Flash drives need to be imaged using the FRED because it has a hardware write blocker. External hard drives and USB Flash drives need to be connected to the Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay needs to be turned ON. 
+External hard drives and USB Flash drives need to be imaged using the FRED because it has a hardware write blocker. External hard drives and USB Flash drives need to be connected to the Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay needs to be turned ON.
+
+Imaging Instructions
+********************
 
 1.  | Turn on the Tableau UltraBay write blocker on the FRED. Two green lights should appear – the Power light and the WrtBlk light. Do not plug in your device unless these lights are on. 
 

@@ -1,8 +1,8 @@
-Imaging Instructions: Zip Disks
-===============================
+Zip Disks
+==========
 
-Windows Formatted Zip Disks
----------------------------
+Imaging Instructions: Windows Formatted Zip Disks
+-------------------------------------------------
 
-Mac Formatted Zip Disks
------------------------
+Imaging Instructions: Mac Formatted Zip Disks
+---------------------------------------------

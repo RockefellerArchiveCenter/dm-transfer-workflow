@@ -20,4 +20,11 @@ Imaging with the Command Line
 Audio CDs
 *********
 
+1. On the FRED, open Exact Audio Copy and insert the CD into the optical disk drive.
+
+2. In the CD Title field, enter the digital media ID of the CD. Remove text from the CD author field.
+
+3. On the lefthand side, click the button that says "IMG." This will crate uncompressed wave files and a CUE file.
+
+4. Select the appropriate folder to store the files. See :ref:`transfer-overview` for information on where files should be stored.
 
