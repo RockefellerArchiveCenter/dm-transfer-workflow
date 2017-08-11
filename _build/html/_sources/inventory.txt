@@ -1,6 +1,6 @@
 .. _inventory_instructions:
 
-Inventorying Digial Media Items
+Inventorying Digital Media Items
 ===============================
 
 Overview

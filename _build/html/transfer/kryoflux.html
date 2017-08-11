@@ -45,6 +45,7 @@
 <p>3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software.
 The following describes how to create disk images using KryoFlux.</p>
 <p>For guidelines on which directories images should be put in and file naming conventions, see <a class="reference internal" href="setup.html"><span class="doc">Transfer Overview &amp; Setup</span></a></p>
+<p>The KryoFlux can be used with Windows, Mac, and Linux machines, and has both command line and GUI interfaces. Scripts using the KryoFlux command line tools on the BitCurator machine are preferred in most cases, but it is also possible to use the GUI on the FRED.</p>
 <div class="section" id="kryoflux-hardware-setup">
 <h2>KryoFlux Hardware Setup<a class="headerlink" href="#kryoflux-hardware-setup" title="Permalink to this headline">¶</a></h2>
 <p>Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the <a class="reference external" href="http://kryoflux.com/?page=download#docs">official documentation</a>.</p>
@@ -72,8 +73,21 @@ drive and / or the board are still powered.</em></div>
 <li>Always unplug and disconnect from mains when not in use! Do not leave unattended!</li>
 </ol>
 </div>
-<div class="section" id="imaging-with-the-kryoflux-gui">
-<h2>Imaging with the KryoFlux GUI<a class="headerlink" href="#imaging-with-the-kryoflux-gui" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="imaging-with-the-kryoflux-on-the-command-line">
+<h2>Imaging with the KryoFlux on the Command Line<a class="headerlink" href="#imaging-with-the-kryoflux-on-the-command-line" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>After setting up the KryoFlux hardware, insert the floppy disk into the drive.</li>
+<li>In the command prompt, navigate to the /dtc directory.</li>
+<li>dtc -f[filename].img -i[imagetype]</li>
+</ol>
+<blockquote>
+<div>image types correspond to numbers; &#8220;4&#8221; is for MFM images</div></blockquote>
+<ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</div>
+<div class="section" id="imaging-with-the-kryoflux-gui-on-the-fred">
+<h2>Imaging with the KryoFlux GUI on the FRED<a class="headerlink" href="#imaging-with-the-kryoflux-gui-on-the-fred" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li>Open the <strong>kryoflux-ui.jar – Shortcut</strong> on the desktop.</li>
 <li>After setting up the KryoFlux hardware, insert the floppy disk into the drive.</li>
@@ -120,19 +134,6 @@ operation in the status line.</li>
 <li><p class="first">Record information in Disk Imaging form in the Digital Media
 Inventory database.</p>
 </li>
-</ol>
-</div>
-<div class="section" id="imaging-with-the-kryoflux-on-the-command-line">
-<h2>Imaging with the KryoFlux on the Command Line<a class="headerlink" href="#imaging-with-the-kryoflux-on-the-command-line" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li>After setting up the KryoFlux hardware, insert the floppy disk into the drive.</li>
-<li>In the command prompt, navigate to the /dtc directory.</li>
-<li>dtc -f[filename].img -i[imagetype]</li>
-</ol>
-<blockquote>
-<div>image types correspond to numbers; &#8220;4&#8221; is for MFM images</div></blockquote>
-<ol class="arabic simple" start="4">
-<li></li>
 </ol>
 </div>
 <div class="section" id="appendices">
@@ -230,8 +231,8 @@ programs, like Guymager.</td></tr>
   <ul>
 <li><a class="reference internal" href="#">Imaging Instructions: 3 1/2 Inch and 5 1/4 Inch Floppy Disks</a><ul>
 <li><a class="reference internal" href="#kryoflux-hardware-setup">KryoFlux Hardware Setup</a></li>
-<li><a class="reference internal" href="#imaging-with-the-kryoflux-gui">Imaging with the KryoFlux GUI</a></li>
 <li><a class="reference internal" href="#imaging-with-the-kryoflux-on-the-command-line">Imaging with the KryoFlux on the Command Line</a></li>
+<li><a class="reference internal" href="#imaging-with-the-kryoflux-gui-on-the-fred">Imaging with the KryoFlux GUI on the FRED</a></li>
 <li><a class="reference internal" href="#appendices">Appendices</a><ul>
 <li><a class="reference internal" href="#likely-in-our-collection">Likely in Our Collection</a></li>
 <li><a class="reference internal" href="#not-likely-in-our-collection">Not Likely in Our Collection</a></li>
