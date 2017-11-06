@@ -189,4 +189,10 @@ If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 
 
 5. Open the commpand prompt and cd to the DTC folder. Run "dtc -c2"
 
+If the Kryoflux GUI does not run when “Start” is selected:
 
+1.	Open the command prompt and cd to the DTC folder 
+
+2.	Run “java -jar kryoflux-ui.jar”
+
+3.	With the command window still open, use the GUI to select “Start” again to being imaging. The command window will provide more detailed output of what the GUI is doing, allowing you to further troubleshoot using any error messages in the output window
