@@ -36,8 +36,6 @@ Imaging with the KryoFlux on the Command Line
 3. dtc -f[filename].img -i[imagetype]
  image types correspond to numbers; "4" is for MFM images
 
-4.
-
 Imaging with the KryoFlux GUI on the FRED
 *****************************************
 
