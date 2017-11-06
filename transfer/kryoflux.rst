@@ -11,7 +11,8 @@ The KryoFlux can be used with Windows, Mac, and Linux machines, and has both com
 KryoFlux Hardware Setup
 ***********************
 
-Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the `official documentation <http://kryoflux.com/?page=download#docs>`_.
+Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the `official documentation <http://
+kryoflux.com/?page=download#docs>`_.
 
 1. On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
 
@@ -38,7 +39,6 @@ Imaging with the KryoFlux on the Command Line
 
 Imaging with the KryoFlux GUI on the FRED
 *****************************************
-
 
 1. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
 
@@ -119,7 +119,7 @@ image, CBM Big Five sector image, CBM OziSoft sector image.
 Appendix 1: KryoFlux Errors and Warnings
 ----------------------------------------
 
-While the Kryoflux is operating, there may be exceptions that trigger
+While the KryoFlux is operating, there may be exceptions that trigger
 warnings or errors. Confusingly, in the KryoFlux GUI (graphical user
 interface—i.e., not the command line) these are all called “errors.” So,
 most of what appears to be an “error” is simply a warning. While
@@ -187,7 +187,7 @@ If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 
 
 5. Open the commpand prompt and cd to the DTC folder. Run "dtc -c2"
 
-If the Kryoflux GUI does not run when “Start” is selected:
+If the KryoFlux GUI does not run when “Start” is selected:
 
 1.	Open the command prompt and cd to the DTC folder 
 
@@ -195,7 +195,7 @@ If the Kryoflux GUI does not run when “Start” is selected:
 
 3.	With the command window still open, use the GUI to select “Start” again to being imaging. The command window will provide more detailed output of what the GUI is doing, allowing you to further troubleshoot using any error messages in the output window
 
-When in doubt, check that the drive is properly calibrated. *When switching between drives (e.g. from imaging 3.5” disks to 5.25” disks) you will need to re-calibrate the kryoflux.*
+When in doubt, check that the drive is properly calibrated. *When switching between drives (e.g. from imaging 3.5” disks to 5.25” disks) you will need to re-calibrate the KryoFlux.*
 
 Calibrate using the command line:
 
@@ -207,6 +207,6 @@ Calibrate using the GUI:
 
 1. Open the GUI and select the “Drive” tab at the top of the window
 
-2. Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference `Understanding Drive 1/0 <https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3>`_ in the “Archivists Guide to Kyroflux”
+2. Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference `Understanding Drive 1/0 <https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3>`_ in the “Archivists Guide to KyroFlux”
 
 3. Select "Calibrate" from the drop-down menu
