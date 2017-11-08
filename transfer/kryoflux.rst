@@ -12,7 +12,7 @@ KryoFlux Hardware Setup
 ***********************
 
 Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the `official documentation <http://
-kryoflux.com/?page=download#docs>`_.
+kryoflux.com/?page=download#docs>`_ or the `Setup and Installation <https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6>`_ page of the Archivist's Guide to KryoFlux.
 
 1. On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
 
