@@ -28,9 +28,9 @@ kryoflux.com/?page=download#docs>`_ or the `Setup and Installation <https://docs
 
 4. Always unplug and disconnect from mains when not in use! Do not leave unattended!
 
-5. | When switching between drives (e.g. from imaging 3.5” disks to 5.25” disks) the drive will need to be calibrated.
+5. When switching between drives (e.g. from imaging 3.5” disks to 5.25” disks) the drive will need to be calibrated.
 
-   | To calibrate using the command line:
+   To calibrate using the command line:
 
  1. Open the command prompt and cd to the DTC folder
 
