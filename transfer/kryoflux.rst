@@ -123,6 +123,8 @@ KryoFlux GUI does not run when “Start” is selected
 
 When in doubt, check that the drive is properly calibrated. *When switching between drives (e.g. from imaging 3.5” disks to 5.25” disks) you will need to re-calibrate the KryoFlux.*
 
+Calibration
+-----------
 Calibrate using the command line:
 
 1. Open the command prompt and cd to the DTC folder
