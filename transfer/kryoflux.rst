@@ -187,10 +187,4 @@ effect on the operation. Some common warnings and errors:
 -  Sector offset found is illegal. Sector is still decoded; warning
    only.
 
-.. [1]
-   In contrast, the open source option, AFF, is no longer supported by
-   its developer and has been discontinued as an option in other imaging
-   programs, like Guymager.
-
-
 3. Select "Calibrate" from the drop-down menu
