@@ -51,8 +51,17 @@ Imaging with the KryoFlux GUI on the FRED
      or FA number followed by the digital media ID.
    | *Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759*
 
-4. \ If the disk is Windows formatted, select **MFM Sector Image**
-   from the drop down menu. Click start.
+4. \ Choose the appropriate image format from the drop down menu.
+
+	If the disk format is unknown, but is a 3.5” floppy, first try “MFM
+	Sector Image.” “FM sector image” and “MFM sector image” support
+	basically any normal disk used for systems that contain a generic FM or
+	MFM FDC.
+
+	For 3.5” disks, if MFM or FM does not work, try FM Sector Information,
+	CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector
+	image, Apple DOS 400k/800k sector image, or CBM DOS extended sector
+	image.
 
 5. | KryoFlux is separated into three sub-windows. The upper left window
      contains the track gird. Each blog of the grid represents a track
@@ -64,8 +73,6 @@ Imaging with the KryoFlux GUI on the FRED
      dependent on profiles. The complete last line of the window is the
      status line which displays additional information. During dumping,
      blocks change their color according to the result of the process.
-
-
 
    a. **Green** – track decoded, no errors found
 
@@ -93,18 +100,7 @@ Appendices
 **********
 
 
-Likely in Our Collection
-------------------------
 
-If the disk format is unknown, but is a 3.5” floppy, first try “MFM
-Sector Image.” “FM sector image” and “MFM sector image” support
-basically any normal disk used for systems that contain a generic FM or
-MFM FDC.
-
-For 3.5” disks, if MFM or FM does not work, try FM Sector Information,
-CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector
-image, Apple DOS 400k/800k sector image, or CBM DOS extended sector
-image.
 
 Not Likely in Our Collection
 ----------------------------
