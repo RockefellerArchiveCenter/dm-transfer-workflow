@@ -30,6 +30,7 @@ kryoflux.com/?page=download#docs>`_ or the `Setup and Installation <https://docs
 
 5. When switching between drives (e.g. from imaging 3.5” disks to 5.25” disks) the drive will need to be calibrated.
 
+<<<<<<< HEAD
     To calibrate using the command line:
     1. Open the command prompt and cd to the DTC folder
     2. Run “dtc -c2”
@@ -37,6 +38,19 @@ kryoflux.com/?page=download#docs>`_ or the `Setup and Installation <https://docs
     To calibrate using the GUI:
     1. Open the GUI and select the “Drive” tab at the top of the window
     2. Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference `Understanding Drive 1/0 <https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3>`_ in the “Archivists Guide to KyroFlux”
+=======
+	To calibrate using the command line:
+
+	1. Open the command prompt and cd to the DTC folder
+
+	2. Run “dtc -c2”
+
+	To calibrate using the GUI:
+
+	1. Open the GUI and select the “Drive” tab at the top of the window
+
+	2. Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference `Understanding Drive 1/0 <https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3>`_ in the “Archivists Guide to KyroFlux”
+>>>>>>> 3f9126f87955714be0c5b221ed9021cb57e75252
 
 Imaging with the KryoFlux on the Command Line
 *********************************************
