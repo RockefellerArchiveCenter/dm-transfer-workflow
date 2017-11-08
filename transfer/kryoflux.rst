@@ -28,6 +28,20 @@ kryoflux.com/?page=download#docs>`_ or the `Setup and Installation <https://docs
 
 4. Always unplug and disconnect from mains when not in use! Do not leave unattended!
 
+5. |When switching between drives (e.g. from imaging 3.5” disks to 5.25” disks) the drive will need to be calibrated.
+
+   |To calibrate using the command line:
+
+ 1. Open the command prompt and cd to the DTC folder
+
+ 2. Run “dtc -c2”
+
+ To calibrate using the GUI:
+
+ 1. Open the GUI and select the “Drive” tab at the top of the window
+
+ 2. Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference `Understanding Drive 1/0 <https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3>`_ in the “Archivists Guide to KyroFlux”
+
 Imaging with the KryoFlux on the Command Line
 *********************************************
 1. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
@@ -120,23 +134,6 @@ KryoFlux GUI does not run when “Start” is selected
 2.	Run “java -jar kryoflux-ui.jar”
 
 3.	With the command window still open, use the GUI to select “Start” again to being imaging. The command window will provide more detailed output of what the GUI is doing, allowing you to further troubleshoot using any error messages in the output window
-
-When in doubt, check that the drive is properly calibrated. *When switching between drives (e.g. from imaging 3.5” disks to 5.25” disks) you will need to re-calibrate the KryoFlux.*
-
-Calibration
------------
-Calibrate using the command line:
-
-1. Open the command prompt and cd to the DTC folder
-
-2. Run “dtc -c2”
-
-Calibrate using the GUI:
-
-1. Open the GUI and select the “Drive” tab at the top of the window
-
-2. Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference `Understanding Drive 1/0 <https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3>`_ in the “Archivists Guide to KyroFlux”
-
 
 KryoFlux Errors and Warnings
 ****************************
