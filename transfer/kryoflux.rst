@@ -112,7 +112,8 @@ If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 
 
 5. Open the commpand prompt and cd to the DTC folder. Run "dtc -c2"
 
-If the KryoFlux GUI does not run when “Start” is selected:
+KryoFlux GUI does not run when “Start” is selected
+--------------------------------------------------
 
 1.	Open the command prompt and cd to the DTC folder
 
