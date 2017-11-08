@@ -95,25 +95,8 @@ Imaging with the KryoFlux GUI on the FRED
    Inventory database.
 
 
-
-Appendices
-**********
-
-
-
-
-Not Likely in Our Collection
-----------------------------
-
-Several of the output options are primarily for computer games and thus
-are not likely to be used. These include MFM XFD, Atari 8-bit, Emu
-sector image, Emu II sector image, CBM MicroProse sector image, CBM
-RapidLok sector image, CBM Datasoft sector image, CBM Vorpal sector
-image, CBM V-MAX! sector image, CBM Teque sector image, CBM TDP sector
-image, CBM Big Five sector image, CBM OziSoft sector image.
-
-Appendix 1: KryoFlux Errors and Warnings
-----------------------------------------
+KryoFlux Errors and Warnings
+****************************
 
 While the KryoFlux is operating, there may be exceptions that trigger
 warnings or errors. Confusingly, in the KryoFlux GUI (graphical user
@@ -169,8 +152,9 @@ effect on the operation. Some common warnings and errors:
    its developer and has been discontinued as an option in other imaging
    programs, like Guymager.
 
-Appendix 2: Troubleshooting
----------------------------
+Troubleshooting
+***************
+
 If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 10 has with the driver. To fix this issue:
 
 1. Open the Device Manager
@@ -185,7 +169,7 @@ If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 
 
 If the KryoFlux GUI does not run when “Start” is selected:
 
-1.	Open the command prompt and cd to the DTC folder 
+1.	Open the command prompt and cd to the DTC folder
 
 2.	Run “java -jar kryoflux-ui.jar”
 
