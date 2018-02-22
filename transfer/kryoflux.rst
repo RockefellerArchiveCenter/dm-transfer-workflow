@@ -36,12 +36,14 @@ kryoflux.com/?page=download#docs>`_ or the `Setup and Installation <https://docs
 
     2. Run “dtc -c2”
 
-	
+
     To calibrate using the GUI:
 
     1. Open the GUI and select the “Drive” tab at the top of the window
 
     2. Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference `Understanding Drive 1/0 <https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3>`_ in the “Archivists Guide to KyroFlux”
+	
+	3. Select "Calibrate" from the drop-down menu
 
 Imaging with the KryoFlux on the Command Line
 *********************************************
@@ -115,7 +117,7 @@ Troubleshooting
 FRED does not recognized the KryoFlux
 -------------------------------------
 
-If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 10 has with the driver. To fix this issue:
+If the FRED does not recognize the KryoFlux, it is likely an issue that Windows 10 has with the driver. To fix this issue:
 
 1. Open the Device Manager
 
@@ -125,7 +127,7 @@ If the FRED does not recongize the KryoFlux, it is likely an issue that Windows 
 
 4. Since KryoFlux has already been installed, you should see the KryoFlux driver in the list
 
-5. Open the commpand prompt and cd to the DTC folder. Run "dtc -c2"
+5. Open the command prompt and cd to the DTC folder. Run "dtc -c2"
 
 KryoFlux GUI does not run when “Start” is selected
 --------------------------------------------------
@@ -187,5 +189,3 @@ effect on the operation. Some common warnings and errors:
 
 -  Sector offset found is illegal. Sector is still decoded; warning
    only.
-
-3. Select "Calibrate" from the drop-down menu
