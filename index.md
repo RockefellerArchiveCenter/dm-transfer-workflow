@@ -2,6 +2,7 @@
 layout: docs
 title: "Rockefeller Archive Center Digital Media Transfer Workflow"
 ---
+
 ## Transfer Overview & Setup
 
 An item must be inventoried in the Digital Media Log before it is

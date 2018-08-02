@@ -2,6 +2,7 @@
 layout: docs
 title: "Troubleshooting by Digital Media Type"
 ---
+
 ## 3 1/2 Inch and 5 1/4 Inch Floppy Disks
 
 ### FRED does not recognized the KryoFlux

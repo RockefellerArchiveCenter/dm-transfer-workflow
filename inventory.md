@@ -2,6 +2,7 @@
 layout: docs
 title: "Inventorying Digital Media Items"
 ---
+
 ## Overview
 
 Digital media items should be inventoried as they are encountered during
