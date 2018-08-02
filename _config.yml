@@ -1,9 +1,9 @@
 public: false
 type: "docs"
 tags:
-  "digital"
-  "processing"
-  "digital media log"
+  - "digital"
+  - "processing"
+  - "digital media log"
 title: "Digital Media Transfer Workflow"
 description: "Instructions for inventorying and transferring digital media, using the Digital Media Log"
 pages:
