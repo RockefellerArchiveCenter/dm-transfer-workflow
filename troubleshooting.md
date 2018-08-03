@@ -54,7 +54,7 @@ Check that you entered the correct format when prompted by the script (cdrom, cd
 **Sector offset supplied is larger than disk image (maximum: 0)**
 
 This error can mean two things: either the disk is corrupt/empty, or you may be trying to image an audio-CD.
-Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a track listing, continue following the audio-CD transfer workflow. If no track listing appears, the disk may be blank or corrupt. 
+Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a track listing, continue following the [Audio CDs](#audio-cds) transfer workflow. If no track listing appears, the disk may be blank or corrupt. 
 
 **Error stat(ing) image file (raw_open: image "ref_id.iso" - Not such file or directory)**
 
