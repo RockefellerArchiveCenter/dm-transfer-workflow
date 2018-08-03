@@ -55,24 +55,18 @@ The KryoFlux can be used with Windows, Mac, and Linux machines, and has both com
 
 ### KryoFlux Hardware Setup
 
-Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the [official documentation &lt;<http://>kryoflux.com/?page=download\#docs&gt;]() or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
+Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the [official documentation](&lt;<http://>kryoflux.com/?page=download\#docs&gt;) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
 
-1.  On a flat, non-conductive surface, connect the drive to the KryoFlux
-using the floppy data cable.
+1.  On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
 2.  Connect KryoFlux to the FRED using the USB port in the back of the
     tower.
-3. | Connect the drive to power.
-
-:   Important! Always make the drive – board - connection first, then
-    plug the power (PSU & USB). *Power always comes last! You are
-    connecting two systems with different grounds, so ground (connected
-    via the floppy data cable) must always come first. Never ever
-    connect or remove the floppy data cable while the drive and / or the
-    board are still powered.*
-
-1.  Always unplug and disconnect from mains when not in use! Do not
+3. Connect the drive to power.
+    <div class="docs-example">
+      <p>Important! Always make the drive – board - connection first, then plug the power (PSU & USB). *Power always comes last! You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Never ever connect or remove the floppy data cable while the drive and / or the board are still powered.*</p>
+    </div>
+4.  Always unplug and disconnect from mains when not in use! Do not
     leave unattended!
-2.  When switching between drives (e.g. from imaging 3.5” disks to 5.25”
+5.  When switching between drives (e.g. from imaging 3.5” disks to 5.25”
     disks) the drive will need to be calibrated.
 
     > To calibrate using the command line:
@@ -105,7 +99,9 @@ using the floppy data cable.
 2.  After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 3.  For each image you create, you must change the output file. In order to so, go to **File &gt; Settings**. and navigate to the **Output** tab. Enter the directory the image will be in. Make sure **Logs** is checked.
 4.  On the main KryoFlux screen, enter the name of the image in the text field. The image name is constructed with the accession number or FA number followed by the digital media ID.  
-    *Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759*
+  <div class="docs-example">
+    <p>Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759</p>
+  </div>
 5.  Choose the appropriate image format from the drop down menu.
 
     > If the disk format is unknown, but is a 3.5” floppy, first try
@@ -120,18 +116,15 @@ using the floppy data cable.
 
 6.  KryoFlux is separated into three sub-windows. The upper left window contains the track gird. Each blog of the grid represents a track on the disk’s surface. The upper right window contains the track info block, with two more tabs called “Histogram” and “Scatter.” The lower part of the window is the control section, where the current track, drive controls, and the filename are displayed. Below the filename is the format selector, which itself is dependent on profiles. The complete last line of the window is the status line which displays additional information. During dumping, blocks change their color according to the result of the process.
 
-    1.  **Green** – track decoded, no errors found
-    2.  **Grey** – noise (or unknown encoding scheme)
-    3.  **Red** – track decoded, error(s) found, reading will be retried
-    4.  **Yellow** – notifications and warnings, e.g., additional header
+  - **Green** – track decoded, no errors found
+  - **Grey** – noise (or unknown encoding scheme)
+  - **Red** – track decoded, error(s) found, reading will be retried
+  - **Yellow** – notifications and warnings, e.g., additional header
         data found
-    5.  **Glowing** – track is being dumped
-    6.  To get more information about the result of a certain track,
-        move your mouse pointer over it. This will output the result of
-        the operation in the status line.
+  - **Glowing** – track is being dumped
+  - To get more information about the result of a certain track, move your mouse pointer over it. This will output the result of the operation in the status line.
 
 7.  Click **Start** and note what time imaging started.
-8.  Record information in Disk Imaging form in the Digital Media
-    Inventory database.
+8.  Record information in Disk Imaging form in the Digital Media Inventory database.
 
-### Troubleshooting
+[Troubleshooting](troubleshooting)
