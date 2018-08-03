@@ -5,20 +5,16 @@ title: "Rockefeller Archive Center Digital Media Transfer Workflow"
 
 ## Transfer Overview & Setup
 
-An item must be inventoried in the Digital Media Log before it is transferred. See instructions for inventory\_instructions. When a digital media item is imaged or otherwise has its contents transferred, this must be recorded in the Digital Media Log.
+An item must be inventoried in the Digital Media Log before it is transferred. See instructions for [Inventorying Digital Media Items](inventory). When a digital media item is imaged or otherwise has its contents transferred, this must be recorded in the Digital Media Log.
 
 ## Recording Transfers in Digital Media Log
 
 1. When you have finished transferring a digital media item, changed the transfer status to "Transferred - Failed" or "Transferred - Success" as appropriate.
-
-  Note: If transfer fails initially you may need to try
-  again; appropriate number of transfer attempts is dependent upon type of
-  media.
-
+<div class="docs-example">
+  <p>Note: If transfer fails initially you may need to try again; appropriate number of transfer attempts is dependent upon type of media.</p>
+</div>
 2. Record the transfer method. Record the successful method if multiple methods were attempted.
-
 3.  When you changed the transfer status from "Not Transferred," the "Date Transferred" autopopulated with today's date. Correct if needed.
-
 4.  Record whether the physical digital media item is to be retained due to artifactual value or disposed of. This is to record the disposition of the physical media item and not the appraisal of the contents of the digital media item.
 
 ## Destination Folders and File Names
@@ -28,3 +24,5 @@ Newly created disk transfers are stored on Ginger; this is accessible via mounte
 ## Choosing Transfer Method
 
 Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device, and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images; and do not include file slackspace. At this point in time, disk images are created in-house for optical disks (DVDs and CDs), external hard drives, USB Flash drives, 5.25-inch floppy disks and 3.5-inch floppy disks (recently dated disks that are PC-formatted). The hardware used to create images will vary depending on the type of digital media.
+
+[Transfer Instructions by Digital Media Type](transfer-instructions)
