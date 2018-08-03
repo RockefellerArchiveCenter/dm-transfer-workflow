@@ -55,7 +55,7 @@ Check that you entered the correct format when prompted by the script (cdrom, cd
 
 This error can mean two things: either the disk is corrupt/empty, or you may be trying to image an audio-CD.
 
-Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a track listing, continue following the [Audio CDs](#audio-cds) transfer workflow. If no track listing appears, the disk may be blank or corrupt. 
+Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a track listing, continue following the [audio cds](transfer-instructions#cds-&-dvds) transfer workflow. If no track listing appears, the disk may be blank or corrupt. 
 
 **Error stat(ing) image file (raw_open: image "ref_id.iso" - Not such file or directory)**
 
