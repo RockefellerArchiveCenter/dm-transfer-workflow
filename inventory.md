@@ -27,4 +27,4 @@ The Digital Media Log is located at
 4.  The component and resource fields should autopopulate. If they do
     not, contact the administrator.
 5.  Choose the appropriate format from the drop down menu.
-6.  If you are ready to transfer the item, continue to /transfer/setup
+6.  If you are ready to transfer the item, continue to [transfer setup](index#-transfer-overview-&-setup)

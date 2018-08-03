@@ -92,7 +92,9 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 2.  In the command prompt, navigate to the /dtc directory.
 3. dtc -f\[filename\].img -i\[imagetype\]
 
-:   image types correspond to numbers; "4" is for MFM images
+<div class="docs-example">
+  <p>image types correspond to numbers; "4" is for MFM images</p>
+</div>
 
 ### Imaging with the KryoFlux GUI on the FRED
 1.  Open the **kryoflux-ui.jar – Shortcut** on the desktop.
@@ -103,19 +105,12 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
     <p>Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759</p>
   </div>
 5.  Choose the appropriate image format from the drop down menu.
-
-    > If the disk format is unknown, but is a 3.5” floppy, first try
-    > “MFM Sector Image.” “FM sector image” and “MFM sector image”
-    > support basically any normal disk used for systems that contain a
-    > generic FM or MFM FDC.
-    >
-    > For 3.5” disks, if MFM or FM does not work, try FM Sector
-    > Information, CBM DOS sector image, AmigaDOS sector image, Amiga
-    > DiskSpare sector image, Apple DOS 400k/800k sector image, or CBM
-    > DOS extended sector image.
-
+  <div class="docs-example">
+    <p> If the disk format is unknown, but is a 3.5” floppy, first try “MFM Sector Image.” “FM sector image” and “MFM sector image” support basically any normal disk used for systems that contain a generic FM or MFM FDC.
+    </p>
+    <p>For 3.5” disks, if MFM or FM does not work, try FM Sector Information, CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector image, Apple DOS 400k/800k sector image, or CBM DOS extended sector image.</p>
+  </div>
 6.  KryoFlux is separated into three sub-windows. The upper left window contains the track gird. Each blog of the grid represents a track on the disk’s surface. The upper right window contains the track info block, with two more tabs called “Histogram” and “Scatter.” The lower part of the window is the control section, where the current track, drive controls, and the filename are displayed. Below the filename is the format selector, which itself is dependent on profiles. The complete last line of the window is the status line which displays additional information. During dumping, blocks change their color according to the result of the process.
-
   - **Green** – track decoded, no errors found
   - **Grey** – noise (or unknown encoding scheme)
   - **Red** – track decoded, error(s) found, reading will be retried
@@ -123,7 +118,6 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
         data found
   - **Glowing** – track is being dumped
   - To get more information about the result of a certain track, move your mouse pointer over it. This will output the result of the operation in the status line.
-
 7.  Click **Start** and note what time imaging started.
 8.  Record information in Disk Imaging form in the Digital Media Inventory database.
 
