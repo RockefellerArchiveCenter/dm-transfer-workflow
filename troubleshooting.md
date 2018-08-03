@@ -42,3 +42,22 @@ While the KryoFlux is operating, there may be exceptions that trigger warnings o
 -   Track number found is different from what it should be; warning only.
 -   Sector truncated. Sector data is incomplete, decoding stopped. Reason is another sync/mark was found in the data block. Almost certainly protection that a sector image can't deal with; sector is not included in the image; error.
 -   Sector offset found is illegal. Sector is still decoded; warning only.
+
+## CDs and DVDs
+
+### Imaging Script Errors
+
+**Cannot determine file system type**
+
+Check that you entered the correct format when prompted by the script (cdrom, cdrw, dvd, dvdrw). If this error continues to appear, try mounting the disk image to determine if the contents have been successfully copied. Sometimes a disk image can still be considered successful despite this error.
+
+**Sector offset supplied is larger than disk image (maximum: 0)**
+
+This error can mean two things: either the disk is corrupt/empty, or you may be trying to image an audio-CD.
+Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a track listing, continue following the audio-CD transfer workflow. If no track listing appears, the disk may be blank or corrupt. 
+
+**Error stat(ing) image file (raw_open: image "ref_id.iso" - Not such file or directory)**
+
+Solution: Empty folder containing the .img file, run script again.
+
+
