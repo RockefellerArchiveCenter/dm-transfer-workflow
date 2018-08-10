@@ -60,35 +60,29 @@ The KryoFlux can be used with Windows, Mac, and Linux machines, and has both com
 Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the [official documentation](&lt;<http://>kryoflux.com/?page=download\#docs&gt;) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
 
 1.  On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
-2.  Connect KryoFlux to the FRED using the USB port in the back of the
-    tower.
+2.  Connect KryoFlux to the FRED using the USB port in the back of the tower.
 3. Connect the drive to power.
 
     <div class="docs-example">
-      <p>Important! Always make the drive – board - connection first, then plug the power (PSU & USB). *Power always comes last! You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Never ever connect or remove the floppy data cable while the drive and / or the board are still powered.*</p>
+      <p>Important! Always make the drive – board - connection first, then plug the power (PSU & USB). <strong>Power always comes last! You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Never ever connect or remove the floppy data cable while the drive and / or the board are still powered.</srong></p>
     </div>
 
-4.  Always unplug and disconnect from mains when not in use! Do not
-    leave unattended!
-5.  When switching between drives (e.g. from imaging 3.5” disks to 5.25”
-    disks) the drive will need to be calibrated.
+4.  Always unplug and disconnect from mains when not in use! Do not leave unattended!
+5.  When switching between drives (e.g. from imaging 3.5” disks to 5.25” disks) the drive will need to be calibrated.
 
-    > To calibrate using the command line:
-    >
-    > 1.  Open the command prompt and cd to the DTC folder
-    > 2.  Run “dtc -c2”
-    >
-    > To calibrate using the GUI:
-    >
-    > 1.  Open the GUI and select the “Drive” tab at the top of the
-    >     window
-    > 2.  Select either Drive 0 or Drive 1 in the drop-down menu. Note:
-    >     the drive will not calibrate if the wrong drive is selected.
-    >     If you are unsure of which Drive to select, reference
-    >     [Understanding Drive
-    >     1/0](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3)
-    >     in the “Archivists Guide to KyroFlux”
-    > 3.  Select "Calibrate" from the drop-down menu
+    <div class="docs-example">
+      <p>To calibrate using the command line:</p>
+      <p>
+        <li>Open the command prompt and cd to the DTC folder</li>
+        <li>Run “dtc -c2”</li>
+      </p>
+      <p>To calibrate using the GUI:</p>
+        <p>
+        <li>Open the GUI and select the “Drive” tab at the top of the window</li>
+        <li>Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference [Understanding Drive 1/0](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3) in the “Archivists Guide to KyroFlux”</li>
+        </p>
+      <li>Select "Calibrate" from the drop-down menu</li>
+    </div>
 
 ### Imaging with the KryoFlux on the Command Line
 
@@ -96,9 +90,9 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 2.  In the command prompt, navigate to the /dtc directory.
 3. dtc -f\[filename\].img -i\[imagetype\]
 
-<div class="docs-example">
-  <p>image types correspond to numbers; "4" is for MFM images</p>
-</div>
+    <div class="docs-example">
+      <p>image types correspond to numbers; "4" is for MFM images</p>
+    </div>
 
 ### Imaging with the KryoFlux GUI on the FRED
 1.  Open the **kryoflux-ui.jar – Shortcut** on the desktop.
@@ -106,17 +100,17 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 3.  For each image you create, you must change the output file. In order to so, go to **File &gt; Settings**. and navigate to the **Output** tab. Enter the directory the image will be in. Make sure **Logs** is checked.
 4.  On the main KryoFlux screen, enter the name of the image in the text field. The image name is constructed with the accession number or FA number followed by the digital media ID.  
 
-  <div class="docs-example">
-    <p>Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759</p>
-  </div>
+    <div class="docs-example">
+      <p>Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759</p>
+    </div>
 
 5.  Choose the appropriate image format from the drop down menu.
 
-  <div class="docs-example">
-    <p> If the disk format is unknown, but is a 3.5” floppy, first try “MFM Sector Image.” “FM sector image” and “MFM sector image” support basically any normal disk used for systems that contain a generic FM or MFM FDC.
-    </p>
-    <p>For 3.5” disks, if MFM or FM does not work, try FM Sector Information, CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector image, Apple DOS 400k/800k sector image, or CBM DOS extended sector image.</p>
-  </div>
+    <div class="docs-example">
+      <p> If the disk format is unknown, but is a 3.5” floppy, first try “MFM Sector Image.” “FM sector image” and “MFM sector image” support basically any normal disk used for systems that contain a generic FM or MFM FDC.
+      </p>
+      <p>For 3.5” disks, if MFM or FM does not work, try FM Sector Information, CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector image, Apple DOS 400k/800k sector image, or CBM DOS extended sector image.</p>
+    </div>
 
 6.  KryoFlux is separated into three sub-windows. The upper left window contains the track gird. Each blog of the grid represents a track on the disk’s surface. The upper right window contains the track info block, with two more tabs called “Histogram” and “Scatter.” The lower part of the window is the control section, where the current track, drive controls, and the filename are displayed. Below the filename is the format selector, which itself is dependent on profiles. The complete last line of the window is the status line which displays additional information. During dumping, blocks change their color according to the result of the process.
   - **Green** – track decoded, no errors found
