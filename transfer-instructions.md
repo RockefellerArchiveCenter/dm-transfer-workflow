@@ -64,7 +64,7 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 3. Connect the drive to power.
 
     <div class="docs-example">
-      <p>Important! Always make the drive – board - connection first, then plug the power (PSU & USB). <strong>Power always comes last! You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Never ever connect or remove the floppy data cable while the drive and / or the board are still powered.</srong></p>
+      <p>Important! Always make the drive – board - connection first, then plug the power (PSU & USB). <strong>Power always comes last! You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Never ever connect or remove the floppy data cable while the drive and / or the board are still powered.</strong></p>
     </div>
 
 4.  Always unplug and disconnect from mains when not in use! Do not leave unattended!
@@ -72,15 +72,15 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 
     <div class="docs-example">
       <p>To calibrate using the command line:</p>
-      <p>
+      <ol>
         <li>Open the command prompt and cd to the DTC folder</li>
         <li>Run “dtc -c2”</li>
-      </p>
+      </ol>
       <p>To calibrate using the GUI:</p>
-        <p>
+        <ol>
         <li>Open the GUI and select the “Drive” tab at the top of the window</li>
-        <li>Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference [Understanding Drive 1/0](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3) in the “Archivists Guide to KyroFlux”</li>
-        </p>
+        <li>Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference <a href="https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3">Understanding Drive 1/0</a> in the “Archivists Guide to KyroFlux”</li>
+        </ol>
       <li>Select "Calibrate" from the drop-down menu</li>
     </div>
 
