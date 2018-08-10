@@ -22,6 +22,8 @@ The following describes how to create disk images using FTK Imager. FTK Imager i
 4.  Select the appropriate folder to store the files. See transfer-overview for information on where files should be stored.
 5.  When copying is complete, click "Create Log File."
 
+[Trouble shoot CDs & DVDs](troubleshooting#cds-&-dvds)
+
 ## Hard Drives & USB Flash Drives
 
 The following describes how to create disk images using **FTK Imager** on the FRED.
@@ -127,4 +129,7 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 7.  Click **Start** and note what time imaging started.
 8.  Record information in Disk Imaging form in the Digital Media Inventory database.
 
-[Troubleshooting](troubleshooting)
+[Troubleshoot 3 1/2 Inch and 5 1/4 Inch Floppy Disks](troubleshooting#3-1/2-inch-and-5-1/4-inch-floppy-disks)
+
+
+[Scanning for Viruses](virus_scan)
