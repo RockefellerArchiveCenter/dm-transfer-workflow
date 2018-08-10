@@ -77,11 +77,11 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
         <li>Run “dtc -c2”</li>
       </ol>
       <p>To calibrate using the GUI:</p>
-        <ol>
+      <ol>
         <li>Open the GUI and select the “Drive” tab at the top of the window</li>
         <li>Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference <a href="https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3">Understanding Drive 1/0</a> in the “Archivists Guide to KyroFlux”</li>
         <li>Select "Calibrate" from the drop-down menu</li>
-        </ol>
+      </ol>
     </div>
 
 ### Imaging with the KryoFlux on the Command Line
