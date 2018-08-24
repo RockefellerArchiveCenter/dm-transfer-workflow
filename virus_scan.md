@@ -17,13 +17,13 @@ Make sure the disk images you want to virus check can be seen by the Virus Check
 ## Running the Script
 
 1. Switch to root: `sudo su`
-2. Enter password used for the virus checking workstation
-3. Navigate to the directory containing the scripts: `cd Desktop`
-4. Run the expect script: `./script.exp` (this automatically spawns vc_setup.sh which mounts the network and enters the credentials)
-5. Run the virus checking script: `./virus_script.sh`
-6. Enter the FA number, digital media id, and file extension of the disk image
-7. End root session: `exit`
-
-
+2. Enter password used to sign in to the virus checking workstation
+3. Mount the network: `mount -o username=freduser //fredIPaddress/ginger /mnt` 
+>*The IP address for connecting to the FRED on the quarantine network can be found on the "System Info Sheets/FRED Info Sheet" page.*
+4. Enter password used to sign in to the FRED
+5. Navigate to the directory containing the virus script: `cd /mnt`
+6. Run the virus checking script: `./virus_script.sh`
+7. Enter the FA number, digital media id, and file extension of the disk image
+8. End root session: `exit`
 
 [Troubleshooting](troubleshooting)
