@@ -9,6 +9,6 @@ description: "Instructions for inventorying and transferring digital media, usin
 pages:
   - ["Rockefeller Archive Center Digital Media Transfer Workflow", "index"]
   - ["Inventorying Digital Media", "inventory"]
-  - ["Transfer Instructions by Digital Media Type", "transfer-instructions"]
+  - ["Transfer Instructions", "transfer-instructions"]
   - ["Scanning for Viruses", "virus_scan"]
   - ["Troubleshooting by Digital Media Type", "troubleshooting"]

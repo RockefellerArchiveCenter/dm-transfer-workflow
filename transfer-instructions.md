@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "Transfer Instructions by Digital Media Type"
+title: "Transfer Instructions"
 ---
 
 ## CDs & DVDs
