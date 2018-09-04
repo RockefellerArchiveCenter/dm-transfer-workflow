@@ -13,9 +13,9 @@ Newly created disk transfers are stored on Ginger; this is accessible via mounte
 
 ## Choosing Transfer Method
 
-Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device, and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images; and do not include file slackspace. At this point in time, disk images are created in-house for optical disks [(CDs and DVDs)](#cds-&-dvds), [external hard drives](#hard-drives-&-usb-flash-drives), [USB Flash drives](#hard-drives-&-usb-flash-drives), [5.25-inch floppy disks and 3.5-inch floppy disks](#3-1/2-inch-and-5-1/4-inch-floppy-disks) (recently dated disks that are PC-formatted). The hardware used to create images will vary depending on the type of digital media.
+Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device, and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images; and do not include file slackspace. At this point in time, disk images are created in-house for optical disks [(CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-&-usb-flash-drives), [USB Flash drives](#hard-drives-&-usb-flash-drives), [5.25-inch floppy disks and 3.5-inch floppy disks](#3-1/2-inch-and-5-1/4-inch-floppy-disks) (recently dated disks that are PC-formatted). The hardware used to create images will vary depending on the type of digital media.
 
-## CDs & DVDs
+## CDs and DVDs
 
 In general, optical disk images will be forensically imaged using FTK Imager or BitCurator. Forensics images cannot be made for Audio CDs. Please see [Audio CDs](#audio-cds) for instructions.
 
@@ -34,7 +34,7 @@ The following describes how to create disk images using FTK Imager. FTK Imager i
 4.  Select the appropriate folder to store the files. See transfer-overview for information on where files should be stored.
 5.  When copying is complete, click "Create Log File."
 
-[Troubleshoot CDs & DVDs](troubleshooting#cds-&-dvds)
+[Troubleshoot CDs & DVDs](troubleshooting#cds-and-dvds)
 
 ## Hard Drives & USB Flash Drives
 
@@ -76,7 +76,7 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 3. Connect the drive to power.
 
     <div class="docs-example">
-      <p>Important! Always make the drive – board - connection first, then plug the power (PSU & USB). <strong>Power always comes last! You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Never ever connect or remove the floppy data cable while the drive and / or the board are still powered.</strong></p>
+      <p>Important! Always make the drive – board - connection first, then plug the power (PSU & USB). <strong>Power always comes last! You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Never ever connect or remove the floppy data cable while the drive and/or the board are still powered.</strong></p>
     </div>
 
 4.  Always unplug and disconnect from mains when not in use! Do not leave unattended!
