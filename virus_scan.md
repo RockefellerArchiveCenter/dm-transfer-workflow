@@ -20,7 +20,7 @@ Make sure the disk images you want to virus check can be seen by the Virus Check
 2. Enter password used to sign in to the virus checking workstation
 3. Mount the network: `mount -o username=freduser //fredIPaddress/ginger /mnt`
 
-    <div class-"docs-example">
+    <div class="docs-example">
       <p><i>The IP address for connecting to the FRED on the quarantine network can be found on the "System Info Sheets/FRED Info Sheet" page.</i></p>
     </div>
 

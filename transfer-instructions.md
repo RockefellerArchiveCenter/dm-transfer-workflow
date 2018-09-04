@@ -13,7 +13,7 @@ Newly created disk transfers are stored on Ginger; this is accessible via mounte
 
 ## Choosing Transfer Method
 
-Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device, and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images; and do not include file slackspace. At this point in time, disk images are created in-house for optical disks [(CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-&-usb-flash-drives), [USB Flash drives](#hard-drives-&-usb-flash-drives), [5.25-inch floppy disks and 3.5-inch floppy disks](#3-1/2-inch-and-5-1/4-inch-floppy-disks) (recently dated disks that are PC-formatted). The hardware used to create images will vary depending on the type of digital media.
+Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device, and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images; and do not include file slackspace. At this point in time, disk images are created in-house for optical disks [(CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), [5.25-inch floppy disks and 3.5-inch floppy disks](#3-1/2-inch-and-5-1/4-inch-floppy-disks) (recently dated disks that are PC-formatted). The hardware used to create images will vary depending on the type of digital media.
 
 ## CDs and DVDs
 
@@ -34,9 +34,9 @@ The following describes how to create disk images using FTK Imager. FTK Imager i
 4.  Select the appropriate folder to store the files. See transfer-overview for information on where files should be stored.
 5.  When copying is complete, click "Create Log File."
 
-[Troubleshoot CDs & DVDs](troubleshooting#cds-and-dvds)
+[Troubleshoot CDs and DVDs](troubleshooting#cds-and-dvds)
 
-## Hard Drives & USB Flash Drives
+## Hard Drives and USB Flash Drives
 
 The following describes how to create disk images using **FTK Imager** on the FRED.
 
