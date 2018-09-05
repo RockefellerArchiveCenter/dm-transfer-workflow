@@ -59,7 +59,7 @@ External hard drives and USB Flash drives need to be imaged using the FRED becau
 
 A detailed Manual for FTK Imager is available as a PDF. It is located on the M drive or through the web. <http://ad-pdf.s3.amazonaws.com/ImagerUsersGuide.pdf>
 
-## 3 and One Half Inch and 5 and One Quarter Inch Floppy Disks
+## 3 and 1 Half Inch and 5 and 1 Quarter Inch Floppy Disks
 
 3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. The following describes how to create disk images using KryoFlux.
 

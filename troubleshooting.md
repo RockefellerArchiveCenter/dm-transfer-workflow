@@ -21,7 +21,7 @@ Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a
 
 Solution: Empty folder containing the .img file, run script again.
 
-## 3 and One Half Inch and 5 and One Quarter Inch Floppy Disks
+## 3 and 1 Half Inch and 5 and 1 Quarter Inch Floppy Disks
 
 ### FRED does not recognized the KryoFlux
 
