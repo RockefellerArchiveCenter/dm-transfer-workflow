@@ -110,10 +110,10 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 1.  Open the **kryoflux-ui.jar – Shortcut** on the desktop.
 2.  After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 3.  For each image you create, you must change the output file. In order to so, go to **File &gt; Settings**. and navigate to the **Output** tab. Enter the directory the image will be in. Make sure **Logs** is checked.
-4.  On the main KryoFlux screen, enter the name of the image in the text field. The image name is constructed with the accession number or FA number followed by the digital media ID.  
+4.  On the main KryoFlux screen, enter the name of the image in the text field. The image name is constructed with the accession number or FA number followed by the RefID.  
 
     <div class="docs-example">
-      <p>Example: 2012\_077\_DM0000000001 or FA012\_DM0000000759</p>
+      <p>Example: 2012\_077\_2lz4u8myrs or FA012\_5a9wf7at7r</p>
     </div>
 
 5.  Choose the appropriate image format from the drop down menu.
