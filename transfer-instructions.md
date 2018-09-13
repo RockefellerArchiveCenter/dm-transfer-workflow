@@ -113,7 +113,7 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 4.  On the main KryoFlux screen, enter the name of the image in the text field. The image name is constructed with the accession number or FA number followed by the RefID.  
 
     <div class="docs-example">
-      <p>Example: 2012\_077\_2lz4u8myrs or FA012\_5a9wf7at7r</p>
+      <p>Example: 2012_077_2lz4u8myrs or FA012_5a9wf7at7r</p>
     </div>
 
 5.  Choose the appropriate image format from the drop down menu.
