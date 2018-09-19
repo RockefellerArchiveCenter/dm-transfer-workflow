@@ -17,7 +17,7 @@ Disk images are single files containing the complete content and structure repre
 
 ## CDs and DVDs
 
-In general, optical disk images will be forensically imaged using FTK Imager or BitCurator. Forensics images cannot be made for Audio CDs. Please see [Audio CDs](#audio-cds) for instructions.
+In general, optical disk images will be forensically imaged using FTK Imager or BitCurator. Forensic images cannot be made for Audio CDs. Please see [Audio CDs](#audio-cds) for instructions.
 
 The following describes how to create disk images using FTK Imager. FTK Imager is digital forensics software used to create disk images of digital media separated either at accessioning, processing or during the Legacy Digital Media Survey. FTK Imager is a different program than the Forensic Toolkit, which is usually referred to as FTK.
 
