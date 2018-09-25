@@ -3,6 +3,10 @@ layout: docs
 title: "Scanning for Viruses"
 ---
 
+If you were unable to successfully transfer a digital media item refer to the [Troubleshooting](troubleshooting) page.
+
+Otherwise, proceed to the instructions below for scanning digital media items for viruses.
+
 ## Overview
 
 All disk images need to be scanned for viruses and malware on the Virus Checking Workstation (Ginger)

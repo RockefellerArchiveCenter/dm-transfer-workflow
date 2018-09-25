@@ -35,4 +35,4 @@ Instructions for using the Digital Media Log to create and save a digital media 
 3.  When you changed the transfer status from "Not Transferred," the "Date Transferred" autopopulated with today's date. Correct if needed.
 4.  Record whether the physical digital media item is to be retained due to artifactual value or disposed of. This is to record the disposition of the physical media item and not the appraisal of the contents of the digital media item.
 
-[Transfer Instructions](transfer-instructions)
+Next Step: [Transfer Instructions](transfer-instructions)

@@ -138,4 +138,4 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 [Troubleshoot 3 1/2 Inch and 5 1/4 Inch Floppy Disks](troubleshooting#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks)
 
 
-[Scanning for Viruses](virus_scan)
+Next Step: [Scanning for Viruses](virus_scan)
