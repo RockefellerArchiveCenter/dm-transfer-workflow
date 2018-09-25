@@ -25,14 +25,4 @@ Instructions for using the Digital Media Log to create and save a digital media 
 6.  Default entry for "Transfer Status" field - Not Transferred" - will autopopulate. This field along with the "Transfer Method" and "Date Transferred Field" can be updated after the digital media item record is saved. (You will want to return to the digital media item after transfer actions have been completed or attempted)
 7. Click the "Submit" button to save the record. If you are ready to transfer the item, continue to [transfer setup](transfer-instructions#transfer-overview-&-setup)
 
-## Recording Transfers in Digital Media Log
-
-1. When you have finished transferring a digital media item, changed the transfer status to "Transferred - Failed" or "Transferred - Success" as appropriate.
-    <div class="docs-example">
-      <p>Note: If transfer fails initially you may need to try again; appropriate number of transfer attempts is dependent upon type of media.</p>
-    </div>
-2. Record the transfer method. Record the successful method if multiple methods were attempted.
-3.  When you changed the transfer status from "Not Transferred," the "Date Transferred" autopopulated with today's date. Correct if needed.
-4.  Record whether the physical digital media item is to be retained due to artifactual value or disposed of. This is to record the disposition of the physical media item and not the appraisal of the contents of the digital media item.
-
 Next Step: [Transfer Instructions](transfer-instructions)

@@ -5,7 +5,7 @@ title: "Transfer Instructions"
 
 ## Transfer Overview & Setup
 
-An item must be inventoried in the Digital Media Log before it is transferred. See instructions for [Inventorying Digital Media Items](inventory). When a digital media item is imaged or otherwise has its contents transferred, this must be recorded in the Digital Media Log.
+An item must be inventoried in the Digital Media Log before it is transferred. See instructions for [Inventorying Digital Media Items](inventory). When a digital media item is imaged or otherwise has its contents transferred, this must be [recorded in the Digital Media Log](#recording-transfers-in-digital-media-log).
 
 ## Destination Folders and File Names
 
@@ -24,7 +24,7 @@ The following describes how to create disk images using FTK Imager. FTK Imager i
 ### Imaging with the Command Line
 
 1.  Insert the disk in the drive.
-2.  In the command prompt, run the script optical\_disks.sh.
+2.  In the command prompt, run the script optical_disks.sh.
 
 ### Audio CDs
 
@@ -63,11 +63,11 @@ A detailed Manual for FTK Imager is available as a PDF. It is located on the M d
 
 3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. The following describes how to create disk images using KryoFlux.
 
-For guidelines on which directories images should be put in and file naming conventions, see /transfer/setup
+For guidelines on which directories images should be put in and file naming conventions, see [Destination Folders and File Names](#destination-folders-and-file-names)
 
 The KryoFlux can be used with Windows, Mac, and Linux machines, and has both command line and GUI interfaces. Scripts using the KryoFlux command line tools on the BitCurator machine are preferred in most cases, but it is also possible to use the GUI on the FRED.
 
-### KryoFlux Hardware Setup
+### KryoFlux Hardware Setup on the FRED
 
 Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the [official documentation](&lt;<http://>kryoflux.com/?page=download\#docs&gt;) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
 
@@ -137,5 +137,14 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
 
 [Troubleshoot 3 1/2 Inch and 5 1/4 Inch Floppy Disks](troubleshooting#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks)
 
+## Recording Transfers in Digital Media Log
+
+1. When you have finished transferring a digital media item, changed the transfer status to "Transferred - Failed" or "Transferred - Success" as appropriate.
+    <div class="docs-example">
+      <p>Note: If transfer fails initially you may need to try again; appropriate number of transfer attempts is dependent upon type of media.</p>
+    </div>
+2. Record the transfer method. Record the successful method if multiple methods were attempted.
+3.  When you changed the transfer status from "Not Transferred," the "Date Transferred" autopopulated with today's date. Correct if needed.
+4.  Record whether the physical digital media item is to be retained due to artifactual value or disposed of. This is to record the disposition of the physical media item and not the appraisal of the contents of the digital media item.
 
 Next Step: [Scanning for Viruses](virus_scan)
