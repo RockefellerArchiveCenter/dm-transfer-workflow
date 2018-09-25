@@ -16,7 +16,7 @@ There are 4 required steps to correctly inventory and transfer digital media. Th
 The steps should be completed in order.  
 
 1. Inventory digital media item using Digital Media Log
-2. Transfer digital media item using appropriate hardware and tools (If you experience difficulties using the available tools for transferring digital media items consult the [Troubleshooting page](troubleshoot))
+2. Transfer digital media item using appropriate hardware and tools (If you experience difficulties using the available tools for transferring digital media items consult the [Troubleshooting page](troubleshooting))
 3. Document transfer using Digital Media Log (If digital media item failed to transfer, you cannot proceed to the next step)
 4. Scan digital media item for viruses using Ginger workstation
 

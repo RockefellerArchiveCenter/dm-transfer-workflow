@@ -15,38 +15,60 @@ Note that the BitCurator station is not connected to Ginger. Disk transfers crea
 
 ### Disk Imaging
 
-Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device, and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images; and do not include file slackspace.
+Disk imaging is currently the primary process by which the content and structure of a digital media item is transfered at the RAC. By imaging legacy digital media, archivists can help ensure the long term preservation and management of records stored on devices vulnerable to deterioration and obsolescence.
 
-At this point in time, disk images are created in-house for optical disks [(CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), [3.5-inch floppy disks and 5.25-inch floppy disks](#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks) (recently dated disks that are PC-formatted).
+Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images and do not include file slackspace.
+
+At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), and [3.5-inch floppy disks and 5.25-inch floppy disks](#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks) (recently dated disks that are PC-formatted).
 
 ### Choosing Transfer Method
 
-The hardware used to create images will vary depending on the type of digital media.
+The programs and hardware used to create disk images will vary depending on the type of digital media you are attempting to transfer.
+
+Workstations Used to Transfer Digital Media Items:
+- **BitCurator:** Used to image CDS and DVDs and 3 1/2 and 5 1/4 Floppy Disks; connected to the FRED
+- **FRED:** Used to image Audio CDs, Hard Drives and USB Flash Drives, and 3 1/2 and 5 1/4 Floppy Disks; connected to the BitCurator and the Ginger
+
+Other Significant Hardware for Transferring Digital Media Items:
+- **KryoFlux:** Used when imaging 3 1/2 and 5 1/4 Floppy Disks
+
+Significant Software for Transferring Digital Media Items:
+
+- **FTK Imager:** Used when imaging CDS and DVDs and Hard Drives and USB Flash Drives
+
+The sections below describe the options available for imaging the specific type of digital media that each section heading names as well as the step-by-step workflows for executing those imaging options.
 
 ## CDs and DVDs
 
-In general, optical disk images will be forensically imaged using FTK Imager or BitCurator. Forensic images cannot be made for Audio CDs. Please see [Audio CDs](#audio-cds) for instructions.
+In general, optical disk images will be forensically imaged using BitCurator or FTK Imager. Forensic images cannot be made for Audio CDs. Please see [Audio CDs](#audio-cds) for instructions.
 
-The following describes how to create disk images using FTK Imager. FTK Imager is digital forensics software used to create disk images of digital media separated either at accessioning, processing or during the Legacy Digital Media Survey. FTK Imager is a different program than the Forensic Toolkit, which is usually referred to as FTK.
+### Imaging with the Command Line on BitCurator
 
-### Imaging with the Command Line
+1. Insert the disk into the drive
+2. Open the command line and navigate to the desktop by entering: CD Desktop
+3. In the command prompt, run the bash script optical_disks.sh
+4. BitCurator will ask you to select from one of the following formats: cdrom, cdrw, dvd, dvdrw; in the command prompt, enter your disk's format
+5. BitCurator will then image the disk
 
-1.  Insert the disk in the drive.
-2.  In the command prompt, run the script optical_disks.sh .
+If you receive an error message from BitCurator when attempting to complete any of the steps above consult [Troubleshoot CDs and DVDs](troubleshooting#cds-and-dvds).
+
+### Imaging using FTK Imager
+
+This section is still under development. Instructions will be added soon.
 
 ### Audio CDs
+
+Audio CDS are imaged on the FRED, using the program Exact Audio Copy.
 
 1.  On the FRED, open Exact Audio Copy and insert the CD into the optical disk drive.
 2.  In the CD Title field, enter the digital media ID of the CD. Remove text from the CD author field.
 3.  On the lefthand side, click the button that says "IMG." This will create 1 uncompressed WAV file (containing all tracks) and a CUE file.
-4.  Select the appropriate folder to store the files. See transfer-overview for information on where files should be stored.
+4.  Select the appropriate folder to store the files. See [Destination Folders and File Names](#destination_folders-and-file-names) for information on where files should be stored.
 5.  When copying is complete, click "Create Log File."
-
-[Troubleshoot CDs and DVDs](troubleshooting#cds-and-dvds)
 
 ## Hard Drives and USB Flash Drives
 
-The following describes how to create disk images using **FTK Imager** on the FRED.
+The following describes how to create disk images using **FTK Imager** on the FRED. FTK Imager is digital forensics software used to create disk images of digital media separated either at accessioning, processing or during the Legacy Digital Media Survey. FTK Imager is a different program than the Forensic Toolkit, which is usually referred to as FTK.
 
 External hard drives and USB Flash drives need to be imaged using the FRED because it has a hardware write blocker. External hard drives and USB Flash drives need to be connected to the Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay needs to be turned ON.
 
@@ -57,7 +79,7 @@ External hard drives and USB Flash drives need to be imaged using the FRED becau
 3.  Select the **Source Drive Location**. This can be a little confusing, as the program picks up all connected drives – including the one you’re working on. The FRED machine has quite a few drives. You can distinguish between them by using the data size listed in the dialog box. For example, two of the drives are listed at 2000GB and 7999GB, respectively. You can also disregard the WIBU Codemeter Stick USB device, which is a USB key to run the Forensic Toolkit. Click **Finish** to continue
 4.  A dialog box will appear, this time asking where to store the image. Click **Add.** Before the location of the image file can be identified, the type of image file to create needs to be selected. We use the E01 file format. Click **Next** to move forward.
 5.  The Evidence Item dialog box will appear. Insert the digital media ID associated with the item into the **Evidence Number** field. This is generated by the Digital Media Log. All other fields can be left blank.
-6.  The next screen prompts you to identify where the disk image will be stored. See transfer-overview for information on the **Image Destination Folder:** and **Image Filename:**. Additionally, the **Compression** level and **Image Fragment Size** should both be set to 0 and **Use AD Encryption:** should be left unchecked.    
+6.  The next screen prompts you to identify where the disk image will be stored. See [Destination Folders and File Names](#destination-folders-and-file-names) for information on the **Image Destination Folder:** and **Image Filename:**. Additionally, the **Compression** level and **Image Fragment Size** should both be set to 0 and **Use AD Encryption:** should be left unchecked.    
 7.  Click **Finish** to return to the Create Image dialog window, this time with the necessary information completed. Double check the **Image Source**, the **Image Destination**, and that both **Verify images after they are created** and **Create directory listings of all files in the image after they are created** are checked. Click **Start** to initiate the imaging process.
 8.  A Creating Image dialog window will appear. It will indicate how much time has elapsed during the creation of the image.
 9.  Once completed, the Status will read **Image created successfully**. You will also receive notification that the Directory Listing was created successfully. In the image destination folder, you will see the image (.E01), the Directory Listing file (.csv), and the Verify Results file (.txt). The Verify Results Summary contains the same data presented in the Image Summary area below. This information contains the image checksum information needed for the Digital Media database.
