@@ -11,7 +11,7 @@ An item must be inventoried in the Digital Media Log before it is transferred. S
 
 Newly created disk transfers are stored on Ginger (the workstation used for [virus checking](virus_scan)); this is accessible via mounted shares on the FRED workstation. Please note that the Virus Checking Workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On Ginger and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession number.
 
-Note that the BitCurator station is not connected to Ginger. Disk transfers created on the BitCurator (digital media items imaeged using BitCurator include [CDs and DVDs](#cds_and_dvds)) must first be moved to the FRED, and then once on the FRED, they can be moved to Ginger to be scanned for viruses, the next stage in the transfer workflow.
+Note that the BitCurator station is not connected to Ginger. Disk transfers created on the BitCurator (digital media items imaged using BitCurator include [CDs and DVDs](#cds_and_dvds)) must first be moved to the FRED, and then once on the FRED, they can be moved to Ginger to be scanned for viruses, the next stage in the transfer workflow.
 
 ### Disk Imaging
 
@@ -54,7 +54,7 @@ If you receive an error message from BitCurator when attempting to complete any 
 
 ### Imaging using FTK Imager
 
-This section is still under development. Instructions will be added soon.
+This section is still under development.
 
 ### Audio CDs
 
@@ -97,9 +97,15 @@ For guidelines on which directories images should be put in and file naming conv
 
 The KryoFlux can be used with Windows, Mac, and Linux machines, and has both command line and GUI interfaces. Scripts using the KryoFlux command line tools on the BitCurator machine are preferred in most cases, but it is also possible to use the GUI on the FRED.
 
+Currently at the RAC, imaging of 3 1/2 an 5 1/4 floppy disks is done exclusively on the FRED.
+
+**Instructions for imaging 3 1/2 an 5 1/4 floppy disks on the BitCurator is still under development.**
+
 ### KryoFlux Hardware Setup on the FRED
 
-Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the [official documentation](&lt;<http://>kryoflux.com/?page=download\#docs&gt;) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
+If you encounter issues setting up or using the KryoFlux cosult [Troubleshoot 3 1/2 Inch and 5 1/4 Inch Floppy Disks](troubleshooting#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks)
+
+Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the [official documentation](https://kryoflux.com/?page=download#docs) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
 
 1.  On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
 2.  Connect KryoFlux to the FRED using the USB port in the back of the tower.
@@ -126,7 +132,7 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
       </ol>
     </div>
 
-### Imaging with the KryoFlux on the Command Line
+### Imaging with the KryoFlux using the Command Line on the FRED
 
 1.  After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 2.  In the command prompt, navigate to the /dtc directory.
@@ -164,8 +170,6 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
   - To get more information about the result of a certain track, move your mouse pointer over it. This will output the result of the operation in the status line.
 7.  Click **Start** and note what time imaging started.
 8.  Record information in Disk Imaging form in the Digital Media Inventory database.
-
-[Troubleshoot 3 1/2 Inch and 5 1/4 Inch Floppy Disks](troubleshooting#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks)
 
 ## Recording Transfers in Digital Media Log
 

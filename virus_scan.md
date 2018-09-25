@@ -9,8 +9,7 @@ Otherwise, proceed to the instructions below for scanning digital media items fo
 
 ## Overview
 
-All disk images need to be scanned for viruses and malware on the Virus Checking Workstation (Ginger)
-before they are moved over to the Digital Records (X) drive.
+All disk images need to be scanned for viruses and malware on the Virus Checking Workstation (Ginger) before they are moved over to the Digital Records (X) drive.
 
 
 ## Setup
