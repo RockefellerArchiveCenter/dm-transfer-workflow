@@ -12,3 +12,4 @@ pages:
   - ["Transfer Instructions", "transfer-instructions"]
   - ["Scanning for Viruses", "virus_scan"]
   - ["Troubleshooting by Digital Media Type", "troubleshooting"]
+  - ["Error Reporting", "error_reporting"]
