@@ -34,13 +34,13 @@ Other Significant Hardware for Transferring Digital Media Items:
 
 Significant Software for Transferring Digital Media Items:
 
-- **FTK Imager:** Used when imaging CDS and DVDs and Hard Drives and USB Flash Drives
+- **FTK Imager:** Used when imaging Hard Drives and USB Flash Drives
 
 The sections below describe the options available for imaging the specific type of digital media that each section heading names as well as the step-by-step workflows for executing those imaging options.
 
 ## CDs and DVDs
 
-In general, optical disk images will be forensically imaged using BitCurator or FTK Imager. Forensic images cannot be made for Audio CDs. Please see [Audio CDs](#audio-cds) for instructions.
+In general, optical disk images will be forensically imaged on BitCurator. Forensic images cannot be made for Audio CDs. Please see [Audio CDs](#audio-cds) for instructions.
 
 ### Imaging with the Command Line on BitCurator
 
@@ -51,10 +51,6 @@ In general, optical disk images will be forensically imaged using BitCurator or 
 5. BitCurator will then image the disk
 
 If you receive an error message from BitCurator when attempting to complete any of the steps above consult [Troubleshoot CDs and DVDs](troubleshooting#cds-and-dvds).
-
-### Imaging using FTK Imager
-
-This section is still under development.
 
 ### Audio CDs
 
