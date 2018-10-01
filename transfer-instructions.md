@@ -26,7 +26,7 @@ At this point in time, disk images are created in-house for [optical disks (CDs 
 The programs and hardware used to create disk images will vary depending on the type of digital media you are attempting to transfer.
 
 Workstations Used to Transfer Digital Media Items:
-- **BitCurator:** Used to image CDS and DVDs and 3 1/2 and 5 1/4 Floppy Disks; connected to the FRED
+- **BitCurator:** Used to image CDS and DVDs; connected to the FRED
 - **FRED:** Used to image Audio CDs, Hard Drives and USB Flash Drives, and 3 1/2 and 5 1/4 Floppy Disks; connected to the BitCurator and the Ginger
 
 Other Significant Hardware for Transferring Digital Media Items:
@@ -93,9 +93,9 @@ For guidelines on which directories images should be put in and file naming conv
 
 The KryoFlux can be used with Windows, Mac, and Linux machines, and has both command line and GUI interfaces. Scripts using the KryoFlux command line tools on the BitCurator machine are preferred in most cases, but it is also possible to use the GUI on the FRED.
 
-Currently at the RAC, imaging of 3 1/2 an 5 1/4 floppy disks is done exclusively on the FRED.
+**Currently at the RAC, the FRED is used as the default machine to image 3 1/2 and 5 1/4 floppy disks.** Keeping the KryoFlux at the FRED station mitigates the chance of potential hardware and connection issues that may result from frequent moves between the FRED and the BitCurator. We would only run the KryoFlux on the BitCurator for the purpose of advanced troubleshooting or if an instance were to arise where the FRED could not be operated.
 
-**Instructions for imaging 3 1/2 an 5 1/4 floppy disks on the BitCurator is still under development.**
+The following instructions for setup and use of KryoFlux on the FRED would be the same if one were to image 3 1/2 and 5 1/4 inch floppy disks with KryoFlux on the BitCurator.
 
 ### KryoFlux Hardware Setup on the FRED
 
