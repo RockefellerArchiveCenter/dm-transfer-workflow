@@ -93,7 +93,7 @@ For guidelines on which directories images should be put in and file naming conv
 
 The KryoFlux can be used with Windows, Mac, and Linux machines, and has both command line and GUI interfaces. Scripts using the KryoFlux command line tools on the BitCurator machine are preferred in most cases, but it is also possible to use the GUI on the FRED.
 
-**Currently at the RAC, the FRED is used as the default machine to image 3 1/2 and 5 1/4 floppy disks.** Keeping the KryoFlux at the FRED station mitigates the chance of potential hardware and connection issues that may result from frequent moves between the FRED and the BitCurator. We would only run the KryoFlux on the BitCurator for the purpose of advanced troubleshooting or if an instance were to arise where the FRED could not be operated.
+**The FRED is currently used at the RAC as the default machine to image 3 1/2 and 5 1/4 floppy disks.** Keeping the KryoFlux at the FRED station mitigates the chance of potential hardware and connection issues that may result from frequent moves between the FRED and the BitCurator. We would only run the KryoFlux on the BitCurator for the purpose of advanced troubleshooting or if an instance were to arise where the FRED could not be operated.
 
 The following instructions for setup and use of KryoFlux on the FRED would be the same if one were to image 3 1/2 and 5 1/4 inch floppy disks with KryoFlux on the BitCurator.
 
