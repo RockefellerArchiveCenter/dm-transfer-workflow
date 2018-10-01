@@ -32,5 +32,3 @@ Make sure the disk images you want to virus check can be seen by the Virus Check
 6. Run the virus checking script: `./virus_script.sh`
 7. Enter the FA number, digital media id, and file extension of the disk image
 8. End root session: `exit`
-
-[Troubleshooting](troubleshooting)
