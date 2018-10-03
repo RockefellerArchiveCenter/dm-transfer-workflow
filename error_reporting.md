@@ -6,7 +6,7 @@ title: "Error Reporting"
 ## Overview
 This template should be used to help you effectively communicate errors to the Advanced Troubleshooting Team. Copy and paste the information below into an email and proceed to fill out the appropriate sections - be as specific as possible. Before filling this out, remember to check the [Troubleshooting by Digital Media Type](Troubleshooting) page to see if your error has already been reported/solved.
 
-## Advanced Imaging Troubleshooting Template
+## Advanced Troubleshooting Template
 
 **Digital Media ID:**
 
