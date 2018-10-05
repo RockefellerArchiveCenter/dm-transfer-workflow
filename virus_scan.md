@@ -3,10 +3,6 @@ layout: docs
 title: "Scanning for Viruses"
 ---
 
-If you experienced difficulties using the available tools for transferring digital media  refer to the [Troubleshooting](troubleshooting) page. If item still failed to transfer document that in the Digital Media Log and do not attempt to scan the item for viruses.
-
-Otherwise, proceed to the instructions below for scanning digital media items for viruses.
-
 ## Overview
 
 All disk images need to be scanned for viruses and malware on the Virus Checking Workstation (Ginger) before they are moved over to the Digital Records (X) drive.
