@@ -13,9 +13,8 @@ All disk images need to be scanned for viruses and malware on the Virus Checking
 
 Make sure the disk images you want to virus check can be seen by the Virus Checking Workstation (Ginger). The shared network between the Virus Checking Workstation and the FRED can be found at (D:) on the FRED.
 
-
-## Running the Script
-
+## Checking a Disk Image for Viruses
+*This workflow should be used for .iso & .img files.*
 1. Switch to root: `sudo su`
 2. Enter password used to sign in to the virus checking workstation
 3. Mount the network: `mount -o username=freduser //fredIPaddress/ginger /mnt`
@@ -29,3 +28,13 @@ Make sure the disk images you want to virus check can be seen by the Virus Check
 6. Run the virus checking script: `./virus_script.sh`
 7. Enter the FA number, digital media id, and file extension of the disk image
 8. End root session: `exit`
+
+## Checking a Folder for Viruses
+*This workflow should be used for .wav files (audio cds) and senarios where a disk image is not present.*
+
+This section is under development.
+
+## Review Log File
+Please check the log file after each scan to ensure all of the files have been read and scanned.
+
+The log info for the virus scan can be found inside the log file that was created during the imaging/transfer process (i.e. digitalmedia_id.txt).
