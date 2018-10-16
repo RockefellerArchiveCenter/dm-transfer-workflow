@@ -16,7 +16,7 @@ There are 4 required steps to correctly inventory and transfer digital media. Th
 The steps should be completed in order.  
 
 1. Inventory digital media item using Digital Media Log
-2. Transfer digital media item using appropriate hardware and tools (If you experience difficulties using the available tools for transferring digital media items consult the [Troubleshooting page](troubleshooting))
+2. Transfer digital media item using appropriate hardware and tools (If you experience difficulties using the available tools for transferring digital media items, consult the [Troubleshooting page](troubleshooting) and/or use the [Advanced Troubleshooting Template](error_reporting#advanced_troubleshooting_template) to communicate your issues to the Advanced Troubleshooting Team)
 3. Document transfer using Digital Media Log (If digital media item failed to transfer, you cannot proceed to the next step)
 4. Scan digital media item for viruses using Ginger workstation
 
@@ -26,3 +26,4 @@ The steps should be completed in order.
 - **Transfer Instructions**: Instructions for identifying correct method for transferring digital media and steps for imaging different types of digital media
 - **Scanning for Viruses**: Instructions for setting up the virus checking workstation (Ginger) and running the virus checking script to scan for viruses and malware on disk images
 - **Troubleshooting by Digital Media Type**: Description of common imaging error warnings and instructions/solutions for troubleshooting imaging of different types of digital media
+- **Error Reporting**: Template for describing issues encountered during disk imaging that cannot be resolved with the solutions provided on the Troubleshooting page
