@@ -13,13 +13,13 @@ Check that you entered the correct format when prompted by the script (cdrom, cd
 
 **Sector offset supplied is larger than disk image (maximum: 0)**
 
-This error can mean two things: either the disk is corrupt/empty, or you may be trying to image an audio-CD.
+This error can mean two things: either the disk is corrupt/empty, or you may be trying to image an audio CD.
 
 Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a track listing, continue following the [audio cds](transfer-instructions#audio-cds) transfer workflow. If no track listing appears, the disk may be blank or corrupt.
 
 **Error stat(ing) image file (raw_open: image "ref_id.iso" - Not such file or directory)**
 
-Solution: Empty folder containing the .img file, run script again.
+Solution: Empty folder containing the .img file and run script again.
 
 ## 3 and 1 Half Inch and 5 and 1 Quarter Inch Floppy Disks
 
@@ -31,7 +31,7 @@ If the FRED does not recognize the KryoFlux, it is likely an issue that Windows 
 2. Expand "Ports COM & LPT" and right click on "Bossa Program Post"
 3. Choose "Browse my computer for driver software" then "let me pick from a list of device drivers"
 4. Since KryoFlux has already been installed, you should see the KryoFlux driver in the list
-5. Open the command prompt and navigate to the DTC folder. Run `$ "dtc -c2"``
+5. Open the command prompt and navigate to the DTC folder. Run `$ dtc -c2`
 
 ### KryoFlux GUI does not run when “Start” is selected
 

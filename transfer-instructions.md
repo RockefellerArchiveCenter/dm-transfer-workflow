@@ -11,7 +11,7 @@ An item must be inventoried in the Digital Media Log before it is transferred. S
 
 Newly created disk transfers are stored on Ginger (the workstation used for [virus checking](virus_scan)); this is accessible via mounted shares on the FRED workstation. Please note that the Virus Checking Workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On Ginger and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession number.
 
-Note that the BitCurator station is not connected to Ginger. Disk transfers created on the BitCurator (digital media items imaged using BitCurator include [CDs and DVDs](#cds_and_dvds)) must first be moved to the FRED, and then once on the FRED, they can be moved to Ginger to be scanned for viruses, the next stage in the transfer workflow.
+Note that the BitCurator station is not connected to Ginger. Disk transfers created on the BitCurator (digital media items imaged using BitCurator include [CDs and DVDs](#cds_and_dvds)) must first be moved to the FRED, and then once on the FRED, they can be moved to Ginger to be scanned for viruses - the next stage in the transfer workflow.
 
 ### Disk Imaging
 
@@ -19,15 +19,15 @@ Disk imaging is currently the primary process by which the content and structure
 
 Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images and do not include file slackspace.
 
-At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), and [3.5-inch floppy disks and 5.25-inch floppy disks](#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks) (recently dated disks that are PC-formatted).
+At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), and [3.5 inch floppy disks and 5.25 inch floppy disks](#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks) (recently dated disks that are PC-formatted).
 
 ### Choosing Transfer Method
 
 The programs and hardware used to create disk images will vary depending on the type of digital media you are attempting to transfer.
 
 Workstations Used to Transfer Digital Media Items:
-- **BitCurator:** Used to image CDS and DVDs; connected to the FRED
-- **FRED:** Used to image Audio CDs, Hard Drives and USB Flash Drives, and 3 1/2 and 5 1/4 Floppy Disks; connected to the BitCurator and the Ginger
+- **BitCurator:** Used to image CDs and DVDs; connected to the FRED
+- **FRED:** Used to image Audio CDs, Hard Drives and USB Flash Drives, and 3 1/2 inch and 5 1/4 inch Floppy Disks; connected to the BitCurator and the Ginger
 
 Other Significant Hardware for Transferring Digital Media Items:
 - **KryoFlux:** Used when imaging 3 1/2 and 5 1/4 Floppy Disks
@@ -36,7 +36,7 @@ Significant Software for Transferring Digital Media Items:
 
 - **FTK Imager:** Used when imaging Hard Drives and USB Flash Drives
 
-The sections below describe the options available for imaging the specific type of digital media that each section heading names as well as the step-by-step workflows for executing those imaging options.
+The sections below describe the options available for imaging each specific type of digital media as well as the step-by-step workflows for executing those imaging options.
 
 ## CDs and DVDs
 
@@ -59,7 +59,7 @@ If you receive an error message from BitCurator when attempting to complete any 
 
 ### Audio CDs
 
-Audio CDS are imaged on the FRED, using the program Exact Audio Copy.
+Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 
 1. On the FRED, open Exact Audio Copy and insert the CD into the optical disk drive.
 2. In the CD Title field, enter the digital media ID of the CD. Remove text from the CD author field.
@@ -69,9 +69,9 @@ Audio CDS are imaged on the FRED, using the program Exact Audio Copy.
 
 ## Hard Drives and USB Flash Drives
 
-The following describes how to create disk images using **FTK Imager** on the FRED. FTK Imager is digital forensics software used to create disk images of digital media separated either at accessioning, processing or during the Legacy Digital Media Survey. FTK Imager is a different program than the Forensic Toolkit, which is usually referred to as FTK.
+The following describes how to create disk images using **FTK Imager** on the FRED. FTK Imager is a digital forensics software used to create disk images of digital media separated either at accessioning, processing, or during the Legacy Digital Media Survey. FTK Imager is a different program than the Forensic Toolkit which is usually referred to as FTK.
 
-External hard drives and USB Flash drives need to be imaged using the FRED because it has a hardware write blocker. External hard drives and USB Flash drives need to be connected to the Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay needs to be turned ON.
+External hard drives and USB Flash drives need to be imaged using the FRED because the FRED has a hardware write blocker. External hard drives and USB Flash drives need to be connected to the Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay needs to be turned ON.
 
 ### Imaging Instructions
 
@@ -98,15 +98,15 @@ For guidelines on which directories images should be put in and file naming conv
 
 The KryoFlux can be used with Windows, Mac, and Linux machines, and has both command line and GUI interfaces. Scripts using the KryoFlux command line tools on the BitCurator machine are preferred in most cases, but it is also possible to use the GUI on the FRED.
 
-**The FRED is currently used at the RAC as the default machine to image 3 1/2 and 5 1/4 floppy disks.** Keeping the KryoFlux at the FRED station mitigates the chance of potential hardware and connection issues that may result from frequent moves between the FRED and the BitCurator. We would only run the KryoFlux on the BitCurator for the purpose of advanced troubleshooting or if an instance were to arise where the FRED could not be operated.
+**The FRED is currently used at the RAC as the default machine to image 3 1/2 inch and 5 1/4 inch floppy disks.** Keeping the KryoFlux at the FRED station mitigates the chance of potential hardware and connection issues that may result from frequent moves between the FRED and the BitCurator. We would only run the KryoFlux on the BitCurator for the purpose of advanced troubleshooting or if an instance were to arise where the FRED could not be operated.
 
 The following instructions for setup and use of KryoFlux on the FRED would be the same if one were to image 3 1/2 and 5 1/4 inch floppy disks with KryoFlux on the BitCurator.
 
 ### KryoFlux Hardware Setup on the FRED
 
-If you encounter issues setting up or using the KryoFlux consult [Troubleshoot 3 1/2 Inch and 5 1/4 Inch Floppy Disks](troubleshooting#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks)
+If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 3 1/2 Inch and 5 1/4 Inch Floppy Disks](troubleshooting#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks)
 
-Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow the setup instructions carefully; for more details and images see the [official documentation](https://kryoflux.com/?page=download#docs) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
+**Warning: Incorrect setup can damage the KryoFlux and void our warranty.** Follow the setup instructions carefully; for more details and images see the [official documentation](https://kryoflux.com/?page=download#docs) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
 
 1. On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
 2. Connect KryoFlux to the FRED using the USB port in the back of the tower.
@@ -161,7 +161,7 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
       <p>For 3.5” disks, if MFM or FM does not work, try FM Sector Information, CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector image, Apple DOS 400k/800k sector image, or CBM DOS extended sector image.</p>
     </div>
 
-6. KryoFlux is separated into three sub-windows. The upper left window contains the track gird. Each blog of the grid represents a track on the disk’s surface. The upper right window contains the track info block, with two more tabs called “Histogram” and “Scatter.” The lower part of the window is the control section, where the current track, drive controls, and the filename are displayed. Below the filename is the format selector, which itself is dependent on profiles. The complete last line of the window is the status line which displays additional information. During dumping, blocks change their color according to the result of the process.
+6. KryoFlux is separated into three sub-windows. The upper left window contains the track gird. Each block of the grid represents a track on the disk’s surface. The upper right window contains the track info block, with two more tabs called “Histogram” and “Scatter.” The lower part of the window is the control section, where the current track, drive controls, and the filename are displayed. Below the filename is the format selector which is dependent on profiles. The complete last line of the window is the status line which displays additional information. During dumping, blocks change their color according to the result of the process.
   - **Green** – track decoded, no errors found
   - **Grey** – noise (or unknown encoding scheme)
   - **Red** – track decoded, error(s) found, reading will be retried
@@ -170,11 +170,11 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
   - **Glowing** – track is being dumped
   - To get more information about the result of a certain track, move your mouse pointer over it. This will output the result of the operation in the status line.
 7. Click **Start** and note what time imaging started.
-8. Record information in Disk Imaging form in the Digital Media Inventory database.
+8. Record information in Digital Media Log
 
 ## Recording Transfers in Digital Media Log
 
-1. When you have finished transferring a digital media item, changed the transfer status to "Transferred - Failed" or "Transferred - Success" as appropriate.
+1. When you have finished transferring a digital media item, change the transfer status to "Transferred - Failed" or "Transferred - Success" as appropriate.
     <div class="docs-example">
       <p>Note: If transfer fails initially you may need to try again; appropriate number of transfer attempts is dependent upon type of media.</p>
     </div>

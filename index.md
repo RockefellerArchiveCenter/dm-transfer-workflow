@@ -5,7 +5,7 @@ title: "Rockefeller Archive Center Digital Media Transfer Workflow"
 
 ## Digital Media Transfer Overview
 
-This is the Rockefeller Archive Center's documentation for digital media inventorying and transfer workflows using the Digital Media Log, a tool for documenting the discovery of digital media items as well as the transfer actions applied to those items. For the purposes of inventorying and transferring digital media at the RAC, the term digital media is used to describe the various data storage devices records creators use to store born digital material. Examples of the types of digital media items that these workflows address include optical disks, hard drives and flash drives, and 3 1/2 and 5 1/4 floppy disks.
+This is the Rockefeller Archive Center's documentation for digital media inventorying and transfer workflows using the Digital Media Log, a tool for documenting the discovery of digital media items as well as the transfer actions applied to those items. For the purposes of inventorying and transferring digital media at the RAC, the term digital media is used to describe the various data storage devices records creators use to store born digital material. Examples of the types of digital media items that these workflows address include optical disks, hard drives and flash drives, and 3 1/2 inch and 5 1/4 inch floppy disks.
 
 The workflows were written to empower archivists to process records consisting entirely of digital media as well as to process digital media records found in mostly analog or mixed collections. Their use supports the RAC's objective to preserve and provide access to archival records, regardless of format.
 
@@ -23,7 +23,7 @@ The steps should be completed in order.
 ## Documentation Components
 
 - **Inventorying Digital Media**: Instructions for when and how to inventory digital media and to record transfers of digital media, using the Digital Media Log
-- **Transfer Instructions**: Instructions for identifying correct method for transferring digital media and steps for imaging different types of digital media
+- **Transfer Instructions**: Instructions for identifying the correct method for transferring digital media as well as steps for imaging different types of digital media
 - **Scanning for Viruses**: Instructions for setting up the virus checking workstation (Ginger) and running the virus checking script to scan for viruses and malware on disk images
 - **Troubleshooting by Digital Media Type**: Description of common imaging error warnings and instructions/solutions for troubleshooting imaging of different types of digital media
 - **Error Reporting**: Template for describing issues encountered during disk imaging that cannot be resolved with the solutions provided on the Troubleshooting page
