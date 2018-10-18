@@ -50,7 +50,7 @@ In general, optical disk images will be forensically imaged on BitCurator. Foren
 4. BitCurator will ask you to select from one of the following formats: cdrom, cdrw, dvd, dvdrw; in the command prompt, enter your disk's format
 
     <div class="docs-example">
-      <p>example: `$ cdrw`</p>
+      <p>example: <code>$ cdrw</code></p>
     </div>
 
 5. BitCurator will then image the disk
@@ -123,7 +123,7 @@ Warning: Incorrect setup can damage the KryoFlux and void our warranty. Follow t
       <p>To calibrate using the command line:</p>
       <ol>
         <li>Open the command prompt and navigate to the DTC folder</li>
-        <li>Run `$ dtc -c2`</li>
+        <li>Run <code>$ dtc -c2</code></li>
       </ol>
       <p>To calibrate using the GUI:</p>
       <ol>
