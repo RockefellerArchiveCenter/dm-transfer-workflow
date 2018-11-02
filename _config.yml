@@ -1,6 +1,6 @@
 public: false
 type: "docs"
-category:"preservation"
+category: "preservation"
 tags:
   - "digital preservation"
   - "processing"
