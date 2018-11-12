@@ -5,13 +5,13 @@ title: "Scanning for Viruses"
 
 ## Overview
 
-All disk images need to be scanned for viruses and malware on the Virus Checking Workstation (Ginger) before they are moved over to the Digital Records (X) drive.
+All disk images need to be scanned for viruses and malware on the virus checking workstation (Ginger) before they are moved over to the Digital Records (X) drive.
 
 *Before you begin this step, please make sure the transfer process was successful. If you've experienced difficulties using the available tools for transferring digital media refer to the [Troubleshooting](troubleshooting) page. If the item still failed to transfer, document that in the Digital Media Log and do not attempt to scan the item for viruses. Otherwise, proceed to the instructions below for scanning digital media items for viruses.*
 
 ## Setup
 
-Make sure the disk images you want to virus check can be seen by the Virus Checking Workstation (Ginger). The shared network between the Virus Checking Workstation and the FRED can be found at (D:) on the FRED.
+Make sure the disk images you want to virus check can be seen by the virus checking workstation (Ginger). The shared network between the virus checking workstation and the FRED can be found at (D:) on the FRED.
 
 ## Checking a Disk Image for Viruses
 *This workflow should be used for .iso & .img files.*

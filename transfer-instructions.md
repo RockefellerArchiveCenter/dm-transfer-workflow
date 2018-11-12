@@ -9,7 +9,7 @@ An item must be inventoried in the Digital Media Log before it is transferred. S
 
 ### Destination Folders and File Names
 
-Newly created disk transfers are stored on Ginger (the workstation used for [virus checking](virus_scan)); this is accessible via mounted shares on the FRED workstation. Please note that the Virus Checking Workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On Ginger and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession number.
+Newly created disk transfers are stored on Ginger (the workstation used for [virus checking](virus_scan)); this is accessible via mounted shares on the FRED workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On Ginger and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession number.
 
 Note that the BitCurator station is not connected to Ginger. Disk transfers created on the BitCurator (digital media items imaged using BitCurator include [CDs and DVDs](#cds_and_dvds)) must first be moved to the FRED, and then once on the FRED, they can be moved to Ginger to be scanned for viruses - the next stage in the transfer workflow.
 
@@ -27,20 +27,20 @@ The programs and hardware used to create disk images will vary depending on the 
 
 Workstations Used to Transfer Digital Media Items:
 - **BitCurator:** Used to image CDs and DVDs; connected to the FRED
-- **FRED:** Used to image Audio CDs, Hard Drives and USB Flash Drives, and 3 1/2 inch and 5 1/4 inch Floppy Disks; connected to the BitCurator and the Ginger
+- **FRED:** Used to image audio CDs, hard drives and USB flash drives, and 3 1/2 inch and 5 1/4 inch floppy disks; connected to the BitCurator and the Ginger
 
 Other Significant Hardware for Transferring Digital Media Items:
-- **KryoFlux:** Used when imaging 3 1/2 and 5 1/4 Floppy Disks
+- **KryoFlux:** Used when imaging 3 1/2 and 5 1/4 floppy disks
 
 Significant Software for Transferring Digital Media Items:
 
-- **FTK Imager:** Used when imaging Hard Drives and USB Flash Drives
+- **FTK Imager:** Used when imaging Hard Drives and USB flash frives
 
 The sections below describe the options available for imaging each specific type of digital media as well as the step-by-step workflows for executing those imaging options.
 
 ## CDs and DVDs
 
-In general, optical disk images will be forensically imaged on BitCurator. Forensic images cannot be made for Audio CDs. Please see [Audio CDs](#audio-cds) for instructions.
+In general, optical disk images will be forensically imaged on BitCurator. Forensic images cannot be made for audio CDs. Please see [audio CDs](#audio-cds) for instructions.
 
 ### Imaging with the Command Line on BitCurator
 
@@ -59,7 +59,7 @@ If you receive an error message from BitCurator when attempting to complete any 
 
 ### Audio CDs
 
-Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
+audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 
 1. On the FRED, open Exact Audio Copy and insert the CD into the optical disk drive.
 2. In the CD Title field, enter the digital media ID of the CD. Remove text from the CD author field.
@@ -71,7 +71,7 @@ Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 
 The following describes how to create disk images using **FTK Imager** on the FRED. FTK Imager is a digital forensics software used to create disk images of digital media separated either at accessioning, processing, or during the Legacy Digital Media Survey. FTK Imager is a different program than the Forensic Toolkit which is usually referred to as FTK.
 
-External hard drives and USB Flash drives need to be imaged using the FRED because the FRED has a hardware write blocker. External hard drives and USB Flash drives need to be connected to the Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay needs to be turned ON.
+External hard drives and USB flash drives need to be imaged using the FRED because the FRED has a hardware write blocker. External hard drives and USB Flash drives need to be connected to the Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay needs to be turned ON.
 
 ### Imaging Instructions
 
@@ -165,8 +165,7 @@ If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 
   - **Green** – track decoded, no errors found
   - **Grey** – noise (or unknown encoding scheme)
   - **Red** – track decoded, error(s) found, reading will be retried
-  - **Yellow** – notifications and warnings, e.g., additional header
-        data found
+  - **Yellow** – notifications and warnings, e.g., additional header data found
   - **Glowing** – track is being dumped
   - To get more information about the result of a certain track, move your mouse pointer over it. This will output the result of the operation in the status line.
 7. Click **Start** and note what time imaging started.
