@@ -7,17 +7,17 @@ title: "Troubleshooting by Digital Media Type"
 
 ### Imaging Script Errors
 
-**Cannot determine file system type**
+#### Cannot determine file system type
 
 Check that you entered the correct format when prompted by the script (cdrom, cdrw, dvd, dvdrw). If this error continues to appear, try mounting the disk image to determine if the contents have been successfully copied. Sometimes a disk image can still be considered successful despite this error.
 
-**Sector offset supplied is larger than disk image (maximum: 0)**
+#### Sector offset supplied is larger than disk image (maximum: 0)
 
 This error can mean two things: either the disk is corrupt/empty, or you may be trying to image an audio CD.
 
 Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a track listing, continue following the [audio cds](transfer-instructions#audio-cds) transfer workflow. If no track listing appears, the disk may be blank or corrupt.
 
-**Error stat(ing) image file (raw_open: image "ref_id.iso" - Not such file or directory)**
+#### Error stat(ing) image file (raw_open: image "ref_id.iso" - Not such file or directory)
 
 Solution: Empty folder containing the .img file and run script again.
 
@@ -27,9 +27,9 @@ Solution: Empty folder containing the .img file and run script again.
 
 If the FRED does not recognize the KryoFlux, it is likely an issue that Windows 10 has with the driver. To fix this issue:
 
-1. Open the Device Manager
-2. Expand "Ports COM & LPT" and right click on "Bossa Program Post"
-3. Choose "Browse my computer for driver software" then "let me pick from a list of device drivers"
+1. Open the **Device Manager**
+2. Expand **Ports COM & LPT** and right click on **Bossa Program Post**
+3. Choose **Browse my computer for driver software** then **let me pick from a list of device drivers**
 4. Since KryoFlux has already been installed, you should see the KryoFlux driver in the list
 5. Open the command prompt and navigate to the DTC folder. Run `$ dtc -c2`
 
