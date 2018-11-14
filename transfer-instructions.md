@@ -54,7 +54,7 @@ In general, optical disk images will be forensically imaged on BitCurator. Foren
     </div>
 
 5. BitCurator will then image the disk
-6. Update the item's transfer status in the Digital Media Log. See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction.
+6. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction.
 
 If you receive an error message from BitCurator when attempting to complete any of the steps above consult [Troubleshoot CDs and DVDs](troubleshooting#cds-and-dvds).
 
@@ -67,7 +67,7 @@ Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 3. On the lefthand side, click the button that says **IMG**. This will create 1 uncompressed WAV file (containing all tracks) and a CUE file.
 4. Select the appropriate folder to store the files. See [Destination Folders and File Names](#destination_folders-and-file-names) for information on where files should be stored.
 5. When copying is complete, click **Create Log File**.
-6. Update the item's transfer status in the Digital Media Log. See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction.
+6. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction.
 
 ## Hard Drives and USB Flash Drives
 
@@ -87,7 +87,7 @@ External hard drives and USB flash drives need to be imaged using the FRED becau
 8. A Creating Image dialog window will appear. It will indicate how much time has elapsed during the creation of the image.
 9. Once completed, the Status will read **Image created successfully**. You will also receive notification that the Directory Listing was created successfully. In the image destination folder, you will see the image (.E01), the Directory Listing file (.csv), and the Verify Results file (.txt). The Verify Results Summary contains the same data presented in the Image Summary area below. This information contains the image checksum information needed for the Digital Media database.
 10. Make sure to safely eject the hardware you were imaging. Failure to do so can result in irreparable damage to the media.
-11. Update the item's transfer status in the Digital Media Log. See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction.
+11. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction.
 
 ### Further Information
 
@@ -145,7 +145,7 @@ If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 
     <div class="docs-example">
       <p>image types correspond to numbers; "4" is for MFM images</p>
     </div>
-4. Update the item's transfer status in the Digital Media Log. See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction.
+4. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction.
 
 ### Imaging with the KryoFlux GUI on the FRED
 1. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
@@ -173,7 +173,7 @@ If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 
   - **Glowing** – track is being dumped
   - To get more information about the result of a certain track, move your mouse pointer over it. This will output the result of the operation in the status line.
 7. Click **Start** and note what time imaging started.
-8. Update the item's transfer status in the Digital Media Log. See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction.
+8. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction.
 
 ## Recording Transfers in Digital Media Log
 
