@@ -46,4 +46,4 @@ Make sure the disk images you want to virus check can be seen by the virus check
 8. End root session: `$ exit`
 
 ## Review Log File
-Please check the log file after each scan to ensure all the files have been read and scanned. The results of the the virus scan can be found inside the log file that was created during the imaging/transfer process (i.e. digitalmedia_id.txt).
+Please check the log file after each scan to ensure all the files have been read and scanned. The results of the the virus scan can be found inside the folder contatining the disk image and will follow a similar naming convention to digitalmediaID_scan.txt.
