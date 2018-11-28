@@ -9,7 +9,7 @@ title: "Troubleshooting by Digital Media Type"
 
 #### Cannot determine file system type
 
-Check that you entered the correct format when prompted by the script (cdrom, cdrw, dvd, dvdrw). If this error continues to appear, try mounting the disk image to determine if the contents have been successfully copied. Sometimes a disk image can still be considered successful despite this error.
+Solution: Check that you entered the correct format when prompted by the script (cdrom, cdrw, dvd, dvdrw). If this error continues to appear, try mounting the disk image to determine if the contents have been successfully copied. Sometimes a disk image can still be considered successful despite this error.
 
 #### Sector offset supplied is larger than disk image (maximum: 0)
 
@@ -19,9 +19,9 @@ Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a
 
 #### Error stat(ing) image file (raw_open: image "ref_id.iso" - Not such file or directory)
 
-Solution: Empty folder containing the .img file and run script again.
+Solution: Empty the folder containing the .img file and run the script again.
 
-## 3 and 1 Half Inch and 5 and 1 Quarter Inch Floppy Disks
+## KryoFlux Errors
 
 ### FRED does not recognize the KryoFlux
 
