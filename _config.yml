@@ -12,5 +12,5 @@ pages:
   - ["Inventorying Digital Media", "inventory"]
   - ["Transfer Instructions", "transfer-instructions"]
   - ["Scanning for Viruses", "virus_scan"]
-  - ["Troubleshooting by Digital Media Type", "troubleshooting"]
+  - ["Troubleshooting", "troubleshooting"]
   - ["Error Reporting", "error_reporting"]
