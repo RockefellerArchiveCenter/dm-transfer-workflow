@@ -34,7 +34,7 @@ Other Significant Hardware for Transferring Digital Media Items:
 
 Significant Software for Transferring Digital Media Items:
 
-- **FTK Imager:** Used when imaging hard drives and USB flash drives
+- **FTK Imager:** Used when imaging Hard Drives and USB flash drives
 
 The sections below describe the options available for imaging each specific type of digital media as well as the step-by-step workflows for executing those imaging options.
 
@@ -165,7 +165,7 @@ If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 
       <p>For 3.5” disks, if MFM or FM does not work, try FM Sector Information, CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector image, Apple DOS 400k/800k sector image, or CBM DOS extended sector image.</p>
     </div>
 
-6. KryoFlux is separated into three sub-windows. The upper left window contains the track gird. Each block of the grid represents a track on the disk’s surface. The upper right window contains the track info block, with two more tabs called **Histogram** and **Scatter**. The lower part of the window is the control section, where the current track, drive controls, and the filename are displayed. Below the filename is the format selector which is dependent on profiles. The complete last line of the window is the status line which displays additional information. During dumping, blocks change their color according to the result of the process.
+6. KryoFlux is separated into three sub-windows. The upper left window contains the track grid. Each block of the grid represents a track on the disk’s surface. The upper right window contains the track info block, with two more tabs called **Histogram** and **Scatter**. The lower part of the window is the control section, where the current track, drive controls, and the filename are displayed. Below the filename is the format selector which is dependent on profiles. The complete last line of the window is the status line which displays additional information. During dumping, blocks change their color according to the result of the process.
   - **Green** – track decoded, no errors found
   - **Grey** – noise (or unknown encoding scheme)
   - **Red** – track decoded, error(s) found, reading will be retried
