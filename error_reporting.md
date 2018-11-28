@@ -22,4 +22,4 @@ What error messages were displayed when you encountered a problem? Copy and past
 Is there anything else we should know? Were there any noticeable patterns during the imaging process (i.e. all optical disks from the same folder failed to image/resulted in the same error). Did you try to work around the problem using a different method than those listed in the documentation? What did you try and what were the results? Be as specific as possible.
 
 **Item’s value to parent folder/collection (if known):**
-Knowing the item's (potential) value to the collection will help prioritize troubleshooting. Is this the only known copy of the item? Does a printed copy of this information already exist in the parent folder?
+Is this the only known copy of the item? Does a printed copy of this information already exist in the parent folder?
