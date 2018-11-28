@@ -17,11 +17,11 @@ This error can mean two things: either the disk is corrupt/empty, or you may be 
 
 Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a track listing, continue following the [audio cds](transfer-instructions#audio-cds) transfer workflow. If no track listing appears, the disk may be blank or corrupt.
 
-#### Error stat(ing) image file (raw_open: image "ref_id.iso" - Not such file or directory)
+#### Error stat(ing) image file (raw_open: image "ref_id.iso" - No such file or directory)
 
 Solution: Empty the folder containing the .img file and run the script again.
 
-## KryoFlux Errors
+## 3 and 1 Half Inch and 5 and 1 Quarter Inch Floppy Disks
 
 ### FRED does not recognize the KryoFlux
 
