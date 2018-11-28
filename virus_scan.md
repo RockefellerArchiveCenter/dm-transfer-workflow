@@ -26,7 +26,7 @@ Make sure the disk images you want to virus check can be seen by the virus check
 4. Enter password used to sign in to the FRED
 5. Navigate to the directory containing the virus script: `$ cd /mnt`
 6. Run the virus checking script: `$ ./virus_script.sh`
-7. Enter the FA number, digital media id, and file extension of the disk image
+7. Enter the FA number, digital media ID, and file extension of the disk image
 8. End root session: `$ exit`
 
 ## Checking a Folder for Viruses
@@ -42,8 +42,8 @@ Make sure the disk images you want to virus check can be seen by the virus check
 4. Enter password used to sign in to the FRED
 5. Navigate to the directory containing the virus script: `$ cd /mnt`
 6. Run the virus checking script: `$ ./directory_virus_script.sh`
-7. Enter the FA number and digital media id
+7. Enter the FA number and digital media ID
 8. End root session: `$ exit`
 
 ## Review Log File
-Please check the log file after each scan to ensure all the files have been read and scanned. The results of the the virus scan can be found inside the folder contatining the disk image and will follow a similar naming convention to digitalmediaID_scan.txt.
+Please check the log file after each scan to ensure all the files have been read and scanned. The results of the the virus scan can be found inside the folder containing the disk image and will follow a similar naming convention to digitalmediaID_scan.txt.

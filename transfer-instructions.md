@@ -34,7 +34,7 @@ Other Significant Hardware for Transferring Digital Media Items:
 
 Significant Software for Transferring Digital Media Items:
 
-- **FTK Imager:** Used when imaging Hard Drives and USB flash frives
+- **FTK Imager:** Used when imaging hard drives and USB flash drives
 
 The sections below describe the options available for imaging each specific type of digital media as well as the step-by-step workflows for executing those imaging options.
 
@@ -73,7 +73,7 @@ Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 
 The following describes how to create disk images using FTK Imager on the FRED. FTK Imager is a digital forensics software used to create disk images of digital media separated either at accessioning, processing, or during the Legacy Digital Media Survey. FTK Imager is a different program than the Forensic Toolkit which is usually referred to as FTK.
 
-External hard drives and USB flash drives need to be imaged using the FRED because the FRED has a hardware write blocker. External hard drives and USB Flash drives need to be connected to the Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay needs to be turned ON.
+External hard drives and USB flash drives need to be imaged using the FRED because the FRED has a hardware write blocker. External hard drives and USB flash drives need to be connected to the Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay needs to be turned ON.
 
 ### Imaging Instructions
 
@@ -150,7 +150,7 @@ If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 
 ### Imaging with the KryoFlux GUI on the FRED
 1. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
 2. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
-3. For each image you create, you must change the output file. In order to so, go to **File &gt; Settings**. and navigate to the **Output** tab. Enter the directory the image will be in. Make sure **Logs** is checked.
+3. For each image you create, you must change the output file. In order to do so, go to **File &gt; Settings**. and navigate to the **Output** tab. Enter the directory that the image will be in. Make sure **Logs** is checked.
 4. On the main KryoFlux screen, enter the name of the image in the text field. The image name is constructed with the accession number or FA number followed by the RefID.  
 
     <div class="docs-example">
