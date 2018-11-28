@@ -25,5 +25,5 @@ The steps should be completed in the following order:
 - **Inventorying Digital Media**: Instructions for when and how to inventory digital media and for recording transfers of digital media, using the Digital Media Log
 - **Transfer Instructions**: Instructions for identifying the correct method for transferring digital media as well as steps for imaging different types of digital media
 - **Scanning for Viruses**: Instructions for setting up the virus checking workstation (Ginger) and running the virus checking script to scan for viruses and malware on disk images
-- **Troubleshooting by Digital Media Type**: Description of common imaging error warnings and instructions/solutions for troubleshooting imaging of different types of digital media
+- **Troubleshooting**: Description of common imaging error warnings and instructions/solutions for troubleshooting imaging of different types of digital media
 - **Error Reporting**: Template for describing issues encountered during disk imaging that cannot be resolved with the solutions provided on the troubleshooting page
