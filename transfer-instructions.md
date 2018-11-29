@@ -19,7 +19,7 @@ Disk imaging is currently the primary process by which the content and structure
 
 Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images and do not include file slackspace.
 
-At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), and [3.5 inch floppy disks and 5.25 inch floppy disks](#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks) (recently dated disks that are PC-formatted).
+At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), and [3 1/2 inch floppy disks and 5 1/4 inch floppy disks](#3-1/2-half-inch-and-5-1/4-inch-floppy-disks) (recently dated disks that are PC-formatted).
 
 ### Choosing Transfer Method
 
@@ -30,7 +30,7 @@ Workstations Used to Transfer Digital Media Items:
 - **FRED:** Used to image audio CDs, hard drives and USB flash drives, and 3 1/2 inch and 5 1/4 inch floppy disks; connected to the BitCurator and the Ginger
 
 Other Significant Hardware for Transferring Digital Media Items:
-- **KryoFlux:** Used when imaging 3 1/2 and 5 1/4 floppy disks
+- **KryoFlux:** Used when imaging 3 1/2 inch and 5 1/4 inch floppy disks
 
 Significant Software for Transferring Digital Media Items:
 
@@ -93,7 +93,7 @@ External hard drives and USB flash drives need to be imaged using the FRED becau
 
 A detailed Manual for FTK Imager is available as a PDF. It is located on the M drive or through the web. <http://ad-pdf.s3.amazonaws.com/ImagerUsersGuide.pdf>
 
-## 3 and 1 Half Inch and 5 and 1 Quarter Inch Floppy Disks
+## 3 1/2 Inch and 5 1/4 Inch Floppy Disks
 
 3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. The following describes how to create disk images using KryoFlux.
 
@@ -107,7 +107,7 @@ The following instructions for setup and use of KryoFlux on the FRED would be th
 
 ### KryoFlux Hardware Setup on the FRED
 
-If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 3 1/2 Inch and 5 1/4 Inch Floppy Disks](troubleshooting#3-and-1-half-inch-and-5-and-1-quarter-inch-floppy-disks)
+If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 3 1/2 Inch and 5 1/4 Inch Floppy Disks](troubleshooting#3-1/2-inch-and-5-1/4-inch-floppy-disks)
 
 **Warning: Incorrect setup can damage the KryoFlux and void our warranty.** Follow the setup instructions carefully; for more details and images see the [official documentation](https://kryoflux.com/?page=download#docs) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
 
@@ -120,7 +120,7 @@ If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 
     </div>
 
 4. Always unplug and disconnect from mains when not in use! Do not leave unattended!
-5. When switching between drives (e.g. from imaging 3.5” disks to 5.25” disks) the drive will need to be calibrated.
+5. When switching between drives (e.g. from imaging 3 1/2 inch disks to 5 1/4 inch disks) the drive will need to be calibrated.
 
     <div class="docs-example">
       <p>To calibrate using the command line:</p>
@@ -151,18 +151,18 @@ If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 
 1. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
 2. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 3. For each image you create, you must change the output file. In order to do so, go to **File &gt; Settings**. and navigate to the **Output** tab. Enter the directory that the image will be in. Make sure **Logs** is checked.
-4. On the main KryoFlux screen, enter the name of the image in the text field. The image name is constructed with the accession number or FA number followed by the RefID.  
+4. On the main KryoFlux screen, enter the name of the image in the text field. The image name is the auto-generated ID (digital media ID) created by the Digital Media Log.
 
     <div class="docs-example">
-      <p>Example: 2012_077_2lz4u8myrs or FA012_5a9wf7at7r</p>
+      <p>Example: 2lz4u8myrs or a9wf7at7r</p>
     </div>
 
 5. Choose the appropriate image format from the drop down menu.
 
     <div class="docs-example">
-      <p> If the disk format is unknown, but is a 3.5” floppy, first try “MFM Sector Image.” “FM sector image” and “MFM sector image” support basically any normal disk used for systems that contain a generic FM or MFM FDC.
+      <p> If the disk format is unknown, but is a 3 1/2 inch floppy, first try “MFM Sector Image.” “FM sector image” and “MFM sector image” support basically any normal disk used for systems that contain a generic FM or MFM FDC.
       </p>
-      <p>For 3.5” disks, if MFM or FM does not work, try FM Sector Information, CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector image, Apple DOS 400k/800k sector image, or CBM DOS extended sector image.</p>
+      <p>For 3 1/2 inch disks, if MFM or FM does not work, try FM Sector Information, CBM DOS sector image, AmigaDOS sector image, Amiga DiskSpare sector image, Apple DOS 400k/800k sector image, or CBM DOS extended sector image.</p>
     </div>
 
 6. KryoFlux is separated into three sub-windows. The upper left window contains the track grid. Each block of the grid represents a track on the disk’s surface. The upper right window contains the track info block, with two more tabs called **Histogram** and **Scatter**. The lower part of the window is the control section, where the current track, drive controls, and the filename are displayed. Below the filename is the format selector which is dependent on profiles. The complete last line of the window is the status line which displays additional information. During dumping, blocks change their color according to the result of the process.
