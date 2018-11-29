@@ -5,7 +5,7 @@ title: "Inventorying Digital Media Items"
 
 ## Overview
 
-Digital media items should be inventoried in the Digital Media Log as they are encountered during processing. In order to save a digital media item record, you must supply the ArchivesSpace RefId of the appropriate item-level component representing the digital media item in ArchivesSpace and retrieve the item and resource titles. For minimal processing, you may supply the RefId of the series-level or subseries-level component. Digital media items should be described as a sibling relationship to their parent units (e.g. file for standard processing) and should have the same box and/or folder instances. Do not create a child relationship to represent the association between the digital media item and the parent unit.
+Digital media items should be inventoried in the Digital Media Log as they are encountered during processing. In order to save a digital media item record, you must supply the ArchivesSpace Ref ID of the appropriate item-level component representing the digital media item in ArchivesSpace and retrieve the item and resource titles. For minimal processing, you may supply the Ref ID of the series-level or subseries-level component. Digital media items should be described as a sibling relationship to their parent units (e.g. file for standard processing) and should have the same box and/or folder instances. Do not create a child relationship to represent the association between the digital media item and the parent unit.
 
 ## Setup
 
@@ -19,7 +19,7 @@ Below are instructions for using the Digital Media Log to create and save a digi
 
 1.  On the homepage for the Digital Media Log, click **Add Digital Media Item**. (Button should be located at the bottom of the homepage, below the list of digital media items)
 2.  A record will generate for the digital media item and the digital media item **ID** field will autopopulate.
-3.  Copy the ArchivesSpace RefId for the parent component from ArchivesSpace into the **ArchivesSpace RefID** field and click **Find in ArchivesSpace**. (The parent component is the description of the digital media item in ArchivesSpace that was created during processing. Make sure that the component has been saved in ArchivesSpace before attempting this step.)
+3.  Copy the ArchivesSpace Ref ID for the parent component from ArchivesSpace into the **ArchivesSpace Ref ID** field and click **Find in ArchivesSpace**. (The parent component is the description of the digital media item in ArchivesSpace that was created during processing. Make sure that the component has been saved in ArchivesSpace before attempting this step.)
 4.  The **Parent Component** and **Parent Resource** fields should autopopulate. If they do not, contact the administrator.
 5.  Choose the appropriate format from the drop down menu in the **Format** field.
 6.  Default entry for **Transfer Status** field - **Not Transferred** - will autopopulate. This field along with the **Transfer Method** and **Date Transferred Field** can be updated after the digital media item record is saved. (You will want to return to the digital media item after transfer actions have been completed or attempted)
