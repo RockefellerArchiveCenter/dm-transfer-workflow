@@ -34,7 +34,7 @@ Other Significant Hardware for Transferring Digital Media Items:
 
 Significant Software for Transferring Digital Media Items:
 
-- **FTK Imager:** Used when imaging Hard Drives and USB flash drives
+- **FTK Imager:** Used when imaging hard drives and USB flash drives
 
 The sections below describe the options available for imaging each specific type of digital media as well as the step-by-step workflows for executing those imaging options.
 
