@@ -11,7 +11,7 @@ An item must be inventoried in the Digital Media Log before it is transferred. S
 
 Newly created disk transfers are stored on Ginger (the workstation used for [virus checking](virus_scan)); this is accessible via mounted shares on the FRED workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On Ginger and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
 
-Note that the BitCurator station is not connected to Ginger. Disk transfers created on the BitCurator (digital media items imaged using BitCurator include [CDs and DVDs)](#cds-and-dvds) must first be moved to the FRED, and then once on the FRED, they can be moved to Ginger to be scanned for viruses - the next stage in the transfer workflow.
+Note that the BitCurator station is not connected to Ginger. Disk transfers created on the BitCurator must first be moved to the FRED, and then once on the FRED, they can be moved to Ginger to be scanned for viruses - the next stage in the transfer workflow.
 
 ### Disk Imaging
 
@@ -91,7 +91,7 @@ External hard drives and USB flash drives need to be imaged using the FRED becau
 
 ### Further Information
 
-A detailed Manual for FTK Imager is available as a PDF. It is located on the M drive or through the web. <http://ad-pdf.s3.amazonaws.com/ImagerUsersGuide.pdf>
+A detailed manual for FTK Imager is available as a PDF. It is located on the M drive or through the web. <http://ad-pdf.s3.amazonaws.com/ImagerUsersGuide.pdf>
 
 ## 3 and a Half Inch and 5 and One Quarter Inch Floppy Disks
 
@@ -107,7 +107,7 @@ The following instructions for setup and use of KryoFlux on the FRED would be th
 
 ### KryoFlux Hardware Setup on the FRED
 
-If you encounter issues setting up or using the KryoFlux, consult [Kryoflux Errors](troubleshooting#kryoflux-errors) on the troubleshooting page.
+If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Errors](troubleshooting#kryoflux-errors) on the troubleshooting page.
 
 **Warning: Incorrect setup can damage the KryoFlux and void our warranty.** Follow the setup instructions carefully; for more details and images see the [official documentation](https://kryoflux.com/?page=download#docs) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
 
