@@ -65,7 +65,7 @@ Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 1. On the FRED, open **Exact Audio Copy** and insert the CD into the optical disk drive.
 2. In the **CD Title field**, enter the digital media ID of the CD. Remove text from the **CD author field**.
 3. On the lefthand side, click the button that says **IMG**. This will create 1 uncompressed WAV file (containing all tracks) and a CUE file.
-4. Select the appropriate folder to store the files and click **Save**. See [Destination Folders and File Names](#destination_folders-and-file-names) for information on where files should be stored.
+4. Select the appropriate folder to store the files and click **Save**. See [Destination Folders and File Names](#destination-folders-and-file-names) for information on where files should be stored.
 5. Exact Audio Copy will begin ripping tracks and create a log file.
 6. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction).
 
