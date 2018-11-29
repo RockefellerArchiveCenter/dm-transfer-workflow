@@ -11,7 +11,7 @@ An item must be inventoried in the Digital Media Log before it is transferred. S
 
 Newly created disk transfers are stored on Ginger (the workstation used for [virus checking](virus_scan)); this is accessible via mounted shares on the FRED workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On Ginger and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession number.
 
-Note that the BitCurator station is not connected to Ginger. Disk transfers created on the BitCurator (digital media items imaged using BitCurator include [CDs and DVDs](#cds_and_dvds)) must first be moved to the FRED, and then once on the FRED, they can be moved to Ginger to be scanned for viruses - the next stage in the transfer workflow.
+Note that the BitCurator station is not connected to Ginger. Disk transfers created on the BitCurator (digital media items imaged using BitCurator include [CDs and DVDs](#cds_and_dvds) ) must first be moved to the FRED, and then once on the FRED, they can be moved to Ginger to be scanned for viruses - the next stage in the transfer workflow.
 
 ### Disk Imaging
 
@@ -19,7 +19,7 @@ Disk imaging is currently the primary process by which the content and structure
 
 Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images and do not include file slackspace.
 
-At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), and [3 1/2 inch floppy disks and 5 1/4 inch floppy disks](#3-and-a-half-inch-and-5-and-One-Quarter-Inch-Floppy-Disks) (recently dated disks that are PC-formatted).
+At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), and [3 1/2 inch floppy disks and 5 1/4 inch floppy disks](#3-and-a-half-inch-and-5-and-one-quarter-inch-floppy-disks) (recently dated disks that are PC-formatted).
 
 ### Choosing Transfer Method
 
