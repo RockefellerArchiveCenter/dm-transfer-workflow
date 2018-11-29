@@ -19,7 +19,7 @@ Disk imaging is currently the primary process by which the content and structure
 
 Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images and do not include file slackspace.
 
-At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), and [3 1/2 inch floppy disks and 5 1/4 inch floppy disks](#3-1/2-half-inch-and-5-1/4-inch-floppy-disks) (recently dated disks that are PC-formatted).
+At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB Flash drives](#hard-drives-and-usb-flash-drives), and [3 1/2 inch floppy disks and 5 1/4 inch floppy disks](#3-and-a-half-inch-and-5-and-One-Quarter-Inch-Floppy-Disks) (recently dated disks that are PC-formatted).
 
 ### Choosing Transfer Method
 
@@ -93,7 +93,7 @@ External hard drives and USB flash drives need to be imaged using the FRED becau
 
 A detailed Manual for FTK Imager is available as a PDF. It is located on the M drive or through the web. <http://ad-pdf.s3.amazonaws.com/ImagerUsersGuide.pdf>
 
-## 3 1/2 Inch and 5 1/4 Inch Floppy Disks
+## 3 and a Half Inch and 5 and One Quarter Inch Floppy Disks
 
 3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. The following describes how to create disk images using KryoFlux.
 
