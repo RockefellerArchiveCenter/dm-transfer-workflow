@@ -19,7 +19,7 @@ Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a
 
 Solution: Empty the folder containing the .img file and run the script again.
 
-If you have tried following the instructions provided for imaging script errors but still cannot successfully implement the script, use the [Advanced Troubleshooting Template](error_reporting#advanced_troubleshooting_template) to communicate the problems you are experiencing and the actions you have attempted to the Advanced Troubleshooting Team.
+If you have tried following the instructions provided for imaging script errors but still cannot successfully implement the script, use the [Advanced Troubleshooting Template](error_reporting#advanced-troubleshooting-template) to communicate the problems you are experiencing and the actions you have attempted to the Advanced Troubleshooting Team.
 
 ## KryoFlux Errors
 
@@ -56,4 +56,4 @@ While the KryoFlux is operating, there may be exceptions that trigger warnings o
 - Sector truncated. Sector data is incomplete, decoding stopped. Reason is another sync/mark was found in the data block. Almost certainly protection that a sector image can't deal with; sector is not included in the image; error.
 - Sector offset found is illegal. Sector is still decoded; warning only.
 
-If you have tried following the instructions provided for KryoFlux errors but still cannot successfully use the KryoFlux, use the [Advanced Troubleshooting Template](error_reporting#advanced_troubleshooting_template) to communicate the problems you are experiencing and the actions you have attempted to the Advanced Troubleshooting Team.
+If you have tried following the instructions provided for KryoFlux errors but still cannot successfully use the KryoFlux, use the [Advanced Troubleshooting Template](error_reporting#advanced-troubleshooting-template) to communicate the problems you are experiencing and the actions you have attempted to the Advanced Troubleshooting Team.
