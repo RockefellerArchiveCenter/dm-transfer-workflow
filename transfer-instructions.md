@@ -56,7 +56,7 @@ In general, optical disk images will be forensically imaged on BitCurator. Foren
 5. BitCurator will then image the disk
 6. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction).
 
-If you receive an error message from BitCurator when attempting to complete any of the steps above consult [Imaging Script Errors](troubleshooting#imaging-script-errors) on the troubleshooting page.
+If you receive an error message from BitCurator when attempting to complete any of the steps above consult [Troubleshoot CDs and DVDs](troubleshooting#cds-and-dvds).
 
 ### Audio CDs
 
@@ -65,8 +65,8 @@ Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 1. On the FRED, open **Exact Audio Copy** and insert the CD into the optical disk drive.
 2. In the **CD Title field**, enter the digital media ID of the CD. Remove text from the **CD author field**.
 3. On the lefthand side, click the button that says **IMG**. This will create 1 uncompressed WAV file (containing all tracks) and a CUE file.
-4. Select the appropriate folder to store the files. See [Destination Folders and File Names](#destination_folders-and-file-names) for information on where files should be stored.
-5. When copying is complete, click **Create Log File**.
+4. Select the appropriate folder to store the files and click **Save**. See [Destination Folders and File Names](#destination_folders-and-file-names) for information on where files should be stored.
+5. Exact Audio Copy will begin ripping tracks and create a log file.
 6. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction).
 
 ## Hard Drives and USB Flash Drives
@@ -107,7 +107,7 @@ The following instructions for setup and use of KryoFlux on the FRED would be th
 
 ### KryoFlux Hardware Setup on the FRED
 
-If you encounter issues setting up or using the KryoFlux, consult [Kryoflux Errors](troubleshooting#kryoflux-errors) on the troubleshooting page.
+If you encounter issues setting up or using the KryoFlux, consult [Troubleshoot 3 1/2 Inch and 5 1/4 Inch Floppy Disks](troubleshooting#3-1/2-inch-and-5-1/4-inch-floppy-disks)
 
 **Warning: Incorrect setup can damage the KryoFlux and void our warranty.** Follow the setup instructions carefully; for more details and images see the [official documentation](https://kryoflux.com/?page=download#docs) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
 
