@@ -5,7 +5,7 @@ title: "Inventorying Digital Media Items"
 
 ## Overview
 
-Digital media items should be inventoried in the Digital Media Log as they are encountered during processing. In order to save a digital media item record, you must supply the ArchivesSpace Ref ID of the appropriate item-level component representing the digital media item in ArchivesSpace and retrieve the item and resource titles. For minimal processing, you may supply the Ref ID of the series-level or subseries-level component. Digital media items should be described as a sibling relationship to their parent units (e.g. file for standard processing) and should have the same box and/or folder instances. Do not create a child relationship to represent the association between the digital media item and the parent unit.
+Digital media items should be inventoried in the Digital Media Log as they are encountered during processing. In order to save a digital media item record, you must supply the ArchivesSpace Ref ID of the appropriate item-level component representing the digital media item in ArchivesSpace and retrieve the item and resource titles. For [minimal processing](processing-manual/#processing-levels), you may supply the Ref ID of the series-level or subseries-level component. Digital media items should be described as a sibling relationship to their parent units (e.g. file for [standard processing](processing-manual/#processing-levels)) and should have the same box and/or folder instances. Do not create a child relationship to represent the association between the digital media item and the parent unit.
 
 ## Setup
 

@@ -9,15 +9,13 @@ An item must be inventoried in the Digital Media Log before it is transferred. S
 
 ### Destination Folders and File Names
 
-Newly created disk transfers are stored on Ginger (the workstation used for [virus checking](virus_scan)); this is accessible via mounted shares on the FRED workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On Ginger and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
+Newly created disk transfers are stored on the [virus checking](virus_scan) workstation; this is accessible via mounted shares on the FRED (Forensic Recovery of Evidence Device) workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On the virus checking workstation and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
 
-Note that the BitCurator station is not connected to Ginger. Disk images created on the BitCurator must first be moved to the FRED, and then once on the FRED, they can be moved to Ginger to be scanned for viruses - the next stage in the transfer workflow.
+Note that the BitCurator station is not connected to the virus checking workstation. Disk images created on the BitCurator must first be moved to the FRED, and then once on the FRED, they can be moved to the virus checking workstation to be scanned for viruses - the next stage in the transfer workflow.
 
 ### Disk Imaging
 
-Disk imaging is currently the primary process by which the content and structure of a digital media item is transfered at the RAC. By imaging legacy digital media, archivists can help ensure the long term preservation and management of records stored on devices vulnerable to deterioration and obsolescence.
-
-Disk images are single files containing the complete content and structure representing a data storage medium or device. There are different types of images. Forensic images perfectly replicate the structure and contents of a storage device and allow the viewing of deleted files and slackspace (i.e, the unused space in a disk cluster). Logical images \[AD1\] are not true forensic images and do not include file slackspace.
+Disk imaging is currently the primary process by which the content and structure of a digital media item is transfered at the RAC. Disk images are single files containing the complete content and structure representing a data storage medium or device.By imaging legacy digital media, archivists can help ensure the long term preservation and management of records stored on devices vulnerable to deterioration and obsolescence.
 
 At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB flash drives](#hard-drives-and-usb-flash-drives), and [3 1/2 inch floppy disks and 5 1/4 inch floppy disks](#3-and-a-half-inch-and-5-and-one-quarter-inch-floppy-disks) (recently dated disks that are PC-formatted).
 
@@ -27,7 +25,7 @@ The programs and hardware used to create disk images will vary depending on the 
 
 Workstations Used to Transfer Digital Media Items:
 - **BitCurator:** Used to image CDs and DVDs; connected to the FRED
-- **FRED:** Used to image audio CDs, hard drives and USB flash drives, and 3 1/2 inch and 5 1/4 inch floppy disks; connected to the BitCurator and the Ginger
+- **FRED:** Used to image audio CDs, hard drives and USB flash drives, and 3 1/2 inch and 5 1/4 inch floppy disks; connected to the BitCurator machine and the virus checking workstation
 
 Other Significant Hardware for Transferring Digital Media Items:
 - **KryoFlux:** Used when imaging 3 1/2 inch and 5 1/4 inch floppy disks
@@ -89,10 +87,6 @@ External hard drives and USB flash drives need to be imaged using the FRED becau
 10. Make sure to safely eject the hardware you were imaging. Failure to do so can result in irreparable damage to the media.
 11. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction).
 
-### Further Information
-
-A detailed manual for FTK Imager is available as a PDF. It is located on the M drive or through the web. <http://ad-pdf.s3.amazonaws.com/ImagerUsersGuide.pdf>
-
 ## 3 and a Half Inch and 5 and One Quarter Inch Floppy Disks
 
 3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. The following describes how to create disk images using KryoFlux.
@@ -113,12 +107,7 @@ If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Erro
 
 1. On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
 2. Connect KryoFlux to the FRED using the USB port in the back of the tower.
-3. Connect the drive to power.
-
-    <div class="docs-example">
-      <p>Important! Always make the drive – board - connection first, then plug the power (PSU & USB). <strong>Power always comes last! You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Never ever connect or remove the floppy data cable while the drive and/or the board are still powered.</strong></p>
-    </div>
-
+3. Connect the drive to power. **Important! Never ever connect or remove the floppy data cable while the drive and/or the board are still powered. Power always comes last! You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Always make the drive – board - connection first, then plug the power (PSU & USB).**
 4. Always unplug and disconnect from mains when not in use! Do not leave unattended!
 5. When switching between drives (e.g. from imaging 3 1/2 inch disks to 5 1/4 inch disks) the drive will need to be calibrated.
 
@@ -128,7 +117,7 @@ If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Erro
         <li>Open the command prompt and navigate to the DTC folder</li>
         <li>Run <code>$ dtc -c2</code></li>
       </ol>
-      <p>To calibrate using the GUI:</p>
+      </br><p>To calibrate using the GUI:</p>
       <ol>
         <li>Open the GUI and select the “Drive” tab at the top of the window</li>
         <li>Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference <a href="https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3">Understanding Drive 1/0</a> in the “Archivists Guide to KyroFlux”</li>
@@ -177,10 +166,7 @@ If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Erro
 
 ## Recording Transfers in Digital Media Log
 
-1. When you have finished transferring a digital media item, change the transfer status to **Transferred - Failed** or **Transferred - Success** as appropriate.
-    <div class="docs-example">
-      <p>Note: If transfer fails initially you may need to try again; appropriate number of transfer attempts is dependent upon type of media.</p>
-    </div>
+1. When you have finished transferring a digital media item, change the transfer status to **Transferred - Failed** or **Transferred - Success** as appropriate. Note: If transfer fails initially you may need to try again; appropriate number of transfer attempts is dependent upon type of media.
 2. Record the transfer method. Record the successful method if multiple methods were attempted.
 3. When you changed the transfer status from **Not Transferred**, the **Date Transferred** autopopulated with today's date. Correct if needed.
 4. Record whether the physical digital media item is to be retained due to artifactual value or disposed of. This is to record the disposition of the physical media item and not the appraisal of the contents of the digital media item.
