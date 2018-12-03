@@ -9,7 +9,7 @@ An item must be inventoried in the Digital Media Log before it is transferred. S
 
 ### Destination Folders and File Names
 
-Newly created disk transfers are stored on the [virus checking](virus_scan) workstation; this is accessible via mounted shares on the FRED (Forensic Recovery of Evidence Device) workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On the virus checking workstation and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
+Newly created disk transfers are stored on the [virus checking](virus_scan) workstation; this is accessible via mounted shares on the FRED ([Forensic Recovery of Evidence Device](https://digitalintelligence.com/products/fred/) workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On the virus checking workstation and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
 
 Note that the BitCurator station is not connected to the virus checking workstation. Disk images created on the BitCurator must first be moved to the FRED, and then once on the FRED, they can be moved to the virus checking workstation to be scanned for viruses - the next stage in the transfer workflow.
 
