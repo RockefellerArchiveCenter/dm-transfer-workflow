@@ -48,7 +48,7 @@ In general, optical disk images will be forensically imaged on BitCurator. Foren
 4. BitCurator will ask you to select from one of the following formats: cdrom, cdrw, dvd, dvdrw; in the command prompt, enter your disk's format
 
     <div class="docs-example">
-      <p>example: <code>$ cdrw</code></p>
+      <p>Example: <code>$ cdrw</code></p>
     </div>
 
 5. BitCurator will then image the disk
