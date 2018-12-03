@@ -117,7 +117,9 @@ If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Erro
         <li>Open the command prompt and navigate to the DTC folder</li>
         <li>Run <code>$ dtc -c2</code></li>
       </ol>
-      <p><br/>To calibrate using the GUI:</p>
+      <p>
+      <br/>To calibrate using the GUI:
+      </p>
       <ol>
         <li>Open the GUI and select the “Drive” tab at the top of the window</li>
         <li>Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference <a href="https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3">Understanding Drive 1/0</a> in the “Archivists Guide to KyroFlux”</li>
