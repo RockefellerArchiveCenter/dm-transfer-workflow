@@ -18,7 +18,7 @@ The steps should be completed in the following order:
 1. Inventory digital media item using the Digital Media Log
 2. Transfer digital media item using appropriate hardware and tools (If you experience difficulties using the available tools for transferring digital media items, consult the [Troubleshooting Page](troubleshooting) and/or use the [Advanced Troubleshooting Template](error_reporting#advanced_troubleshooting_template) to communicate your issues to the Advanced Troubleshooting Team)
 3. Document transfer using the Digital Media Log (If digital media item failed to transfer, you cannot proceed to the next step)
-4. Scan digital media item for viruses using the virus checking workstation (Ginger workstation) 
+4. Scan digital media item for viruses using the virus checking workstation (Ginger machine)
 
 ## Documentation Components
 

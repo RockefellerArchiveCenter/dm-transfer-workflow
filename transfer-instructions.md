@@ -9,7 +9,7 @@ An item must be inventoried in the Digital Media Log before it is transferred. S
 
 ### Destination Folders and File Names
 
-Newly created disk transfers are stored on the [virus checking](virus_scan) workstation; this is accessible via mounted shares on the FRED ([Forensic Recovery of Evidence Device](https://digitalintelligence.com/products/fred/) workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On the virus checking workstation and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
+Newly created disk transfers are stored on the [virus checking](virus_scan) workstation; this is accessible via mounted shares on the FRED ([Forensic Recovery of Evidence Device](https://digitalintelligence.com/products/fred/)) workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On the virus checking workstation and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
 
 Note that the BitCurator station is not connected to the virus checking workstation. Disk images created on the BitCurator must first be moved to the FRED, and then once on the FRED, they can be moved to the virus checking workstation to be scanned for viruses - the next stage in the transfer workflow.
 
@@ -107,7 +107,7 @@ If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Erro
 
 1. On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
 2. Connect KryoFlux to the FRED using the USB port in the back of the tower.
-3. Connect the drive to power. **Important! Never ever connect or remove the floppy data cable while the drive and/or the board are still powered. Power always comes last! You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Always make the drive – board - connection first, then plug the power (PSU & USB).**
+3. Connect the drive to power. **Important! Never ever connect or remove the floppy data cable while the drive and/or the board are still powered. Power always comes last!** You are connecting two systems with different grounds, so ground (connected via the floppy data cable) must always come first. Always make the drive – board - connection first, then plug the power (PSU & USB).
 4. Always unplug and disconnect from mains when not in use! Do not leave unattended!
 5. When switching between drives (e.g. from imaging 3 1/2 inch disks to 5 1/4 inch disks) the drive will need to be calibrated.
 
@@ -117,7 +117,7 @@ If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Erro
         <li>Open the command prompt and navigate to the DTC folder</li>
         <li>Run <code>$ dtc -c2</code></li>
       </ol>
-      </br><p>To calibrate using the GUI:</p>
+      <p></br>To calibrate using the GUI:</p>
       <ol>
         <li>Open the GUI and select the “Drive” tab at the top of the window</li>
         <li>Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference <a href="https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3">Understanding Drive 1/0</a> in the “Archivists Guide to KyroFlux”</li>
