@@ -15,7 +15,7 @@ Note that the BitCurator station is not connected to the virus checking workstat
 
 ### Disk Imaging
 
-Disk imaging is currently the primary process by which the content and structure of a digital media item is transfered at the RAC. Disk images are single files containing the complete content and structure representing a data storage medium or device. By imaging legacy digital media, archivists can help ensure the long term preservation and management of records stored on devices vulnerable to deterioration and obsolescence.
+Disk imaging is currently the primary process by which the content and structure of a digital media item are transferred at the RAC. Disk images are single files containing the complete content and structure representing a data storage medium or device. By imaging legacy digital media, archivists can help ensure the long term preservation and management of records stored on devices vulnerable to deterioration and obsolescence.
 
 At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB flash drives](#hard-drives-and-usb-flash-drives), and [3 1/2 inch floppy disks and 5 1/4 inch floppy disks](#3-and-a-half-inch-and-5-and-one-quarter-inch-floppy-disks) (recently dated disks that are PC-formatted).
 
