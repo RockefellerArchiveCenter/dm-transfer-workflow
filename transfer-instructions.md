@@ -119,7 +119,7 @@ To calibrate using the command line:
 To calibrate using the GUI:
 
 1. Open the GUI and select the “Drive” tab at the top of the window
-2. Select either Drive 0 or Drive 1 in the drop-down menu. Note: the drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference [Understanding Drive 1/0](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3) in the “Archivists Guide to KyroFlux”
+2. Select either Drive 0 or Drive 1 in the drop-down menu. **Note:** The drive will not calibrate if the wrong drive is selected. If you are unsure of which Drive to select, reference [Understanding Drive 1/0](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.s1zf81h6kdr3) in the “Archivists Guide to KyroFlux”
 3. Select "Calibrate" from the drop-down menu
 
 ### Imaging with the KryoFlux using the Command Line on the FRED
