@@ -1,19 +1,9 @@
 # RAC Digital Media Inventory & Transfer Workflow Documentation
-Documentation for digital media inventorying and transfer workflows using the [Digital Media Log](https://github.com/RockefellerArchiveCenter/dm_log) at the Rockefeller Archive Center.
 
-[See this on Read the Docs](http://digital-media-transfer-workflow.readthedocs.io/en/latest/)
+Documentation for digital media inventorying and transfer workflows using the [Digital Media Log](https://github.com/RockefellerArchiveCenter/dm_log) at the Rockefeller Archive Center. Digital media encompasses the various data storage devices records creators use to store born digital material. Examples of the types of digital media items that this documentation addresses include optical disks, hard drives and flash drives, and 3 1/2 and 5 1/4 floppy disks.
 
+The RAC developed the Digital Media Inventory & Transfer Workflows as part of its efforts to preserve and provide access to archival records, regardless of format.
 
-## Requirements
-[Sphinx](http://www.sphinx-doc.org/en/1.4.8/)
+## Accessing the guide
 
-## Installation
-To create HTML pages:
-```
-$ git clone https://github.com/RockefellerArchiveCenter/transfer_workflow.git
-$ cd transfer_workflow
-$ make html
-```
-
-## License
-CC0. See LICENSE.md
+This content is accessible on [docs.rockarch.org](docs.rockarch.org), the central platform for the documentation of the Rockefeller Archive Center.
