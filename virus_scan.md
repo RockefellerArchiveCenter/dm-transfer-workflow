@@ -21,20 +21,20 @@ This workflow should be used for .iso & .img files.
 3. Mount the network: `$ mount -o username=freduser //fredIPaddress/ginger /mnt`_(The IP address for connecting to the FRED on the quarantine network can be found on the ["System Info Sheets/FRED Info Sheet"](/info-sheets/fred-info-sheet))_
 4. Enter password used to sign in to the FRED
 5. Navigate to the directory containing the virus script: `$ cd /mnt`
-6. Run the virus checking script: `$ ./virus_script.sh`
+6. Run the virus checking script: `$ ./virus_scan.sh`(View this script on [GitHub](https://github.com/RockefellerArchiveCenter/imaging_scripts/blob/master/virus_scan.sh))
 7. Enter the FA number, digital media ID, and file extension of the disk image
 8. End root session: `$ exit`
 
 ## Checking a Folder for Viruses
 
-This workflow should be used for .wav files (audio cds) and senarios where a disk image is not present.
+This workflow should be used for .wav files (audio cds) and scenarios where a disk image is not present.
 
 1. Switch to root: `$ sudo su`
 2. Enter password used to sign in to the virus checking workstation
 3. Mount the network: `$ mount -o username=freduser //fredIPaddress/ginger /mnt`_(The IP address for connecting to the FRED on the quarantine network can be found on the ["System Info Sheets/FRED Info Sheet"](/info-sheets/fred-info-sheet))_
 4. Enter password used to sign in to the FRED
 5. Navigate to the directory containing the virus script: `$ cd /mnt`
-6. Run the virus checking script: `$ ./directory_virus_script.sh`
+6. Run the virus checking script: `$ ./directory_virus_scan.sh` (View this script on [GitHub](https://github.com/RockefellerArchiveCenter/imaging_scripts/blob/master/directory_virus_scan.sh))
 7. Enter the FA number and digital media ID
 8. End root session: `$ exit`
 

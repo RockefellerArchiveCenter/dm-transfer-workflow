@@ -44,7 +44,7 @@ In general, optical disk images will be forensically imaged on BitCurator. Foren
 
 1. Insert the disk into the drive
 2. Open the command line and navigate to the desktop by entering: `$ cd Desktop`
-3. In the command prompt, run the bash script `$ ./optical_disks.sh`
+3. In the command prompt, run the bash script `$ ./optical_disks.sh` (View this script on [GitHub](https://github.com/RockefellerArchiveCenter/imaging_scripts/blob/master/optical_disks.sh))
 4. BitCurator will ask you to select from one of the following formats: cdrom, cdrw, dvd, dvdrw; in the command prompt, enter your disk's format
 
     <div class="docs-example">
