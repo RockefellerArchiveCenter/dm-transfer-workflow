@@ -103,7 +103,7 @@ The following instructions for setup and use of KryoFlux on the FRED would be th
 
 If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Errors](troubleshooting#kryoflux-errors) on the troubleshooting page.
 
-**Warning: Incorrect setup can damage the KryoFlux and void our warranty.** Follow the setup instructions carefully; for more details and images see the [official documentation](https://kryoflux.com/?page=download#docs) or the [Setup and Installation](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#heading=h.jvaxyk94isq6) page of the Archivist's Guide to KryoFlux.
+**Warning: Incorrect setup can damage the KryoFlux and void our warranty.** Follow the setup instructions carefully; for more details and images see the [official documentation](https://kryoflux.com/?page=download#docs) or the [Setup and Installation](https://github.com/archivistsguidetokryoflux/archivists-guide-to-kryoflux/tree/master/1%20PART%20ONE%20Getting%20Started) section of the Archivist's Guide to KryoFlux.
 
 1. On a flat, non-conductive surface, connect the drive to the KryoFlux using the floppy data cable.
 2. Connect KryoFlux to the FRED using the USB port in the back of the tower.
