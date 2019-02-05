@@ -2,9 +2,7 @@ public: true
 type: "docs"
 category: "preservation"
 tags:
-  - "digital preservation"
-  - "processing"
-  - "digital media log"
+  - "workflow"
 title: "Digital Media Transfer Workflow"
 description: "Instructions for inventorying and transferring digital media, using the Digital Media Log"
 pages:
