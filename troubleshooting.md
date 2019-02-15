@@ -64,7 +64,7 @@ If you have tried following the instructions provided for KryoFlux errors but st
 If the virus scan log file shows no data is being read or scanned, try to scan the disk image using ClamTK, which is installed on the BitCurator machine. This error has occurred most frequently when attempting to scan a disk image of a DVD, although not *all* DVDs have resulted with this error.
 
 1. Disconnect the Ethernet cord on the BitCurator machine
-2. Navigate to Ginger network using the file explorer and locate the disk image on the quarantined network
+2. Navigate to the virus checking workstation (Ginger) network using the file explorer and locate the disk image on the quarantined network
 3. Right click the disk image file and select **Open with... Disk Image Mounter**, the mounted disk image should appear on the left-hand side of the screen
 4. Run ClamTK with sudo permissions by opening a terminal window by typing `sudo clamtk` + ENTER
 5. In ClamTK, select **Scan a directory**
