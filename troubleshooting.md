@@ -57,3 +57,18 @@ While the KryoFlux is operating, there may be exceptions that trigger warnings o
 - Sector offset found is illegal. Sector is still decoded; warning only.
 
 If you have tried following the instructions provided for KryoFlux errors but still cannot successfully use the KryoFlux, use the [Advanced Troubleshooting Template](error_reporting#advanced-troubleshooting-template) to communicate the problems you are experiencing and the actions you have attempted to the Advanced Troubleshooting Team.
+
+## Virus Script Errors
+
+### Data Scanned and Data Read = 0MB
+If the virus scan log file shows no data is being read or scanned, try to scan the disk image using ClamTK, which is installed on the BitCurator machine. This error has occurred most frequently when attempting to scan a disk image of a DVD, although not *all* DVDs have resulted with this error.
+
+1. Disconnect the Ethernet cord on the BitCurator machine
+2. Navigate to the virus checking workstation (Ginger) network using the file explorer and locate the disk image on the quarantined network
+3. Right click the disk image file and select **Open with... Disk Image Mounter**, the mounted disk image should appear on the left-hand side of the screen
+4. Run ClamTK with sudo permissions by opening a terminal window by typing `sudo clamtk` + ENTER
+5. In ClamTK, select **Scan a directory**
+6. Select the mounted disk image, then select the parent directory to run the scan
+7. Check the results of the scan by selecting the **History** icon in ClamTK, select today's date, and click **View** (located on the bottom left of the screen)
+8. Copy the results of the virus scan, paste them into a .txt file
+9. Save the .txt file as `dmID_scan.txt` inside the folder containing the disk image and log file
