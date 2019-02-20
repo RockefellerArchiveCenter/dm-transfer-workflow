@@ -65,10 +65,15 @@ If the virus scan log file shows no data is being read or scanned, try to scan t
 
 1. Disconnect the Ethernet cord on the BitCurator machine
 2. Navigate to the virus checking workstation (Ginger) network using the file explorer and locate the disk image on the quarantined network
-3. Right click the disk image file and select **Open with... Disk Image Mounter**, the mounted disk image should appear on the left-hand side of the screen
+3. Right click the disk image file and select **Open with... Disk Image Mounter**, the mounted disk image should appear on the left-hand side of the screen. Click on the mounted disk image so that an arrow symbol appears next to it, this will ensure that ClamTK will be able to see the mounted disk image.
 4. Run ClamTK with sudo permissions by opening a terminal window and typing `sudo clamtk` + ENTER
 5. In ClamTK, select **Scan a directory**
 6. Select the mounted disk image, then select the parent directory to run the virus scan
 7. Check the results of the virus scan by double-clicking the **History** icon in ClamTK, select today's date, and click **View** (located on the bottom left of the screen)
 8. Copy the results of the virus scan, paste them into a new .txt file
 9. Save the .txt file as `dmID_scan.txt` inside the folder containing the disk image and log file
+
+If you are using the BitCurator machine to virus check many disk images, be sure to clear the mount points to avoid confusion:
+1. Open a new terminal window
+2. `sudo su`
+3. `losetup -D`
