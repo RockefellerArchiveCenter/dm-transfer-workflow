@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "Rockefeller Archive Center Digital Media Transfer Workflow"
+title: "Digital Media Transfer Workflow"
 ---
 
 ## Digital Media Transfer Overview
