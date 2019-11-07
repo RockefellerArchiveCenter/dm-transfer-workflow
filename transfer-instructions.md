@@ -5,11 +5,11 @@ title: "Transfer Instructions"
 
 ## Transfer Overview & Setup
 
-An item must be inventoried in the Digital Media Log before it is transferred. See instructions for [Inventorying Digital Media Items](inventory). When a digital media item is imaged or otherwise has its contents transferred, this must be [recorded in the Digital Media Log](#recording-transfers-in-digital-media-log).
+An item must be inventoried in the Digital Media Log before it is transferred. See instructions for [Inventorying Digital Media Items](/dm-transfer-workflow/inventory). When a digital media item is imaged or otherwise has its contents transferred, this must be [recorded in the Digital Media Log](#recording-transfers-in-digital-media-log).
 
 ### Destination Folders and File Names
 
-Newly created disk transfers are stored on the [virus checking](virus_scan) workstation; this is accessible via mounted shares on the FRED ([Forensic Recovery of Evidence Device](https://digitalintelligence.com/products/fred/)) workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On the virus checking workstation and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
+Newly created disk transfers are stored on the [virus checking](/dm-transfer-workflow/virus_scan) workstation; this is accessible via mounted shares on the FRED ([Forensic Recovery of Evidence Device](https://digitalintelligence.com/products/fred/)) workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On the virus checking workstation and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
 
 Note that the BitCurator station is not connected to the virus checking workstation. Disk images created on the BitCurator must first be moved to the FRED, and then once on the FRED, they can be moved to the virus checking workstation to be scanned for viruses - the next stage in the transfer workflow.
 
@@ -54,7 +54,7 @@ In general, optical disk images will be forensically imaged on BitCurator. Foren
 5. BitCurator will then image the disk
 6. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction).
 
-If you receive an error message from BitCurator when attempting to complete any of the steps above consult [Imaging Script Errors](troubleshooting#imaging-script-errors) on the troubleshooting page.
+If you receive an error message from BitCurator when attempting to complete any of the steps above consult [Imaging Script Errors](/dm-transfer-workflow/troubleshooting#imaging-script-errors) on the troubleshooting page.
 
 ### Audio CDs
 
@@ -101,7 +101,7 @@ The following instructions for setup and use of KryoFlux on the FRED would be th
 
 ### KryoFlux Hardware Setup on the FRED
 
-If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Errors](troubleshooting#kryoflux-errors) on the troubleshooting page.
+If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Errors](/dm-transfer-workflow/troubleshooting#kryoflux-errors) on the troubleshooting page.
 
 **Warning: Incorrect setup can damage the KryoFlux and void our warranty.** Follow the setup instructions carefully; for more details and images see the [official documentation](https://kryoflux.com/?page=download#docs) or the [Setup and Installation](https://github.com/archivistsguidetokryoflux/archivists-guide-to-kryoflux/tree/master/1%20PART%20ONE%20Getting%20Started) section of the Archivist's Guide to KryoFlux.
 
@@ -168,4 +168,4 @@ To calibrate using the GUI:
 3. When you changed the transfer status from **Not Transferred**, the **Date Transferred** autopopulated with today's date. Correct if needed.
 4. Record whether the physical digital media item is to be retained due to artifactual value or disposed of. This is to record the disposition of the physical media item and not the appraisal of the contents of the digital media item.
 
-Next Step: [Scanning for Viruses](virus_scan)
+Next Step: [Scanning for Viruses](/dm-transfer-workflow/virus_scan)
