@@ -23,6 +23,6 @@ Below are instructions for using the Digital Media Log to create and save a digi
 4.  The **Parent Component** and **Parent Resource** fields should autopopulate. If they do not, contact the administrator.
 5.  Choose the appropriate format from the drop down menu in the **Format** field.
 6.  Default entry for **Transfer Status** field - **Not Transferred** - will autopopulate. This field along with the **Transfer Method** and **Date Transferred Field** can be updated after the digital media item record is saved. (You will want to return to the digital media item after transfer actions have been completed or attempted)
-7. Click the **Submit** button to save the record. If you are ready to transfer the item, continue to [transfer setup](transfer-instructions#transfer-overview-&-setup)
+7. Click the **Submit** button to save the record. If you are ready to transfer the item, continue to [transfer setup](/dm-transfer-workflow/transfer-instructions#transfer-overview-&-setup)
 
-Next Step: [Transfer Instructions](transfer-instructions)
+Next Step: [Transfer Instructions](/dm-transfer-workflow/transfer-instructions)
