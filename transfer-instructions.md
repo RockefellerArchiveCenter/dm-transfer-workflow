@@ -9,9 +9,9 @@ An item must be inventoried in the Digital Media Log before it is transferred. S
 
 ### Destination Folders and File Names
 
-Newly created disk transfers are stored on the [virus checking](/dm-transfer-workflow/virus_scan) workstation; this is accessible via mounted shares on the FRED ([Forensic Recovery of Evidence Device](https://digitalintelligence.com/products/fred/)) workstation. Please note that the virus checking workstation is not backed up, so transfers should be scanned and moved to the Digital Records (X) drive as soon as possible. On the virus checking workstation and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
+Newly created disk transfers are stored on the [virus checking](/dm-transfer-workflow/virus_scan) workstation and the transfers are accessible via mounted shares on the FRED ([Forensic Recovery of Evidence Device](https://digitalintelligence.com/products/fred/)) workstation. On the virus checking workstation and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
 
-Note that the BitCurator station is not connected to the virus checking workstation. Disk images created on the BitCurator must first be moved to the FRED, and then once on the FRED, they can be moved to the virus checking workstation to be scanned for viruses - the next stage in the transfer workflow.
+The BitCurator workstation is not connected to the virus checking workstation. Disk images created on the BitCurator must first be moved to the FRED, and then once on the FRED, they can be moved to the virus checking workstation.
 
 ### Disk Imaging
 
@@ -36,6 +36,8 @@ Significant Software for Transferring Digital Media Items:
 
 The sections below describe the options available for imaging each specific type of digital media as well as the step-by-step workflows for executing those imaging options.
 
+**If/when an error is recorded during the imaging process, make a maximum of five attempts to create a disk image, with no more than three attempts made for the same error.**
+
 ## CDs and DVDs
 
 In general, optical disk images will be forensically imaged on BitCurator. Forensic images cannot be made for audio CDs. Please see [audio CDs](#audio-cds) for instructions.
@@ -43,12 +45,12 @@ In general, optical disk images will be forensically imaged on BitCurator. Foren
 ### Imaging with the Command Line on BitCurator
 
 1. Insert the disk into the drive
-2. Open the command line and navigate to the desktop by entering: `$ cd Desktop`
-3. In the command prompt, run the bash script `$ ./optical_disks.sh` (View this script on [GitHub](https://github.com/RockefellerArchiveCenter/imaging_scripts/blob/master/optical_disks.sh))
+2. Open the command line and navigate to the desktop by entering: `cd Desktop`
+3. In the command prompt, run the bash script `./optical_disks.sh` (View this script on [GitHub](https://github.com/RockefellerArchiveCenter/imaging_scripts/blob/master/optical_disks.sh))
 4. BitCurator will ask you to select from one of the following formats: cdrom, cdrw, dvd, dvdrw; in the command prompt, enter your disk's format
 
     <div class="docs-example">
-      <p>Example: <code>$ cdrw</code></p>
+      <p>Example: <code>cdrw</code></p>
     </div>
 
 5. BitCurator will then image the disk
@@ -69,9 +71,7 @@ Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 
 ## Hard Drives and USB Flash Drives
 
-The following describes how to create disk images using FTK Imager on the FRED. FTK Imager is a digital forensics software used to create disk images of digital media separated either at accessioning, processing, or during the Legacy Digital Media Survey. FTK Imager is a different program than the Forensic Toolkit which is usually referred to as FTK.
-
-External hard drives and USB flash drives need to be imaged using the FRED because the FRED has a hardware write blocker. External hard drives and USB flash drives need to be connected to the Tableau UltraBay write blocker on the FRED, and the Tableau UltraBay needs to be turned ON.
+The following describes how to create disk images using FTK Imager on the FRED. Provide link to a picture of the FRED. FTK Imager is a digital forensics software used to create disk images of digital media separated either at accessioning, processing, or during the Legacy Digital Media Survey. FTK Imager is a different program than the Forensic Toolkit which is usually referred to as FTK.
 
 ### Imaging Instructions
 
@@ -89,7 +89,7 @@ External hard drives and USB flash drives need to be imaged using the FRED becau
 
 ## 3 and a Half Inch and 5 and One Quarter Inch Floppy Disks
 
-3 1/2 inch and 5 1/4 inch floppy disks need to be imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. The following describes how to create disk images using KryoFlux.
+3 1/2 inch and 5 1/4 inch floppy disks are imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. 
 
 For guidelines on which directories images should be put in and file naming conventions, see [Destination Folders and File Names](#destination-folders-and-file-names)
 
@@ -97,7 +97,7 @@ The KryoFlux can be used with Windows, Mac, and Linux machines, and has both com
 
 **The FRED is currently used at the RAC as the default machine to image 3 1/2 inch and 5 1/4 inch floppy disks.** Keeping the KryoFlux at the FRED station mitigates the chance of potential hardware and connection issues that may result from frequent moves between the FRED and the BitCurator. We would only run the KryoFlux on the BitCurator for the purpose of advanced troubleshooting or if an instance were to arise where the FRED could not be operated.
 
-The following instructions for setup and use of KryoFlux on the FRED would be the same if one were to image 3 1/2 and 5 1/4 inch floppy disks with KryoFlux on the BitCurator.
+The following instructions for setup and use of KryoFlux on the FRED can also be used to image 3 1/2 and 5 1/4 inch floppy disks with KryoFlux on the BitCurator.
 
 ### KryoFlux Hardware Setup on the FRED
 
@@ -114,7 +114,7 @@ If you encounter issues setting up or using the KryoFlux, consult [KryoFlux Erro
 To calibrate using the command line:
 
 1. Open the command prompt and navigate to the DTC folder
-2. Run `$ dtc -c2`
+2. Run `dtc -c2`
 
 To calibrate using the GUI:
 
@@ -126,7 +126,7 @@ To calibrate using the GUI:
 
 1. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 2. In the command prompt, navigate to the DTC folder.
-3. Run `$ dtc -f\[filename\].img -i\[imagetype\]`
+3. Run `dtc -f\[filename\].img -i\[imagetype\]`
 
     <div class="docs-example">
       <p>image types correspond to numbers; "4" is for MFM images</p>
@@ -163,9 +163,7 @@ To calibrate using the GUI:
 
 ## Recording Transfers in Digital Media Log
 
-1. When you have finished transferring a digital media item, change the transfer status to **Transferred - Failed** or **Transferred - Success** as appropriate. Note: If transfer fails initially you may need to try again; appropriate number of transfer attempts is dependent upon type of media.
-2. Record the transfer method. Record the successful method if multiple methods were attempted.
-3. When you changed the transfer status from **Not Transferred**, the **Date Transferred** autopopulated with today's date. Correct if needed.
-4. Record whether the physical digital media item is to be retained due to artifactual value or disposed of. This is to record the disposition of the physical media item and not the appraisal of the contents of the digital media item.
+1. When you have finished transferring a digital media item, change the transfer status to **Transferred - Failed** or **Transferred - Success** as appropriate. Note: If transfer fails initially you may need to try again; make a maximum of five attempts, with no more than three attempts made for the same error. Record the transfer method. Record the successful method if multiple methods were attempted.
+2. When you change the transfer status from **Not Transferred**, the **Date Transferred** autopopulated with today's date. Correct if needed.
 
 Next Step: [Scanning for Viruses](/dm-transfer-workflow/virus_scan)
