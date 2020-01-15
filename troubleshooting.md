@@ -5,6 +5,8 @@ title: "Troubleshooting"
 
 ## Imaging Script Errors
 
+If/when an error is recorded, make a maximum of five attempts to create a disk image or run a virus scan, with no more than three attempts made for the same error.
+
 ### Cannot determine file system type
 
 Solution: Check that you entered the correct format when prompted by the script (cdrom, cdrw, dvd, dvdrw). If this error continues to appear, try mounting the disk image to determine if the contents have been successfully copied. Sometimes a disk image can still be considered successful despite this error.
@@ -31,12 +33,12 @@ If the FRED does not recognize the KryoFlux, it is likely an issue that Windows 
 2. Expand **Ports COM & LPT** and right click on **Bossa Program Post**
 3. Choose **Browse my computer for driver software** then **let me pick from a list of device drivers**
 4. Since KryoFlux has already been installed, you should see the KryoFlux driver in the list
-5. Open the command prompt and navigate to the DTC folder. Run `$ dtc -c2`
+5. Open the command prompt and navigate to the DTC folder. Run `dtc -c2`
 
 ### KryoFlux GUI does not run when “Start” is selected
 
 1. Open the command prompt and navigate to the DTC folder
-2. Run `$ java -jar kryoflux-ui.jar`
+2. Run `java -jar kryoflux-ui.jar`
 3. With the command window still open, use the GUI to select “Start” again to being imaging. The command window will provide more detailed output of what the GUI is doing, allowing you to further troubleshoot using any error messages in the output window
 
 ### KryoFlux Errors and Warnings
