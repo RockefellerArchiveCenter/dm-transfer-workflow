@@ -21,8 +21,6 @@ Solution: Insert disk into the FRED, open Exact Audio Copy (EAC). If EAC shows a
 
 Solution: Empty the folder containing the .img file and run the script again.
 
-If you have tried following the instructions provided for imaging script errors but still cannot successfully implement the script, use the [Advanced Troubleshooting Template](/dm-transfer-workflow/error_reporting#advanced-troubleshooting-template) to communicate the problems you are experiencing and the actions you have attempted to the Advanced Troubleshooting Team.
-
 ## KryoFlux Errors
 
 ### FRED does not recognize the KryoFlux
@@ -58,8 +56,6 @@ While the KryoFlux is operating, there may be exceptions that trigger warnings o
 - Sector truncated. Sector data is incomplete, decoding stopped. Reason is another sync/mark was found in the data block. Almost certainly protection that a sector image can't deal with; sector is not included in the image; error.
 - Sector offset found is illegal. Sector is still decoded; warning only.
 
-If you have tried following the instructions provided for KryoFlux errors but still cannot successfully use the KryoFlux, use the [Advanced Troubleshooting Template](/dm-transfer-workflow/error_reporting#advanced-troubleshooting-template) to communicate the problems you are experiencing and the actions you have attempted to the Advanced Troubleshooting Team.
-
 ## Virus Script Errors
 
 ### Data Scanned and Data Read = 0MB
@@ -79,3 +75,12 @@ If you are using the BitCurator machine to virus check many disk images, be sure
 1. Open a new terminal window
 2. `sudo su`
 3. `losetup -D`
+
+## Advanced Troubleshooting Form
+Once all possible troubleshooting actions have been exhausted, please submit the [Advanced Troubleshooting form](https://form.asana.com/?k=EsWapMmv2cZMzHwcrD9_2A&d=4711715224923).
+
+**Please note:** this form should be used to communicate persistent disk imaging errors and attempted troubleshooting actions. *Do not fill this form out if you have not yet conducted any troubleshooting activities.* 
+
+Once the form is submitted, properly label the digital media item and leave it on the "Problematic Media" shelf in the Digital Media (DM) Archivist's office.
+
+If you solved the issue using a method that is not documented on the Troubleshooting page, please contact the Digtial Media (DM) Archivist so it can be added.
