@@ -7,26 +7,22 @@ title: "Inventorying Digital Media Items"
 
 -	Inventory digital media item(s) in ArchivesSpace when the item(s) are encountered during accessioning/processing. Initial description of any digital media items inventoried during accessioning can be created in an FA shell record.
 -	Describe digital media items in a sibling relationship to their parent units (e.g. file for [standard processing](/processing-manual/#processing-levels)) with the same box and/or folder instances. Do not create a child relationship to represent the association between the digital media item and the parent unit.
--	Inventory digital media items in the Digital Media Log as they are encountered during accessioning/processing.
--	In order to save a digital media item record, you must supply the ArchivesSpace Ref ID of the appropriate file-level component representing the digital media item in ArchivesSpace and retrieve the file and resource titles.
--	For accessioning or [minimal processing](/processing-manual/#processing-levels), you may supply the Ref ID of the series-level, subseries-level or file-level component. 
 
-## Setup
+## Role of the Digital Media Log
 
-The Digital Media Log is a tool for identifying digital media items during accessioning/processing in order to plan and perform preservation actions like disk imaging and for recording digital media stabilization information. It is integrated with ArchivesSpace, the collection management system used at the RAC for archival records, in order to reduce duplicate data entry, record the location of a digital media item, track and manage transferred items, and ensure more effective and efficient control of collection material. More information about the Digital Media Log can be found on the RAC's [Digital Media Log GitHub repository](https://github.com/RockefellerArchiveCenter/dm_log).
+The Digital Media Log is a tool for identifying digital media items during accessioning/processing in order to plan for future preservation actions like disk imaging and for recording digital media stabilization information. The Digital Media Log serves as a “backlog database” and should only be used when preservation actions (imaging, file transfers) cannot happen during processing. Additions to the Digital Media Log will be reviewed on a case-by-case basis by the Assistant Director for Processing and the Digital Media Archivist.
 
-## Instructions
+## Processing Team
 
-To create and save a digital media item record:
+The Processing Team is responsible for addressing the backlog of digital media represented by the Digital Media Log and should avoid adding to it where feasible. Add to the Digital Media Log only if: 
+- The item is outside the scope of the media types that can be imaged in-house, please fill out the **Digital Media Vendor Transfer form** and follow the corresponding [workflow](https://docs.rockarch.org/processing-manual/processing/#image-eligible-digital-media). 
+- The item will not image/virus check successfully, please troubleshoot and if imaging/virus checking is still unsuccessful fill out the **[Advanced Troubleshooting form](https://form.asana.com/?k=EsWapMmv2cZMzHwcrD9_2A&d=4711715224923)** and follow the corresponding [workflow](https://docs.rockarch.org/dm-transfer-workflow/troubleshooting/#advanced-troubleshooting-form).
 
-1.	Inventory the digital media item(s) in ArchivesSpace as described in the Overview section above. For further details on the creation of archival description, please refer to the Guide to Processing Collections at the RAC.
-2.	Open the Digital Media Log, located at [dm-log.rockarch.org](http://dm-log.rockarch.org/) and set up an account.
-3.  On the homepage for the Digital Media Log, click **Add Digital Media Item**. (Button should be located at the bottom of the homepage, below the list of digital media items)
-4.  A record will generate for the digital media item and the digital media item **ID** field will autopopulate.
-5.  Copy the ArchivesSpace Ref ID for the parent component from ArchivesSpace into the **ArchivesSpace Ref ID** field and click **Find in ArchivesSpace**. (The parent component is the description of the digital media item in ArchivesSpace. Make sure that the component has been saved in ArchivesSpace before attempting this step.)
-6.  The **Parent Component** and **Parent Resource** fields should autopopulate. If they do not, contact the administrator.
-7.  Choose the appropriate format from the drop down menu in the **Format** field.
-8.  Default entry for **Transfer Status** field - **Not Transferred** - will autopopulate. This field along with the **Transfer Method** and **Date Transferred Field** can be updated after the digital media item record is saved. (You will want to return to the digital media item after transfer actions have been completed or attempted)
-9. Click the **Submit** button to save the record. If you are ready to transfer the item, continue to [transfer setup](/dm-transfer-workflow/transfer-instructions#transfer-overview-&-setup)
+## Archivists Outside of the Processing Team
+
+Notify the Digital Media Archivist of the existence of digital media within the collection that is being processed by doing the following:
+- Navigate to the Preservation and Access section of the Processing Asana Project
+- Open the task labelled: “Image eligible digital media and document in finding aid/digital media log”
+- Tag the Digital Media Archivist/Head of Processing by using “@+their name” in the comments.
 
 Next Step: [Transfer Instructions](/dm-transfer-workflow/transfer-instructions)
