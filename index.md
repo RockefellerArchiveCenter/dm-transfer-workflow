@@ -11,17 +11,17 @@ The workflows were developed in order to empower archivists to preserve and proc
 
 ## Required Steps for Transferring Digital Media at the RAC
 
-Our objectives are to inventory and transfer digital media items, ensure they are free of viruses and malware, and store them on the Digital Records (X) drive. Complete documentation of the items, and the transfer actions applied to them are then saved in the Digital Media Log. To successfully perform these actions various tools, hardware, and workstations are used in the following ordered steps:  
+Our objectives are to inventory and transfer digital media items, ensure they are free of viruses and malware, and store them on the Digital Records (X) drive. To successfully perform these actions various tools, hardware, and workstations are used in the following ordered steps:  
 
 1. Inventory digital media item(s) in ArchivesSpace when the item(s) are encountered during accessioning/processing. 
-2. Inventory digital media item(s) using the Digital Media Log.
-3. Transfer digital media item using appropriate hardware and tools (If you experience difficulties using the available tools for transferring digital media items, consult the [Troubleshooting Page](troubleshooting) and/or use the [Advanced Troubleshooting form](https://form.asana.com/?k=EsWapMmv2cZMzHwcrD9_2A&d=4711715224923) to communicate your issues to the Advanced Troubleshooting Team)
-4. Document the transfer using the Digital Media Log (If a digital media item failed to transfer, you cannot proceed to the next step)
-5. Scan the digital media item for viruses using the virus checking workstation (Ginger machine)
+2. Transfer digital media item using appropriate hardware and tools (If you experience difficulties using the available tools for transferring digital media items, consult the [Troubleshooting Page](troubleshooting) and/or use the [Advanced Troubleshooting form](https://form.asana.com/?k=EsWapMmv2cZMzHwcrD9_2A&d=4711715224923) to communicate your issues to the Advanced Troubleshooting Team)
+3. Scan the digital media item for viruses using the virus checking workstation (Ginger machine)
+4. Document the transfer using the Digital Media Log in cases where the item was part of the digital media backlog.
+5. Move the files to the X:Drive/Disk Images folder.
 
 ## Documentation Components
 
-- **Inventorying Digital Media**: Instructions for when and how to inventory digital media and for recording transfers of digital media, using the Digital Media Log
+- **Inventorying Digital Media**: Instructions for when and how to inventory digital media ArchivesSpace. Additional information about the role and use of the Digital Media Log.
 - **Transfer Instructions**: Instructions for identifying the correct method for transferring digital media as well as steps for imaging different types of digital media
 - **Scanning for Viruses**: Instructions for setting up the virus checking workstation and running the virus checking script to scan for viruses and malware on disk images
 - **Troubleshooting**: Description of common imaging error warnings and instructions/solutions for troubleshooting imaging of different types of digital media and other workflow procedures
