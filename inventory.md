@@ -23,6 +23,6 @@ The Processing Team is responsible for addressing the backlog of digital media r
 Notify the Digital Media Archivist of the existence of digital media within the collection that is being processed by doing the following:
 - Navigate to the Preservation and Access section of the Processing Asana Project
 - Open the task labelled: “Image eligible digital media and document in finding aid/digital media log”
-- Tag the Digital Media Archivist/Head of Processing by using “@+their name” in the comments.
+- Tag the Digital Media Archivist/Assistant Director for Processing by using “@+their name” in the comments.
 
 Next Step: [Transfer Instructions](/dm-transfer-workflow/transfer-instructions)
