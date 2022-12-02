@@ -21,7 +21,7 @@ This workflow should be used for .iso and .img files.
 3. Mount the network: `mount -o username=freduser //fredIPaddress/ginger /mnt` _(The IP address for connecting to the FRED on the quarantine network can be found on the ["System Info Sheets/FRED Info Sheet"](/info-sheets/fred-info-sheet). Alternatively, pressing the up arrow while inside the terminal will recall previous commands, which may include this line of code.)_
 4. Enter password used to sign in to the FRED
 5. Navigate to the directory containing the virus script: `cd /mnt`
-6. Run the virus checking script: `./virus_scan.sh` (View this script on [GitHub](https://github.com/RockefellerArchiveCenter/imaging_scripts/blob/master/virus_scan.sh))
+6. Run the virus checking script: `./virus_scan.sh` (View this script on [GitHub](https://github.com/RockefellerArchiveCenter/scripts/blob/base/imaging/virus_scan.sh))
 7. Enter the FA number, digital media ID, and file extension of the disk image
 8. End root session: `exit`
 
@@ -34,7 +34,7 @@ This workflow should be used for .wav files (audio cds) and scenarios where a di
 3. Mount the network: `mount -o username=freduser //fredIPaddress/ginger /mnt`_(The IP address for connecting to the FRED on the quarantine network can be found on the ["System Info Sheets/FRED Info Sheet"](/info-sheets/fred-info-sheet)). Alternatively, pressing the up arrow while inside the terminal will recall previous commands, which may include this line of code.)_
 4. Enter password used to sign in to the FRED
 5. Navigate to the directory containing the virus script: `cd /mnt`
-6. Run the virus checking script: `./directory_virus_scan.sh` (View this script on [GitHub](https://github.com/RockefellerArchiveCenter/imaging_scripts/blob/master/directory_virus_scan.sh))
+6. Run the virus checking script: `./directory_virus_scan.sh` (View this script on [GitHub](https://github.com/RockefellerArchiveCenter/scripts/blob/base/imaging/directory_virus_scan.sh))
 7. Enter the FA number and digital media ID
 8. End root session: `exit`
 
