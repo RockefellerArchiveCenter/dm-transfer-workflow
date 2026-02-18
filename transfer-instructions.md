@@ -47,7 +47,7 @@ Optical disks (cds, DVDs), thumb Drives, and USB hard drives are logically image
 - Click **Browse**, navigate to `Desktop/FA#` within the browse window.
   - ***When working with the first disk/drive in a collection, create a folder on the Desktop named after the FA# of the collection, e.g. "FA1234"***
 - Complete the output path by adding a backslash `/` and pasting the ArchivesSpace RefID of the item. Use the Digital Media Log to **copy/paste the RefID** of the item. **Never manually type the RefID.**
-  - The output directory should always look similar to `Desktop/FA#/ASrefID`.
+  - The output directory should always look similar to `bcadmin/Desktop/FA#/ASrefID`.
 
 ### Step 5: SIP naming
 - **SIP Name**: AS RefID of the item (copy/paste from Asana)
@@ -70,8 +70,8 @@ Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 
 1. On the FRED, open **Exact Audio Copy** and insert the CD into the optical disk drive.
 2. In the **CD Title field**, enter the digital media ID of the CD. Remove text from the **CD author field**.
-3. On the lefthand side, click the button that says **IMG**. This will create 1 uncompressed WAV file (containing all tracks) and a CUE file.
-4. Select the appropriate folder to store the files and click **Save**. Typically files are saved within `Desktop/FA#/ASrefID`. If this is the first item being transferred, you may need to create these folders.
+3. On the left-hand side, click the button that says **IMG**. This will create 1 uncompressed WAV file (containing all tracks) and a CUE file.
+4. Select the appropriate folder to store the files and click **Save**. Typically, files are saved within `Desktop/FA#/ASrefID`. If this is the first item being transferred, you may need to create these folders.
 5. Exact Audio Copy will begin ripping tracks and create a log file.
 6. Update the item's transfer status in the Digital Media Log.
 7. Fill out the [SIP Creator Hand-Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
@@ -91,7 +91,7 @@ The following describes how to create disk images using FTK Imager on the FRED. 
 6. The next screen prompts you to identify where the disk image will be stored. The **Image Destination Folder:** is always `Desktop/FA##/ASrefID` and **Image Filename:** is always the ArchivesSpace RefID. Additionally, the **Compression** level and **Image Fragment Size** should both be set to 0 and **Use AD Encryption:** should be left unchecked.    
 7. Click **Finish** to return to the Create Image dialog window, this time with the necessary information completed. Double check the **Image Source**, the **Image Destination**, and that both **Verify images after they are created** and **Create directory listings of all files in the image after they are created** are checked. Click **Start** to initiate the imaging process.
 8. A Creating Image dialog window will appear. It will indicate how much time has elapsed during the creation of the image.
-9. Once completed, the Status will read **Image created successfully**. You will also receive notification that the Directory Listing was created successfully. In the image destination folder, you will see the image (.E01), the Directory Listing file (.csv), and the Verify Results file (.txt). The Verify Results Summary contains the same data presented in the Image Summary area below. This information contains the image checksum information needed for the Digital Media database.
+9. Once completed, the Status will read **Image created successfully**. You will also receive a notification that the Directory Listing was created successfully. In the image destination folder, you will see the image (.E01), the Directory Listing file (.csv), and the Verify Results file (.txt). The Verify Results Summary contains the same data presented in the Image Summary area below. This information contains the image checksum information needed for the Digital Media database.
 10. Make sure to safely eject the hardware you were imaging. Failure to do so can result in irreparable damage to the media.
 11. Update the item's transfer status in the Digital Media Log.
 12. Fill out the [SIP Creator Hand-Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive
@@ -152,7 +152,7 @@ To calibrate using the GUI:
       <p>Example: 2lz4u8myrs or a9wf7at7r</p>
     </div>
 
-5. Choose the appropriate image format from the drop down menu.
+5. Choose the appropriate image format from the drop-down menu.
 
     <div class="docs-example">
       <p> If the disk format is unknown, but is a 3 1/2 inch floppy, first try “MFM Sector Image.” “FM sector image” and “MFM sector image” support basically any normal disk used for systems that contain a generic FM or MFM FDC.
