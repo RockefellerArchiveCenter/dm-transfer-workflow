@@ -9,5 +9,5 @@ pages:
   - ["Digital Media Transfer Workflow", "index"]
   - ["Inventorying Digital Media", "inventory"]
   - ["Transfer Instructions", "transfer-instructions"]
-  - ["Scanning for Viruses", "virus_scan"]
+  - ["File Review", "file_review"]
   - ["Troubleshooting", "troubleshooting"]

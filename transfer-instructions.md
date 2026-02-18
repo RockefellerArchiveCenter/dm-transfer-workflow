@@ -7,56 +7,62 @@ title: "Transfer Instructions"
 
 An item must be inventoried in the Digital Media Log before it is transferred. See instructions for [Inventorying Digital Media Items](/dm-transfer-workflow/inventory). When a digital media item is imaged or otherwise has its contents transferred, this must be [recorded in the Digital Media Log](#recording-transfers-in-digital-media-log).
 
-### Destination Folders and File Names
-
-Newly created disk transfers are stored on the [virus checking](/dm-transfer-workflow/virus_scan) workstation and the transfers are accessible via mounted shares on the FRED ([Forensic Recovery of Evidence Device](https://digitalintelligence.com/products/fred/)) workstation. On the virus checking workstation and the X drive, all transfers are stored in a directory with the name of the ID auto-generated (digital media ID) by the Digital Media Log. On the X drive, these directories are located in a parent directory with the FA or Accession Number.
-
-The BitCurator workstation is not connected to the virus checking workstation. Disk images created on the BitCurator must first be moved to the FRED, and then once on the FRED, they can be moved to the virus checking workstation.
-
-### Disk Imaging
-
-Disk imaging is currently the primary process by which the content and structure of a digital media item are transferred at the RAC. Disk images are single files containing the complete content and structure representing a data storage medium or device. By imaging legacy digital media, archivists can help ensure the long term preservation and management of records stored on devices vulnerable to deterioration and obsolescence.
-
-At this point in time, disk images are created in-house for [optical disks (CDs and DVDs)](#cds-and-dvds), [external hard drives](#hard-drives-and-usb-flash-drives), [USB flash drives](#hard-drives-and-usb-flash-drives), and [3 1/2 inch floppy disks and 5 1/4 inch floppy disks](#3-and-a-half-inch-and-5-and-one-quarter-inch-floppy-disks) (recently dated disks that are PC-formatted).
-
 ### Choosing Transfer Method
 
-The programs and hardware used to create disk images will vary depending on the type of digital media you are attempting to transfer.
+The programs and hardware used to create transfer files or disk images will vary depending on the type of digital media you are attempting to transfer.
 
-Workstations Used to Transfer Digital Media Items:
-- **BitCurator:** Used to image CDs and DVDs; connected to the FRED
-- **FRED:** Used to image audio CDs, hard drives and USB flash drives, and 3 1/2 inch and 5 1/4 inch floppy disks; connected to the BitCurator machine and the virus checking workstation
+Workstations used to transfer digital media items:
+- **BitCurator Machine:** Used for CDs, DVDs, USB thumb drives, and USB hard drives. The [BitCurator suite](https://github.com/BitCurator/bitcurator-distro/wiki/Releases) of tools and [SIP Creator](https://github.com/CCA-Public/sipcreator) are installed on this machine.
+- **FRED:** Used to image audio CDs, non-USB hard drives, and 3 1/2 inch and 5 1/4 inch floppy disks. The following programs are installed on the FRED:
+  - **KryoFlux:** Used when imaging 3 1/2 inch and 5 1/4 inch floppy disks
+  - **FTK Imager:** Used when imaging hard drives.
+  - **Forensic Toolkit (FTK):** Used for troubleshooting.
 
-Other Significant Hardware for Transferring Digital Media Items:
-- **KryoFlux:** Used when imaging 3 1/2 inch and 5 1/4 inch floppy disks
+The sections below describe the options available for each specific type of digital media as well as step-by-step workflows.
 
-Significant Software for Transferring Digital Media Items:
+## CDs, DVDs, USB Thumb-Drives, USB Hard Drives (SIP Creator)
+Optical disks (cds, DVDs), thumb Drives, and USB hard drives are logically imaged using **SIP Creator** which is installed on the BitCurator machine. *Forensic images cannot be made for audio CDs. Please see [audio CDs](#audio-cds) for instructions.*
 
-- **FTK Imager:** Used when imaging hard drives and USB flash drives
+### Step 1: Access SIP Creator
+- Log in the BitCurator Machine using the password: `bcadmin`
+- Navigate to: Applications (top toolbar) -> Forensics and Reporting -> SIP Creator
 
-The sections below describe the options available for imaging each specific type of digital media as well as the step-by-step workflows for executing those imaging options.
+### Step 2: Prepare source
+- Insert the disk/drive containing the files to be copied.
+- In SIP Creator, click **Select Source**
+- A file explorer window will appear in front of the SIP Creator window, select the disk/drive, then click **Open**
+- Be sure to always select the disk/drive at the top level, not individual folders.
 
-**If/when an error is recorded during the imaging process, make a maximum of five attempts to create a disk image, with no more than three attempts made for the same error.**
+### Step 3: Directory selection
+- Use the **Directory Selector** to choose files for copying.
+  - Typically, select all files.
+  - If you see system files (e.g. thumbs.db), empty files, or non-archival files, you can make appraisal decisions if confident.
+- **Tip for quick selection of files that are not nested within a folder:**
+  - Click the top file, it should highlight blue.
+  - Use arrow keys to navigate up/down.
+  - Press spacebar to check/uncheck files.
 
-## CDs and DVDs
+### Step 4: Set output directory
+- Choose where to save the files using this structure:
+- Click **Browse**, navigate to `Desktop/FA#` within the browse window.
+  - ***When working with the first disk/drive in a collection, create a folder on the Desktop named after the FA# of the collection, e.g. "FA1234"***
+- Complete the output path by adding a backslash `/` and pasting the ArchivesSpace RefID of the item. Use the Digital Media Log to **copy/paste the RefID** of the item. **Never manually type the RefID.**
+  - The output directory should always look similar to `bcadmin/Desktop/FA#/ASrefID`.
 
-In general, optical disk images will be forensically imaged on BitCurator. Forensic images cannot be made for audio CDs. Please see [audio CDs](#audio-cds) for instructions.
+### Step 5: SIP naming
+- **SIP Name**: AS RefID of the item (copy/paste from Asana)
 
-### Imaging with the Command Line on BitCurator
+### Step 6: Configure options
+- **Bag SIP**: unchecked
+- **Run Bulk_extractor**: check this option (this scans for PII)
 
-1. Insert the disk into the drive
-2. Open the command line and navigate to the desktop by entering: `cd Desktop`
-3. In the command prompt, run the bash script `./optical_disks.sh` (View this script on [GitHub](https://github.com/RockefellerArchiveCenter/scripts/blob/base/imaging/optical_disks.sh))
-4. BitCurator will ask you to select from one of the following formats: cdrom, cdrw, dvd, dvdrw; in the command prompt, enter your disk's format
+### Step 7: Create SIP
+- Click **Create SIP**
+- Note: The Status bar may stay at 0% and "Processing" until completion. A pop-up window will confirm completion.
 
-    <div class="docs-example">
-      <p>Example: <code>cdrw</code></p>
-    </div>
+### Step 8: Hand-off files for review
+- Fill out the [SIP Creator Hand-Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
 
-5. BitCurator will then image the disk
-6. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction).
-
-If you receive an error message from BitCurator when attempting to complete any of the steps above consult [Imaging Script Errors](/dm-transfer-workflow/troubleshooting#imaging-script-errors) on the troubleshooting page.
 
 ### Audio CDs
 
@@ -64,14 +70,16 @@ Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 
 1. On the FRED, open **Exact Audio Copy** and insert the CD into the optical disk drive.
 2. In the **CD Title field**, enter the digital media ID of the CD. Remove text from the **CD author field**.
-3. On the lefthand side, click the button that says **IMG**. This will create 1 uncompressed WAV file (containing all tracks) and a CUE file.
-4. Select the appropriate folder to store the files and click **Save**. See [Destination Folders and File Names](#destination-folders-and-file-names) for information on where files should be stored.
+3. On the left-hand side, click the button that says **IMG**. This will create 1 uncompressed WAV file (containing all tracks) and a CUE file.
+4. Select the appropriate folder to store the files and click **Save**. Typically, files are saved within `Desktop/FA#/ASrefID`. If this is the first item being transferred, you may need to create these folders.
 5. Exact Audio Copy will begin ripping tracks and create a log file.
-6. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction).
+6. Update the item's transfer status in the Digital Media Log.
+7. Fill out the [SIP Creator Hand-Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
 
-## Hard Drives and USB Flash Drives
 
-The following describes how to create disk images using FTK Imager on the FRED. Provide link to a picture of the FRED. FTK Imager is a digital forensics software used to create disk images of digital media separated either at accessioning, processing, or during the Legacy Digital Media Survey. FTK Imager is a different program than the Forensic Toolkit which is usually referred to as FTK.
+## Hard Drives
+
+The following describes how to create disk images using FTK Imager on the FRED. FTK Imager is a different program than the Forensic Toolkit which is usually referred to as FTK.
 
 ### Imaging Instructions
 
@@ -80,24 +88,25 @@ The following describes how to create disk images using FTK Imager on the FRED. 
 3. Select the **Source Drive Location**. This can be a little confusing, as the program picks up all connected drives – including the one you’re working on. The FRED machine has quite a few drives. You can distinguish between them by using the data size listed in the dialog box. For example, two of the drives are listed at 2000GB and 7999GB, respectively. You can also disregard the WIBU Codemeter Stick USB device, which is a USB key to run the Forensic Toolkit. Click **Finish** to continue
 4. A dialog box will appear, this time asking where to store the image. Click **Add.** Before the location of the image file can be identified, the type of image file to create needs to be selected. We use the E01 file format. Click **Next** to move forward.
 5. The Evidence Item dialog box will appear. Insert the digital media ID associated with the item into the **Evidence Number** field. This is generated by the Digital Media Log. All other fields can be left blank.
-6. The next screen prompts you to identify where the disk image will be stored. See [Destination Folders and File Names](#destination-folders-and-file-names) for information on the **Image Destination Folder:** and **Image Filename:**. Additionally, the **Compression** level and **Image Fragment Size** should both be set to 0 and **Use AD Encryption:** should be left unchecked.    
+6. The next screen prompts you to identify where the disk image will be stored. The **Image Destination Folder:** is always `Desktop/FA##/ASrefID` and **Image Filename:** is always the ArchivesSpace RefID. Additionally, the **Compression** level and **Image Fragment Size** should both be set to 0 and **Use AD Encryption:** should be left unchecked.    
 7. Click **Finish** to return to the Create Image dialog window, this time with the necessary information completed. Double check the **Image Source**, the **Image Destination**, and that both **Verify images after they are created** and **Create directory listings of all files in the image after they are created** are checked. Click **Start** to initiate the imaging process.
 8. A Creating Image dialog window will appear. It will indicate how much time has elapsed during the creation of the image.
-9. Once completed, the Status will read **Image created successfully**. You will also receive notification that the Directory Listing was created successfully. In the image destination folder, you will see the image (.E01), the Directory Listing file (.csv), and the Verify Results file (.txt). The Verify Results Summary contains the same data presented in the Image Summary area below. This information contains the image checksum information needed for the Digital Media database.
+9. Once completed, the Status will read **Image created successfully**. You will also receive a notification that the Directory Listing was created successfully. In the image destination folder, you will see the image (.E01), the Directory Listing file (.csv), and the Verify Results file (.txt). The Verify Results Summary contains the same data presented in the Image Summary area below. This information contains the image checksum information needed for the Digital Media database.
 10. Make sure to safely eject the hardware you were imaging. Failure to do so can result in irreparable damage to the media.
-11. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction).
+11. Update the item's transfer status in the Digital Media Log.
+12. Fill out the [SIP Creator Hand-Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive
 
 ## 3 and a Half Inch and 5 and One Quarter Inch Floppy Disks
 
-3 1/2 inch and 5 1/4 inch floppy disks are imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software. 
-
-For guidelines on which directories images should be put in and file naming conventions, see [Destination Folders and File Names](#destination-folders-and-file-names)
+3 1/2 inch and 5 1/4 inch floppy disks are imaged using KryoFlux, a USB-based forensic floppy controller and the accompanying software.
 
 The KryoFlux can be used with Windows, Mac, and Linux machines, and has both command line and GUI interfaces. Scripts using the KryoFlux command line tools on the BitCurator machine are preferred in most cases, but it is also possible to use the GUI on the FRED.
 
 **The FRED is currently used at the RAC as the default machine to image 3 1/2 inch and 5 1/4 inch floppy disks.** Keeping the KryoFlux at the FRED station mitigates the chance of potential hardware and connection issues that may result from frequent moves between the FRED and the BitCurator. We would only run the KryoFlux on the BitCurator for the purpose of advanced troubleshooting or if an instance were to arise where the FRED could not be operated.
 
 The following instructions for setup and use of KryoFlux on the FRED can also be used to image 3 1/2 and 5 1/4 inch floppy disks with KryoFlux on the BitCurator.
+
+**If/when an error is recorded during the imaging process, make a maximum of five attempts to create a disk image, with no more than three attempts made for the same error.**
 
 ### KryoFlux Hardware Setup on the FRED
 
@@ -131,19 +140,19 @@ To calibrate using the GUI:
     <div class="docs-example">
       <p>image types correspond to numbers; "4" is for MFM images</p>
     </div>
-4. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction).
+4. Update the item's transfer status in the Digital Media Log.
 
 ### Imaging with the KryoFlux GUI on the FRED
 1. Open the **kryoflux-ui.jar – Shortcut** on the desktop.
 2. After setting up the KryoFlux hardware, insert the floppy disk into the drive.
 3. For each image you create, you must change the output file. In order to do so, go to **File &gt; Settings**. and navigate to the **Output** tab. Enter the directory that the image will be in. Make sure **Logs** is checked.
-4. On the main KryoFlux screen, enter the name of the image in the text field. The image name is the auto-generated ID (digital media ID) created by the Digital Media Log.
+4. On the main KryoFlux screen, enter the name of the image in the text field. The image name is the ArchivesSpace RefID.
 
     <div class="docs-example">
       <p>Example: 2lz4u8myrs or a9wf7at7r</p>
     </div>
 
-5. Choose the appropriate image format from the drop down menu.
+5. Choose the appropriate image format from the drop-down menu.
 
     <div class="docs-example">
       <p> If the disk format is unknown, but is a 3 1/2 inch floppy, first try “MFM Sector Image.” “FM sector image” and “MFM sector image” support basically any normal disk used for systems that contain a generic FM or MFM FDC.
@@ -159,11 +168,7 @@ To calibrate using the GUI:
   - **Glowing** – track is being dumped
   - To get more information about the result of a certain track, move your mouse pointer over it. This will output the result of the operation in the status line.
 7. Click **Start** and note what time imaging started.
-8. Update the item's transfer status in the Digital Media Log (See [Recording Transfers in Digital Media Log](#recording-transfers-in-digital-media-log) for further instruction).
+8. Update the item's transfer status in the Digital Media Log.
+9. Fill out the [SIP Creator Hand-Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
 
-## Recording Transfers in Digital Media Log
-
-1. When you have finished transferring a digital media item, change the transfer status to **Transferred - Failed** or **Transferred - Success** as appropriate. Note: If transfer fails initially you may need to try again; make a maximum of five attempts, with no more than three attempts made for the same error. Record the transfer method. Record the successful method if multiple methods were attempted.
-2. When you change the transfer status from **Not Transferred**, the **Date Transferred** autopopulated with today's date. Correct if needed.
-
-Next Step: [Scanning for Viruses](/dm-transfer-workflow/virus_scan)
+Next Step: [File Review](/dm-transfer-workflow/file_review)
