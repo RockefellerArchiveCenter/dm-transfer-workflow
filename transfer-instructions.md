@@ -5,7 +5,7 @@ title: "Transfer Instructions"
 
 ## Transfer Overview & Setup
 
-An item must be inventoried in the Digital Media Log before it is transferred. See instructions for [Inventorying Digital Media Items](/dm-transfer-workflow/inventory). When a digital media item is imaged or otherwise has its contents transferred, this must be [recorded in the Digital Media Log](#recording-transfers-in-digital-media-log).
+An item must be inventoried in the Digital Media Log before it is transferred. See instructions for [Inventorying Digital Media Items](/dm-transfer-workflow/inventory). When a digital media item is imaged or otherwise has its contents transferred, this must be recorded in the Digital Media Log.
 
 ### Choosing Transfer Method
 
@@ -20,8 +20,8 @@ Workstations used to transfer digital media items:
 
 The sections below describe the options available for each specific type of digital media as well as step-by-step workflows.
 
-## CDs, DVDs, USB Thumb-Drives, USB Hard Drives (SIP Creator)
-Optical disks (cds, DVDs), thumb Drives, and USB hard drives are logically imaged using **SIP Creator** which is installed on the BitCurator machine. *Forensic images cannot be made for audio CDs. Please see [audio CDs](#audio-cds) for instructions.*
+## CDs, DVDs, USB Thumb Drives, USB Hard Drives (SIP Creator)
+Optical disks (CDs, DVDs), thumb drives, and USB hard drives are logically imaged using **SIP Creator** which is installed on the BitCurator machine. *Forensic images cannot be made for audio CDs. Please see [audio CDs](#audio-cds) for instructions.*
 
 ### Step 1: Access SIP Creator
 - Log in the BitCurator Machine using the password: `bcadmin`
