@@ -4,11 +4,10 @@ title: "Troubleshooting"
 ---
 
 ## Overview
-Refer to this guide if you've experienced difficulties using the available tools for transferring digital media. If you are unsure why an item is not transferring, please fill out the [Advanced Troubleshooting Form](https://form.asana.com/?k=EsWapMmv2cZMzHwcrD9_2A&d=4711715224923).
+Refer to this guide if you've experienced difficulties using the available tools for transferring digital media. If/when an error is recorded, make a maximum of five attempts to create a disk image or run a virus scan, with no more than three attempts made for the same error. If you are unsure why an item is not transferring, please fill out the [Advanced Troubleshooting Form](https://form.asana.com/?k=EsWapMmv2cZMzHwcrD9_2A&d=4711715224923).
 
 ## Legacy Imaging Script Errors
-
-If/when an error is recorded, make a maximum of five attempts to create a disk image or run a virus scan, with no more than three attempts made for the same error.
+The imaging scripts are no longer used but this information may still be useful in troubleshooting.
 
 ### Cannot determine file system type
 
