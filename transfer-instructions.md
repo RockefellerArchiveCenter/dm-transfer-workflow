@@ -14,7 +14,7 @@ The programs and hardware used to transfer files or create disk images will vary
 Workstations used to transfer digital media items:
 - **BitCurator Machine:** Used for CDs, DVDs, USB thumb drives, and USB hard drives. The [BitCurator environment](https://github.com/BitCurator/bitcurator-distro/wiki/Releases), [SIP Creator](https://github.com/CCA-Public/sipcreator), and [Disk Image Processor](https://github.com/CCA-Public/diskimageprocessor) are installed on this machine.
 - **FRED:** Used to image audio CDs, non-USB hard drives, and 3 1/2 inch and 5 1/4 inch floppy disks. The following programs are installed on the FRED:
-  - **KryoFlux:** Used when imaging 3 1/2 inch and 5 1/4 inch floppy disks
+  - **KryoFlux:** Used when imaging 3 1/2 inch and 5 1/4 inch floppy disks.
   - **FTK Imager:** Used when imaging hard drives.
   - **Forensic Toolkit (FTK):** Used for troubleshooting.
 
