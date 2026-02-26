@@ -5,23 +5,23 @@ title: "Transfer Instructions"
 
 ## Transfer Overview & Setup
 
-An item must be inventoried in the Digital Media Log before it is transferred. See instructions for [Inventorying Digital Media Items](/dm-transfer-workflow/inventory). When a digital media item is imaged or otherwise has its contents transferred, this must be [recorded in the Digital Media Log](#recording-transfers-in-digital-media-log).
+An item must be inventoried in the Digital Media Log before it is transferred. See instructions for [Inventorying Digital Media Items](/dm-transfer-workflow/inventory). When a digital media item is imaged or otherwise has its contents transferred, this must be recorded in the Digital Media Log.
 
-### Choosing Transfer Method
+### Choosing a Transfer Method
 
-The programs and hardware used to create transfer files or disk images will vary depending on the type of digital media you are attempting to transfer.
+The programs and hardware used to transfer files or create disk images will vary depending on the type of digital media you are attempting to transfer.
 
 Workstations used to transfer digital media items:
-- **BitCurator Machine:** Used for CDs, DVDs, USB thumb drives, and USB hard drives. The [BitCurator suite](https://github.com/BitCurator/bitcurator-distro/wiki/Releases) of tools and [SIP Creator](https://github.com/CCA-Public/sipcreator) are installed on this machine.
+- **BitCurator Machine:** Used for CDs, DVDs, USB thumb drives, and USB hard drives. The [BitCurator environment](https://github.com/BitCurator/bitcurator-distro/wiki/Releases), [SIP Creator](https://github.com/CCA-Public/sipcreator), and [Disk Image Processor](https://github.com/CCA-Public/diskimageprocessor) are installed on this machine.
 - **FRED:** Used to image audio CDs, non-USB hard drives, and 3 1/2 inch and 5 1/4 inch floppy disks. The following programs are installed on the FRED:
-  - **KryoFlux:** Used when imaging 3 1/2 inch and 5 1/4 inch floppy disks
+  - **KryoFlux:** Used when imaging 3 1/2 inch and 5 1/4 inch floppy disks.
   - **FTK Imager:** Used when imaging hard drives.
   - **Forensic Toolkit (FTK):** Used for troubleshooting.
 
 The sections below describe the options available for each specific type of digital media as well as step-by-step workflows.
 
-## CDs, DVDs, USB Thumb-Drives, USB Hard Drives (SIP Creator)
-Optical disks (cds, DVDs), thumb Drives, and USB hard drives are logically imaged using **SIP Creator** which is installed on the BitCurator machine. *Forensic images cannot be made for audio CDs. Please see [audio CDs](#audio-cds) for instructions.*
+## CDs, DVDs, USB Thumb Drives, USB Hard Drives
+Optical disks (CDs, DVDs), thumb drives, and USB hard drives are logically imaged using **SIP Creator** which is installed on the BitCurator machine. *Forensic images cannot be made for audio CDs. Please see [audio CDs](#audio-cds) for instructions.*
 
 ### Step 1: Access SIP Creator
 - Log in the BitCurator Machine using the password: `bcadmin`
@@ -31,7 +31,7 @@ Optical disks (cds, DVDs), thumb Drives, and USB hard drives are logically image
 - Insert the disk/drive containing the files to be copied.
 - In SIP Creator, click **Select Source**
 - A file explorer window will appear in front of the SIP Creator window, select the disk/drive, then click **Open**
-- Be sure to always select the disk/drive at the top level, not individual folders.
+  - Be sure to always select the disk/drive at the top level, not individual folders.
 
 ### Step 3: Directory selection
 - Use the **Directory Selector** to choose files for copying.
@@ -61,10 +61,10 @@ Optical disks (cds, DVDs), thumb Drives, and USB hard drives are logically image
 - Note: The Status bar may stay at 0% and "Processing" until completion. A pop-up window will confirm completion.
 
 ### Step 8: Hand-off files for review
-- Fill out the [SIP Creator Hand-Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
+- Fill out the [Digital Media Hand Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
 
 
-### Audio CDs
+## Audio CDs
 
 Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 
@@ -74,7 +74,7 @@ Audio CDs are imaged on the FRED, using the program Exact Audio Copy.
 4. Select the appropriate folder to store the files and click **Save**. Typically, files are saved within `Desktop/FA#/ASrefID`. If this is the first item being transferred, you may need to create these folders.
 5. Exact Audio Copy will begin ripping tracks and create a log file.
 6. Update the item's transfer status in the Digital Media Log.
-7. Fill out the [SIP Creator Hand-Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
+7. Fill out the [Digital Media Hand Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
 
 
 ## Hard Drives
@@ -94,7 +94,7 @@ The following describes how to create disk images using FTK Imager on the FRED. 
 9. Once completed, the Status will read **Image created successfully**. You will also receive a notification that the Directory Listing was created successfully. In the image destination folder, you will see the image (.E01), the Directory Listing file (.csv), and the Verify Results file (.txt). The Verify Results Summary contains the same data presented in the Image Summary area below. This information contains the image checksum information needed for the Digital Media database.
 10. Make sure to safely eject the hardware you were imaging. Failure to do so can result in irreparable damage to the media.
 11. Update the item's transfer status in the Digital Media Log.
-12. Fill out the [SIP Creator Hand-Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive
+12. Fill out the [Digital Media Hand Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
 
 ## 3 and a Half Inch and 5 and One Quarter Inch Floppy Disks
 
@@ -169,6 +169,6 @@ To calibrate using the GUI:
   - To get more information about the result of a certain track, move your mouse pointer over it. This will output the result of the operation in the status line.
 7. Click **Start** and note what time imaging started.
 8. Update the item's transfer status in the Digital Media Log.
-9. Fill out the [SIP Creator Hand-Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
+9. Fill out the [Digital Media Hand Off form](https://form.asana.com/?k=Q1Zt7LC2RhDFK111JRsMBw&d=4711715224923) so that the files can be reviewed and moved to the X:Drive.
 
 Next Step: [File Review](/dm-transfer-workflow/file_review)
