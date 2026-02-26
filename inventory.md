@@ -12,11 +12,10 @@ title: "Inventorying Digital Media Items"
 ## Step 2: Inventorying in the Digital Media Log
 
 Use the assigned Digital Media Log Asana project to inventory all digital media items. During the inventorying stage, only fill out the following fields within the Digital Media Log:
-- Name [title of the item, as described in ArchivesSpace]
-- AS RefID [copy/paste the ArchivesSpace RefID of the item]
-- Digital Media Format [select type of media from drop-down menu]
+- **Name:** title of the item, as described in ArchivesSpace
+- **AS RefID:** copy/paste the ArchivesSpace RefID of the item
+- **Digital Media Format:** select the type of media from the drop-down menu
 
-If the item is outside the scope of the media types that can be imaged in-house, please fill out the [Digital Media Vendor Transfer form](https://form.asana.com/?k=svS04WgIj3cV8-KEThfToQ&d=4711715224923).
-
+If the item's format does not appear in the "Digital Media Format" list, it cannot be transferred in-house so you must fill out the [Digital Media Vendor Transfer form](https://form.asana.com/?k=svS04WgIj3cV8-KEThfToQ&d=4711715224923).
 
 Next Step: [Transfer Instructions](/dm-transfer-workflow/transfer-instructions)
