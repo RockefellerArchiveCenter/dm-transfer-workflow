@@ -39,7 +39,7 @@ If the FRED does not recognize the KryoFlux, it is likely an issue that Windows 
 
 1. Open the command prompt and navigate to the DTC folder
 2. Run `java -jar kryoflux-ui.jar`
-3. With the command window still open, use the GUI to select “Start” again to being imaging. The command window will provide more detailed output of what the GUI is doing, allowing you to further troubleshoot using any error messages in the output window
+3. With the command window still open, use the GUI to select “Start” again to begin imaging. The command window will provide more detailed output of what the GUI is doing, allowing you to further troubleshoot using any error messages in the output window
 
 ### KryoFlux Errors and Warnings
 
@@ -50,8 +50,8 @@ While the KryoFlux is operating, there may be exceptions that trigger warnings o
 - Slip marks (sector end) found at different positions from their expected values; warning only.
 - Header extra data was found. Data is hidden in unused parts of the block header. Sector images can't hold such data; warning only. It is likely that this will appear on the beginning tracks; this is  normal and can be ignored.
 - Format type/block ID is non-standard; warning only.
-- Sector length is non-standard. If considering it as a protection measure it is possible to decode the sector and saving it in the image; if not, you'll get another flag saying so; warning only.
-- Sector ignored, sector was found but sector image was not created. Reason could be sector having a different size set compared to what the image uses; error.
+- Sector length is non-standard. If considering it as a protection measure, it is possible to decode the sector and saving it in the image; if not, you'll get another flag saying so; warning only.
+- Sector ignored, sector was found but sector image was not created. Reason could be the sector having a different size set compared to what the image uses; error.
 - Special protection detected which will malform the sector on purpose, retry will be suppressed; warning only.
 - Side number found is different from what it should be; warning only. If this warning is appearing for multiple disks, the side selection on the drive is broken and a new drive must be used.
 - Track number found is different from what it should be; warning only.
