@@ -67,6 +67,6 @@ If no viruses are found, transfer the FA# folder containing all SIPs to the `X:D
   - Click **Target**, select the destination. This will always be `X:Drive/Processing/Disk Images`.
   - Click **Move**. This will begin to move the files from the source location to the target location. "Move" is cutting/pasting the files into the target location without leaving a copy in the source folder, which avoids the need to go back and delete the original files from the hard drive.
 
-## Step 3: Update Asana Projects
+## Step 4: Update Asana Projects
 - **Digital Media Hand Off Project:** check off all tasks (including subtasks). The item will automatically move to the "Completed" section of the Asana project.
 - **Digital Media Log:** Once ***all*** items are moved to the X:Drive, update the project's status to "Complete". If there are incomplete items, for any reason, do not mark the project as complete.
