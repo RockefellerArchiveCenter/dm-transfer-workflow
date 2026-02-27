@@ -16,6 +16,6 @@ Use the assigned Digital Media Log Asana project to inventory all digital media 
 - **AS RefID:** copy/paste the ArchivesSpace RefID of the item
 - **Digital Media Format:** select the type of media from the drop-down menu
 
-If the item's format does not appear in the "Digital Media Format" list, it cannot be transferred in-house so you must fill out the [Digital Media Vendor Transfer form](https://form.asana.com/?k=svS04WgIj3cV8-KEThfToQ&d=4711715224923).
+If the item's format does not appear in the "Digital Media Format" list, it cannot be transferred in-house, so you must fill out the [Digital Media Vendor Transfer form](https://form.asana.com/?k=svS04WgIj3cV8-KEThfToQ&d=4711715224923).
 
 Next Step: [Transfer Instructions](/dm-transfer-workflow/transfer-instructions)
