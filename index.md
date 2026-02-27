@@ -14,9 +14,9 @@ The workflows were developed in order to empower archivists to preserve and proc
 Our objectives are to inventory and transfer digital media items, ensure they are free of viruses and malware, and store them on the Digital Records (X) drive. To successfully perform these actions, various tools, hardware, and workstations are used in the following ordered steps:  
 
 1. Inventory digital media item(s) in ArchivesSpace and the assigned Digital Media Log Asana project when the item(s) are encountered during accessioning/processing.
-2. Transfer digital media items using appropriate hardware and tools. Document the actions taken in the Digital Media Log. Hand off to digital media (DM) archivists.
+2. Transfer digital media items using appropriate hardware and tools. Document the actions taken in the Digital Media Log. Hand off to Digital Media (DM) archivists.
 3. DM Archivists will review the copied files for viruses and personally identifiable information (PII).
-4. DM Archivists will move all output files (copied files and reports created by SIP Creator) to the X:Drive/Processing/Disk Images folder.
+4. DM Archivists will move all output files (copied files and reports) to the X:Drive/Processing/Disk Images folder.
 
 ## Documentation Components
 
