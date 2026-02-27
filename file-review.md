@@ -34,7 +34,7 @@ This workflow should be used for .iso and .img files. It requires the use of the
 
 - Confirm files are on the BitCurator Machine. If disk images were created on the FRED, copy the disk images to a hard drive and connect it to the BitCurator Machine.
 - Log in to the BitCurator Machine using the password: `bcadmin`
-- Navigate to: Applications (top toolbar) -> Forensics and Reporting -> SIP Creator
+- Navigate to: Applications (top toolbar) -> Forensics and Reporting -> Disk Image Processor
 - Use the **Processing** tab
 - Configure options:
   - **Bag SIPs:** unchecked
