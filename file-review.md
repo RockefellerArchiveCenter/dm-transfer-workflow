@@ -5,7 +5,7 @@ title: "File Review"
 
 ## Overview
 
-All disk images are scanned for viruses and personally identifiable information (PII) before being moved to the Digital Records (X) drive. The following steps are performed by members of the processing team who have in-office workstations (digital media (DM) archivists).
+All disk images are scanned for viruses and personally identifiable information (PII) before being moved to the Digital Records (X) drive. The following steps are performed by members of the processing team who have in-office workstations, Digital Media (DM) archivists.
 
 ## Step 1: Review Digital Media Hand Off Form
 Digital Media Hand Off Form submissions will automatically populate in an Asana project. Once a submission is received, additional subtasks are added, and Digital Media (DM) Archivists are notified.
