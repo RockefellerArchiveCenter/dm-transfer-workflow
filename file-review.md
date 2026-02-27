@@ -5,7 +5,7 @@ title: "File Review"
 
 ## Overview
 
-All disk images are scanned for viruses and personally identifiable information (PII) before being moved to the Digital Records (X) drive. The following steps are performed by members of the processing team who have in-office workstations (digital media (DM) archivists).
+All disk images are scanned for viruses and personally identifiable information (PII) before being moved to the Digital Records (X) drive. The following steps are performed by members of the processing team who have in-office workstations, Digital Media (DM) archivists.
 
 ## Step 1: Review Digital Media Hand Off Form
 Digital Media Hand Off Form submissions will automatically populate in an Asana project. Once a submission is received, additional subtasks are added, and Digital Media (DM) Archivists are notified.
@@ -34,7 +34,7 @@ This workflow should be used for .iso and .img files. It requires the use of the
 
 - Confirm files are on the BitCurator Machine. If disk images were created on the FRED, copy the disk images to a hard drive and connect it to the BitCurator Machine.
 - Log in to the BitCurator Machine using the password: `bcadmin`
-- Navigate to: Applications (top toolbar) -> Forensics and Reporting -> SIP Creator
+- Navigate to: Applications (top toolbar) -> Forensics and Reporting -> Disk Image Processor
 - Use the **Processing** tab
 - Configure options:
   - **Bag SIPs:** unchecked
