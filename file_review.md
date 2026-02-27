@@ -7,12 +7,12 @@ title: "File Review"
 
 All disk images are scanned for viruses and personally identifiable information (PII) before being moved to the Digital Records (X) drive. The following steps are performed by members of the processing team who have in-office workstations (digital media (DM) archivists).
 
-### Step 1: Review Digital Media Hand Off Form
+## Step 1: Review Digital Media Hand Off Form
 Digital Media Hand Off Form submissions will automatically populate in an Asana project. Once a submission is received, additional subtasks are added, and Digital Media (DM) Archivists are notified.
 
 DM Archivists will assign themselves to incoming form submissions and continue to "Step 2: Identify Workflow".
 
-### Step 2: Identify Workflow
+## Step 2: Identify Workflow
 Use the "Transfer Method" column within the digital media log to identify which of the following workflows to use:
 - SIP Creator: Option A
 - Disk Image: Option B
@@ -53,7 +53,7 @@ This workflow should be used for .iso and .img files. It requires the use of the
 - Review the **virus report** and **SSN** sections for any viruses or social security numbers that may have been found by SIP Creator.
 - Document the results in the Digital Media Log.
 
-### Step 3: Move files to the X:Drive
+## Step 3: Move files to the X:Drive
 If no viruses are found, transfer the FA# folder containing all SIPs to the `X:Drive/Processing/Disk Images` folder using TeraCopy.
 
 - Prepare the files for transfer. Cut and paste the files from the BitCurator Machine onto the transfer hard drive.
@@ -67,6 +67,6 @@ If no viruses are found, transfer the FA# folder containing all SIPs to the `X:D
   - Click **Target**, select the destination. This will always be `X:Drive/Processing/Disk Images`.
   - Click **Move**. This will begin to move the files from the source location to the target location. "Move" is cutting/pasting the files into the target location without leaving a copy in the source folder, which avoids the need to go back and delete the original files from the hard drive.
 
-## Step 3: Update Asana Projects
+## Step 4: Update Asana Projects
 - **Digital Media Hand Off Project:** check off all tasks (including subtasks). The item will automatically move to the "Completed" section of the Asana project.
 - **Digital Media Log:** Once ***all*** items are moved to the X:Drive, update the project's status to "Complete". If there are incomplete items, for any reason, do not mark the project as complete.
