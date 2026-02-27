@@ -9,5 +9,5 @@ pages:
   - ["Digital Media Transfer Workflow", "index"]
   - ["Inventorying Digital Media", "inventory"]
   - ["Transfer Instructions", "transfer-instructions"]
-  - ["File Review", "file_review"]
+  - ["File Review", "file-review"]
   - ["Troubleshooting", "troubleshooting"]
