@@ -53,7 +53,7 @@ This workflow should be used for .iso and .img files. It requires the use of the
 - Review the **virus report** and **SSN** sections for any viruses or social security numbers that may have been found by SIP Creator.
 - Document the results in the Digital Media Log.
 
-### Step 2: Move files to the X:Drive
+### Step 3: Move files to the X:Drive
 If no viruses are found, transfer the FA# folder containing all SIPs to the `X:Drive/Processing/Disk Images` folder using TeraCopy.
 
 - Prepare the files for transfer. Cut and paste the files from the BitCurator Machine onto the transfer hard drive.
