@@ -5,7 +5,7 @@ title: "File Review"
 
 ## Overview
 
-All disk images are scanned for viruses and personally identifiable information (PII) before they are moved over to the Digital Records (X) drive. The following steps are performed by members of the processing team who have in-office workstations (digital media (DM) archivists).
+All disk images are scanned for viruses and personally identifiable information (PII) before being moved to the Digital Records (X) drive. The following steps are performed by members of the processing team who have in-office workstations (digital media (DM) archivists).
 
 ### Step 1: Review Digital Media Hand Off Form
 Digital Media Hand Off Form submissions will automatically populate in an Asana project. Once a submission is received, additional subtasks are added, and Digital Media (DM) Archivists are notified.
@@ -19,7 +19,7 @@ Use the "Transfer Method" column within the digital media log to identify which 
 - Rip Tracks: no review is needed
 
 ### Option A: SIP Creator File Review
-For items transferred using SIP Creator, use the reports created by SIP Creator to ensure there are no viruses or personally identifiable information within the files. All SIP Creator files should have been saved by the processing archivist on the Desktop of the BitCurator Machine.
+For items transferred using SIP Creator, use the reports it creates to ensure there are no viruses or personally identifiable information within the files. All SIP Creator files should have been saved by the processing archivist on the Desktop of the BitCurator Machine.
 - For small amounts of digital media (less than 20 items):
   - Manually review the Brunnhilde report for each digital media item by looking in `Desktop/FA#/ASrefID/metadata/submissionsDocumentation/brunnhilde`
   - Open the file called `report.html`. This will open an HTML report in the web browser.
@@ -65,7 +65,7 @@ If no viruses are found, transfer the FA# folder containing all SIPs to the `X:D
   - Select **Create a new list** from the toolbar.
   - Click **Source**, select the folder containing files to be transferred from the hard drive. This usually will be a folder named "FA###".
   - Click **Target**, select the destination. This will always be `X:Drive/Processing/Disk Images`.
-  - Click **Move**. This will be begin to move the files from the source location to the target location. "Move" is cutting/pasting the files into the target location without leaving a copy in the source folder, which avoids the need to go back delete the original files from the hard drive.
+  - Click **Move**. This will begin to move the files from the source location to the target location. "Move" is cutting/pasting the files into the target location without leaving a copy in the source folder, which avoids the need to go back and delete the original files from the hard drive.
 
 ## Step 3: Update Asana Projects
 - **Digital Media Hand Off Project:** check off all tasks (including subtasks). The item will automatically move to the "Completed" section of the Asana project.
